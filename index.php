@@ -42,6 +42,7 @@
       </ul>
     </nav>
   </header>
+
   <section id="imageContainer" class="min-w-full h-[35vh] border-primary-color flex justify-center items-center relative">
     <img id="image1" class="active object-cover" src="./images/slider/imagen1.jpg" alt="Imagen Cambiante" />
     <img id="image2" src="./images/slider/imagen2.jpg" alt="Imagen Cambiante" class="object-cover" />
@@ -57,6 +58,7 @@
       </p>
     </div>
   </section>
+
   <section class="flex bg-primary-color text-white flex-col p-8 px-8">
     <div class="flex justify-center items-center pb-4">
       <img src="./images/logo/logo_sinfondo.png" alt="Logo" title="Logo" class="w-[150px]" />
@@ -73,19 +75,46 @@
       más grandes.
     </p>
   </section>
-  <section class="flex p-8 pt-16 w-full justify-center items-center flex-col gap-4">
-    <h2>Nuestro Profesor</h2>
-    <h3>Juan Carlos Salazar Rico</h3>
-    <p class="text-[11.5px]">
+
+  <section class="flex p-8 pt-14 w-full justify-center items-center flex-col gap-4 mb-6">
+    <h2 class="text-2xl font-medium mb-2">Nuestro Profesor</h2>
+    <div class="flex justify-start items-center w-full gap-1" data-aos="fade-right" data-aos-duration="1000">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6 text-primary-color">
+        <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+      </svg>
+      <h3 class="font-medium text-start w-full font-['Oswald']">Juan Carlos Salazar Rico</h3>
+    </div>
+    <p class="text-[11.5px] text-justify">
       Comencé mi viaje musical con el piano a los 8 años, formándome en la Escuela Maestro Barbieri, la Escuela de Música Ágata en Madrid, y en Roma con Sasha Bajcic y Verónica Metakovskaia. Obtuve el Grado Profesional de Piano del Conservatorio Adolfo Salazar.
     </p>
-    <p class="text-[11.5px]">
+    <p class="text-[11.5px] text-justify">
       Como educador, personalizo lecciones para adaptarme a las necesidades de mis alumnos, fomentando confianza y pasión por la música. Con más de tres décadas en el piano y doce años de enseñanza, participo en talleres y seminarios para enriquecer la comunidad musical, creando un entorno donde cada estudiante puede encontrar su lugar en la música y desarrollarse plenamente.
     </p>
+    <div class="flex w-[200px] h-[200px] mt-2 rounded-full" data-aos="fade-up" data-aos-duration="1000">
+      <img src="./images/profesorjuancarlos.jpeg" alt="" srcset="" class="object-cover rounded-full">
+    </div>
     <div class="flex justify-center items-center pt-4">
       <a href="#" class="bg-primary-color rounded-full px-4 py-1 flex justify-center items-center text-white font-['Oswald']">Conoceme mas</a>
     </div>
   </section>
+
+  <section class="flex bg-primary-color text-white flex-col p-8 px-8">
+    <h4 class="text-center text-lg font-['Oswald']">
+      Nuestro equipo
+    </h4>
+    <br />
+    <p class="text-justify text-[11.5px] animate__animated animate__fadeIn animate__delay-1s">
+      Nuestros profes te acompañan en esta aventura musical con clases online
+      personalizadas. Desde la postura hasta la técnica, se preocupan por cada
+      detalle para que construyas una base sólida y afrontes desafíos cada vez
+      más grandes.
+    </p>
+  </section>
+
+
+
+
+
   <section class="flex p-8 pt-16 w-full justify-center items-center flex-col gap-4">
     <h4 class="text-2xl font-[Oswald] font-medium">¿Por qué elegirnos?</h4>
     <p class="text-sm text-justify" data-aos="zoom-in" data-aos-duration="1000">
