@@ -5,6 +5,10 @@ document.addEventListener("DOMContentLoaded", function () {
     document.querySelector(".slider-container-slider").style.transform =
       "translateX(0)";
   });
+
+  document.getElementById("btn-show-menu-mb").addEventListener("click",()=>{
+    document.getElementById("nav-menu-mobile").classList.toggle("hidden");
+  })
 });
 
 // let currentSlide = 0; // Asegúrate de definir esto en un contexto accesible

@@ -6,6 +6,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
+  scroll-behavior: smooth;
 }
 
 #imageContainer {
@@ -39,6 +40,27 @@
   width: 100%;
   height: 100%;
   background-image: url('../../images/nuestroequipo.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 1; /* Ajusta la opacidad aquí */
+  background-attachment: fixed;
+  z-index: -1;
+}
+
+#nuestroequipopage-parallax {
+  position: relative;
+  overflow: hidden;
+}
+
+#nuestroequipopage-parallax::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../../images/nuestroequipopage.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
