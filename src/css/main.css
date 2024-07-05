@@ -1,6 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Playwrite+ZA:wght@100..400&display=swap");
+@font-face {
+  font-family: 'Oswald';
+  src: url('../../fonts/Oswald/Oswald-VariableFont_wght.ttf'),
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../../fonts/Inter/static/Inter-Medium.ttf'),
+}
+
+@font-face {
+  font-family: 'Playwrite ZA';
+  src: url('../../fonts/Playwrite_ZA/static/PlaywriteZA-Regular.ttf'),
+}
 * {
   padding: 0;
   margin: 0;
@@ -39,7 +50,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('../../images/nuestroequipo.jpg');
+  background-image: url('../../images/nuestroequipo.webp');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -50,6 +61,7 @@
 
 #nuestroequipopage-parallax {
   position: relative;
+  height: 40vh;
   overflow: hidden;
 }
 
@@ -60,11 +72,43 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('../../images/nuestroequipopage.jpg');
+  background-image: url('../../images/nuestroequipo.webp');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 1; /* Ajusta la opacidad aquí */
   background-attachment: fixed;
   z-index: -1;
+}
+
+@media (min-width: 1024px) {
+  #nuestroequipo-parallax {
+    height: 50vh;
+  }
+  #nuestroequipopage-parallax {
+    height: 50vh;
+  }
+}
+
+@media (min-width: 1440px) {
+  #nuestroequipopage-parallax {
+    height: 60vh;
+  }
+}
+
+.slider-resenia {
+  overflow: hidden;
+}
+
+.slides-resenia {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide-resenia {
+  min-width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
 }

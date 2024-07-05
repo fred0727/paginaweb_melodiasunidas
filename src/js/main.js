@@ -11,8 +11,6 @@ document.addEventListener("DOMContentLoaded", function () {
   })
 });
 
-// let currentSlide = 0; // Asegúrate de definir esto en un contexto accesible
-
 function changeProfe(id) {
   console.log(id);
   const sliders = document.querySelectorAll(".slider-container-slide");

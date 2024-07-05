@@ -1,0 +1,108 @@
+@font-face {
+  font-family: 'Oswald';
+  src: url('../../fonts/Oswald/Oswald-VariableFont_wght.ttf'),
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../../fonts/Inter/static/Inter-Medium.ttf'),
+}
+
+@font-face {
+  font-family: 'Playwrite ZA';
+  src: url('../../fonts/Playwrite_ZA/static/PlaywriteZA-Regular.ttf'),
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  scroll-behavior: smooth;
+}
+
+#imageContainer {
+  width: 100%;
+  /* height: 85vh; */
+  overflow: hidden;
+  position: relative;
+}
+#imageContainer img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: opacity 1s ease-in-out;
+  opacity: 0;
+}
+#imageContainer img.active {
+  opacity: 1;
+}
+
+#nuestroequipo-parallax {
+  position: relative;
+  height: auto;
+  overflow: hidden;
+}
+
+#nuestroequipo-parallax::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../../images/nuestroequipo.webp');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 1; /* Ajusta la opacidad aquí */
+  background-attachment: fixed;
+  z-index: -1;
+}
+
+#nuestroequipopage-parallax {
+  position: relative;
+  height: 40vh;
+  overflow: hidden;
+}
+
+#nuestroequipopage-parallax::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../../images/nuestroequipo.webp');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 1; /* Ajusta la opacidad aquí */
+  background-attachment: fixed;
+  z-index: -1;
+}
+
+@media (min-width: 1024px) {
+  #nuestroequipo-parallax {
+    height: 50vh;
+  }
+  #nuestroequipopage-parallax {
+    height: 50vh;
+  }
+}
+
+.slider-resenia {
+  overflow: hidden;
+}
+
+.slides-resenia {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide-resenia {
+  min-width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
