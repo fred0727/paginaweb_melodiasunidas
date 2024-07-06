@@ -81,6 +81,50 @@
   z-index: -1;
 }
 
+#nuestroequipopage-parallax {
+  position: relative;
+  height: 50vh;
+  overflow: hidden;
+}
+
+#nuestroequipopage-parallax::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../../images/portada.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 1; /* Ajusta la opacidad aquí */
+  background-attachment: fixed;
+  z-index: -1;
+}
+
+#nuestroprofepage-parallax {
+  position: relative;
+  height: 50vh;
+  overflow: hidden;
+}
+
+#nuestroprofepage-parallax::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../../images/nuestroprofe.webp');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 1; /* Ajusta la opacidad aquí */
+  background-attachment: fixed;
+  z-index: -1;
+}
+
 @media (min-width: 1024px) {
   #nuestroequipo-parallax {
     height: 50vh;
@@ -88,10 +132,16 @@
   #nuestroequipopage-parallax {
     height: 50vh;
   }
+  #nuestroprofepage-parallax {
+    height: 50vh;
+  }
 }
 
 @media (min-width: 1440px) {
   #nuestroequipopage-parallax {
+    height: 60vh;
+  }
+  #nuestroprofepage-parallax {
     height: 60vh;
   }
 }

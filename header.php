@@ -10,8 +10,8 @@
         <ul class="flex items-center gap-8 text-white">
           <li><a href="inicio.php" class="font-['Oswald'] text-xl">Inicio</a></li>
           <li><a href="nosotros.php" class="font-['Oswald'] text-xl">Nosotros</a></li>
-          <li class="font-['Oswald'] text-xl">Blog</li>
-          <li class="font-['Oswald'] text-xl">Nuestro Profe</li>
+          <li><a href="nuestroprofe.php" class="font-['Oswald'] text-xl">Blog</a></li>
+          <li><a href="nuestroprofe.php" class="font-['Oswald'] text-xl">Nuestro Profe</a></li>
           <li class="font-['Oswald']">
             <button class="bg-secondary-color text-black/80 px-3 py-1 rounded-sm font-['Oswald'] text-lg">
               Iniciar Sesión
@@ -29,8 +29,8 @@
       <ul class="flex flex-col justify-center items-center gap-4 px-2 py-6 box-border bg-primary-color w-full text-white text-lg">
         <li><a href="inicio.php" class="font-['Oswald']">Inicio</a></li>
         <li><a href="nosotros.php" class="font-['Oswald']">Nosotros</a></li>
-        <li class="font-['Oswald']">Blog</li>
-        <li class="font-['Oswald']">Nuestro Profe</li>
+        <li><a href="nuestroprofe.php" class="font-['Oswald']">Blog</a></li>
+        <li><a href="nuestroprofe.php" class="font-['Oswald']">Nuestro Profe</a></li>
         <li class="font-['Oswald']">
           <button class="bg-secondary-color text-black/80 px-2 py-1 rounded-sm font-['Oswald'] text-lg">
             Iniciar Sesión
