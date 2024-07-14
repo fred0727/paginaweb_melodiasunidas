@@ -14,15 +14,19 @@
     <link href="./src/css/main.css" rel="stylesheet" />
     <link href="./src/css/aos-master/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" defer />
-    <link href="./src/output.css" rel="stylesheet" defer />
+    <link href="./src/output_v1.css" rel="stylesheet" defer />
 </head>
+<?php
+$pagina = "nosotros";
+?>
 
 <body>
     <!-- Encabezado -->
     <?php include("header.php") ?>
 
     <!-- Portada -->
-    <section class="flex bg-black/30" id="nuestroprofepage-parallax">
+    <section class="flex bg-black/30 h-[30vh] sm:h-[50vh] lg:h-[70vh] xl:h-[85vh]">
+        <img src="./images/nuestroprofe.webp" alt="portadanosotros" class="w-full object-cover">
     </section>
 
     <!-- NUestro Profesor - Mobile -->
@@ -73,53 +77,43 @@
 
     <!-- Mi formación -->
     <section class="flex p-8 py-16 w-full justify-center items-center flex-col gap-8 bg-[#272727] mt-8 sm:px-32 lg:px-16 lg:gap-12 lg:py-24">
-        <h3 class="text-white text-2xl font-['Oswald'] lg:text-3xl">Mi formación</h3>
-        <div class="flex flex-col gap-4 sm:flex-row sm:gap-8 sm:justify-between sm:w-full lg:justify-start lg:px-32">
-            <div class="flex gap-2 flex-col">
-                <h5 class="text-primary-color text-sm lg:text-xl">
-                    GRADO ELEMENTAL (4 AÑOS)
-                </h5>
-                <p class="text-white text-[12px] lg:text-sm">
-                    – Piano: 4 años
-                    <br>
-                    – Lenguaje musical: 4 años
-                    <br>
-                    – Coro: 4 años
-                    <br>
-                    – Conjunto: 2 años
-                </p>
-            </div>
-            <div class="flex gap-2 flex-col">
-                <h5 class="text-primary-color text-sm lg:text-xl">
-                    GRADO PROFESIONAL (6 AÑOS)
-                </h5>
-                <p class="text-white text-[12px] lg:text-sm">
-                    – Piano: 6 años
-                    <br>
-                    – Conjunto: 2 años
-                    <br>
-                    – Lenguaje musical: 2 años
-                    <br>
-                    – Música de cámara: 4 años
-                    <br>
-                    – Armonía: 3 años
-                    <br>
-                    – Acompañamiento: 2 años
-                    <br>
-                    – Análisis musical: 2 años
-                    <br>
-                    – Historia de la música: 2 años
-                    <br>
-                    – Estética: 1 año
-                </p>
-            </div>
-        </div>
+        <h3 class="text-white text-2xl font-['Oswald'] lg:text-4xl">Mi formación</h3>
         <div class="flex flex-col gap-4 lg:px-32">
             <p class="flex text-[12px] text-white text-justify lg:text-sm">
                 Este conocimiento es el tesoro que tengo el privilegio de compartir contigo. Desde las majestuosas composiciones de Mozart hasta los ritmos vibrantes del jazz y los acordes que marcan épocas en el rock, te guiaré con maestría a través de este vasto universo musical.
                 Mi compromiso va más allá de las teclas del piano; es contigo, en cada paso de tu viaje musical. Ya sea que sueñes con conquistar el conservatorio, superar exámenes oficiales o simplemente explorar la música como un regalo diario, estoy aquí para inspirarte y brindarte una educación de la más alta calidad. ¡Juntos haremos que tu música cobre vida!
             </p>
         </div>
+        <div class="flex flex-col gap-4 sm:flex-row sm:gap-8 sm:justify-between sm:w-full lg:justify-start lg:px-32">
+            <div class="flex gap-2 flex-col">
+                <h5 class="text-primary-color text-sm lg:text-xl">
+                    GRADO ELEMENTAL (4 AÑOS)
+                </h5>
+                <ul class="text-white pl-5">
+                    <li class="list-disc text-[12px] sm:text-sm"><span class="font-bolder sm:text-base">Piano</span> : 4 años</li>
+                    <li class="list-disc text-[12px] sm:text-sm"><span class="font-bolder sm:text-base">Lenguaje musical: </span> 4 años</li>
+                    <li class="list-disc text-[12px] sm:text-sm"><span class="font-bolder sm:text-base">Coro: </span> 4 años</li>
+                    <li class="list-disc text-[12px] sm:text-sm"><span class="font-bolder sm:text-base">Conjunto: </span> 2 años</li>
+                </ul>
+            </div>
+            <div class="flex gap-2 flex-col">
+                <h5 class="text-primary-color text-sm lg:text-xl">
+                    GRADO PROFESIONAL (6 AÑOS)
+                </h5>
+                <ul class="text-white pl-5">
+                    <li class="list-disc text-[12px] sm:text-sm"><span class="font-bolder sm:text-base">Piano</span> : 6 años</li>
+                    <li class="list-disc text-[12px] sm:text-sm"><span class="font-bolder sm:text-base">Lenguaje musical: </span> 2 años</li>
+                    <li class="list-disc text-[12px] sm:text-sm"><span class="font-bolder sm:text-base">Música de cámara: </span> 4 años</li>
+                    <li class="list-disc text-[12px] sm:text-sm"><span class="font-bolder sm:text-base">Conjunto: </span> 2 años</li>
+                    <li class="list-disc text-[12px] sm:text-sm"><span class="font-bolder sm:text-base">Armonía: </span> 3 años</li>
+                    <li class="list-disc text-[12px] sm:text-sm"><span class="font-bolder sm:text-base">Acompañamiento: </span> 2 años</li>
+                    <li class="list-disc text-[12px] sm:text-sm"><span class="font-bolder sm:text-base">Análisis musical: </span> 2 años</li>
+                    <li class="list-disc text-[12px] sm:text-sm"><span class="font-bolder sm:text-base">Historia de la música: </span> 2 años</li>
+                    <li class="list-disc text-[12px] sm:text-sm"><span class="font-bolder sm:text-base">Estética: </span> 1 año</li>
+                </ul>
+            </div>
+        </div>
+        <h3 class="text-white text-2xl font-['Oswald'] lg:text-4xl">Mis Títulos</h3>
         <div class="flex flex-wrap w-full gap-4 lg:px-32 justify-center sm:justify-between lg:justify-between xl:justify-evenly">
             <div class="h-[200px] w-[250px] sm:w-[225px] overflow-hidden relative flex justify-center items-center" onclick="viewCertificado('certificado1')">
                 <img src="./images/certificados/certificado1.jpeg" class="cursor-pointer" alt="Ver Certificado" title="Ver Certificado">
@@ -182,7 +176,7 @@
 
     <!-- Formándose con los mejores -->
     <section class="flex p-8 pb-16 w-full justify-center items-center flex-col gap-6 xl:gap-8 sm:px-16 lg:px-32 xl:px-48 lg:py-16">
-        <h4 class="text-xl font-['Oswald'] text-center sm:text-2xl lg:text-3xl">Formándose con los mejores</h4>
+        <h4 class="text-xl font-['Oswald'] text-center sm:text-2xl lg:text-3xl">Formándome con los mejores</h4>
         <div class="flex w-full rounded-full justify-center">
             <img src="./images/certificados/profe_veronica.jpeg" alt="imagen profesora" title="imagen profesora" class="rounded-full w-[160px] h-[160px] lg:w-[200px] lg:h-[200px] object-cover" data-aos="zoom-in-up" data-aos-duration="1000">
         </div>

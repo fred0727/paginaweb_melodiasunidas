@@ -162,3 +162,13 @@
   display: flex;
   flex-direction: column;
 }
+
+#section-div-videos {
+  overflow: auto;
+  scrollbar-width: none; /* Para Firefox */
+  -ms-overflow-style: none; /* Para Internet Explorer y Edge */
+}
+
+#section-div-videos::-webkit-scrollbar {
+  display: none; /* Para navegadores basados en WebKit */
+}
