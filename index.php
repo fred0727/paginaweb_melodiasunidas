@@ -14,7 +14,7 @@
   <link href="./src/css/main.css" rel="stylesheet" />
   <link href="./src/css/aos-master/dist/aos.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" defer />
-  <link href="./src/output_v1.css" rel="stylesheet" defer />
+  <link href="./src/output_v3.css" rel="stylesheet" defer />
 </head>
 <?php
 $pagina = "inicio";
@@ -32,13 +32,12 @@ $pagina = "inicio";
     <img id="image1" loading="lazy" class="object-cover" src="./images/slider/imagen1.webp" alt="Imagen Cambiante" />
     <div class="absolute z-10 bottom-10 animate__animated animate__backInUp animate__delay-1s lg:bottom-20">
       <a href="#footer" class="bg-secondary-color text-black/80 rounded-full p-2 px-4 text-base lg:text-xl font-['Oswald']">
-        Comienza a aprender
+        ¡Dale play a tu aventura musical!
       </a>
     </div>
     <div class="absolute z-10 top-12 px-12 animate__animated animate__backInDown animate__delay-1s sm:px-40 lg:px-60 lg:top-36">
       <p class="text-white text-center font-bold sm:text-xl lg:text-2xl xl:text-3xl font-['Oswald']">
-        ¡Siente el vínculo musical <br> que une nuestros corazones en todo el
-        Mundo!
+        ¡La música es nuestro idioma común, no importa donde estes!
       </p>
     </div>
     <div class="absolute min-w-full min-h-full bg-black/40 z-0"></div>
@@ -50,14 +49,11 @@ $pagina = "inicio";
       <img src="./images/logo/logo_sinfondo.webp" alt="Logo" title="Logo" class="w-[175px]" />
     </div>
     <h4 class="text-center text-lg font-['Oswald']">
-      NUESTRAS CLASES ONLINE: <br />La presencialidad en la distancia.
+      NUESTRAS CLASES ONLINE: <br /> ¡Como si estuviéramos ahí, pero sin salir de casa!
     </h4>
     <br />
     <p class="text-justify text-[12px] animate__animated animate__fadeIn animate__delay-1s sm:px-16">
-      Nuestros profes te acompañan en esta aventura musical con clases online
-      personalizadas. Desde la postura hasta la técnica, se preocupan por cada
-      detalle para que construyas una base sólida y afrontes desafíos cada vez
-      más grandes.
+      Nuestros profes están siempre al pie del cañón para acompañarte en esta aventura musical. Con clases online a tu medida, se aseguran de que no se te escape ni un detalle: desde cómo te sientas al tocar hasta que te sientas un crack en la técnica. ¡Vas a tener una base tan sólida que los desafíos van a parecer pan comido!
     </p>
   </section>
 
@@ -68,21 +64,18 @@ $pagina = "inicio";
     </div>
     <div class="flex flex-col flex-1 max-w-[600px]">
       <h4 class="text-center text-2xl font-['Oswald']">
-        NUESTRAS CLASES ONLINE: <br />La presencialidad en la distancia.
+        NUESTRAS CLASES ONLINE: <br /> ¡Como si estuviéramos ahí, pero sin salir de casa!
       </h4>
       <br />
       <p class="text-justify text-[13px] animate__animated animate__fadeIn animate__delay-1s sm:px-16 lg:px-0">
-        Nuestros profes te acompañan en esta aventura musical con clases online
-        personalizadas. Desde la postura hasta la técnica, se preocupan por cada
-        detalle para que construyas una base sólida y afrontes desafíos cada vez
-        más grandes.
+        Nuestros profes están siempre al pie del cañón para acompañarte en esta aventura musical. Con clases online a tu medida, se aseguran de que no se te escape ni un detalle: desde cómo te sientas al tocar hasta que te sientas un crack en la técnica. ¡Vas a tener una base tan sólida que los desafíos van a parecer pan comido!
       </p>
     </div>
   </section>
 
   <!-- NUestro Profesor - Mobile -->
   <section class="flex p-8 pt-14 w-full justify-center items-center flex-col gap-4 mb-6 sm:px-16 lg:hidden">
-    <h2 class="text-2xl font-medium mb-2">Nuestro Profesor</h2>
+    <h2 class="text-2xl font-medium mb-2">Nuestras clases de piano</h2>
     <div class="flex justify-start items-center w-full gap-1" data-aos="fade-right" data-aos-duration="1000">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6 text-primary-color">
         <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
@@ -90,22 +83,30 @@ $pagina = "inicio";
       <h3 class="font-medium text-start w-full font-['Oswald']">Juan Carlos Salazar Rico</h3>
     </div>
     <p class="text-[12px] text-justify">
-      Inicié mi travesía musical a la edad de 8 años, con profesores que hicieron crecer mi amor por la música. Mi formación se vio profundamente enriquecida gracias a mis estudios en Roma con el maestro Sasha Bajcic, cuyo enfoque y técnica han sido fundamentales en mi desarrollo artístico. Gracias a la guía de Verónica Metakovskaia, desarrollándome bajo la influencia de la reconocida escuela rusa de piano, el Conservatorio Adolfo Salazar me otorgó el Título de Grado Profesional en Piano, consolidando así mi formación académica.
+      Juan Carlos es nuestro profe de piano y el que coordina a todo el equipo docente.
+
+      Empezó su aventura en la música cuando tenía solo 8 años, y desde entonces no ha parado.
+
+      Después de estudiar en Roma con el maestro Sasha Bajcic, y tras pasar por la escuela rusa de piano de la mano de Verónica Metakovskaia, Juan Carlos consiguió su Título de Grado Profesional en Piano, otorgado por el Conservatorio Adolfo Salazar. ¡Todo un crack!
     </p>
     <p class="text-[12px] text-justify">
-      Como profesor, diseño clases personalizadas para adaptarme a las necesidades únicas de cada alumno, fomentando en ellos la confianza y la pasión por la música. Con más de tres décadas de experiencia en el piano y doce años dedicados a la enseñanza, participo activamente en talleres y seminarios para enriquecer la comunidad musical. Mi objetivo es crear un entorno inspirador donde cada alumno pueda descubrir su lugar en la música y desarrollar plenamente su potencial artístico.
+      A la hora de enseñar, Juan Carlos adapta sus clases a cada alumno, porque sabe que cada uno tiene su propio ritmo y estilo.
+
+      Lleva más de tres décadas tocando el piano y más de doce años enseñando.
+
+      Además, participa en un montón de talleres y seminarios para seguir creciendo. Su misión es clara: que cada alumno encuentre su lugar en la música y saque todo su potencial.
     </p>
     <div class="flex w-[200px] h-[200px] mt-2 rounded-full" data-aos="fade-up" data-aos-duration="1000">
       <img src="./images/profesorjuancarlos.webp" alt="Nuestro Profe" title="Nuestro Profe" srcset="" class="object-cover rounded-full w-[200px] h-[200px]" loading="lazy">
     </div>
     <div class="flex justify-center items-center pt-4">
-      <a href="nuestroprofe.php" class="bg-primary-color rounded-full px-4 py-1 flex justify-center items-center text-white font-['Oswald']">Conoceme mas</a>
+      <a href="profejuancarlos.php" class="bg-primary-color rounded-full px-4 py-1 flex justify-center items-center text-white font-['Oswald']">Conoceme mas</a>
     </div>
   </section>
 
   <!-- NUestro Profesor - Desktop-->
   <section class="hidden lg:flex p-8 py-16 w-full justify-center items-center flex-col gap-4 mb-6 sm:px-16 lg:px-48">
-    <h2 class="text-3xl font-medium mb-4 font-['Oswald']">Nuestro Profesor</h2>
+    <h2 class="text-3xl font-medium mb-4 font-['Oswald']">Nuestras clases de piano</h2>
     <div class="flex flex-row gap-8 max-px-16 xl:max-w-[1920px]">
       <div class="flex flex-col">
         <div class="flex justify-start items-center w-full gap-1 mb-6" data-aos="fade-right" data-aos-duration="1000">
@@ -115,10 +116,18 @@ $pagina = "inicio";
           <h3 class="font-medium text-start w-full font-['Oswald'] text-xl">Juan Carlos Salazar Rico</h3>
         </div>
         <p class="text-[14px] text-justify">
-          Inicié mi travesía musical a la edad de 8 años, con profesores que hicieron crecer mi amor por la música. Mi formación se vio profundamente enriquecida gracias a mis estudios en Roma con el maestro Sasha Bajcic, cuyo enfoque y técnica han sido fundamentales en mi desarrollo artístico. Gracias a la guía de Verónica Metakovskaia, desarrollándome bajo la influencia de la reconocida escuela rusa de piano, el Conservatorio Adolfo Salazar me otorgó el Título de Grado Profesional en Piano, consolidando así mi formación académica.
+          Juan Carlos es nuestro profe de piano y el que coordina a todo el equipo docente.
+
+          Empezó su aventura en la música cuando tenía solo 8 años, y desde entonces no ha parado.
+
+          Después de estudiar en Roma con el maestro Sasha Bajcic, y tras pasar por la escuela rusa de piano de la mano de Verónica Metakovskaia, Juan Carlos consiguió su Título de Grado Profesional en Piano, otorgado por el Conservatorio Adolfo Salazar. ¡Todo un crack!
         </p>
         <p class="text-[14px] text-justify mt-4">
-          Como profesor, diseño clases personalizadas para adaptarme a las necesidades únicas de cada alumno, fomentando en ellos la confianza y la pasión por la música. Con más de tres décadas de experiencia en el piano y doce años dedicados a la enseñanza, participo activamente en talleres y seminarios para enriquecer la comunidad musical. Mi objetivo es crear un entorno inspirador donde cada alumno pueda descubrir su lugar en la música y desarrollar plenamente su potencial artístico.
+          A la hora de enseñar, Juan Carlos adapta sus clases a cada alumno, porque sabe que cada uno tiene su propio ritmo y estilo.
+
+          Lleva más de tres décadas tocando el piano y más de doce años enseñando.
+
+          Además, participa en un montón de talleres y seminarios para seguir creciendo. Su misión es clara: que cada alumno encuentre su lugar en la música y saque todo su potencial.
         </p>
       </div>
       <div class="flex w-full flex-col justify-center items-center gap-4">
@@ -126,7 +135,7 @@ $pagina = "inicio";
           <img src="./images/profesorjuancarlos.jpeg" alt="Nuestro Profe" title="Nuestro Profe" class="object-cover rounded-full w-[300px] h-[300px]" loading="lazy">
         </div>
         <div class="flex justify-center items-center pt-4">
-          <a href="nuestroprofe.php" class="bg-primary-color rounded-full px-6 py-2 flex justify-center items-center text-white font-['Oswald'] text-xl">Conoceme mas</a>
+          <a href="profejuancarlos.php" class="bg-primary-color rounded-full px-6 py-2 flex justify-center items-center text-white font-['Oswald'] text-xl">Conoceme mas</a>
         </div>
       </div>
     </div>
@@ -134,30 +143,146 @@ $pagina = "inicio";
 
   <!-- Nuestro Equipo -->
   <section class="flex text-white flex-col p-16 px-8 bg-black/60 sm:px-16 lg:px-48 lg:justify-center lg:items-center" id="nuestroequipo-parallax">
-    <h4 class="text-center text-2xl font-medium lg:text-3xl">
+    <h4 class="text-center text-2xl font-medium lg:text-4xl">
       Nuestro equipo
     </h4>
     <br />
     <span class="text-lg font-['Oswald'] lg:text-2xl lg:text-start w-full xl:max-w-[1920px]">
-      ¡Hola y bienvenidos a Melodías Unidas!
+      ¡Hey, bienvenidos a Melodías Unidas!
     </span>
     <p class="text-justify text-[12px] animate__animated animate__fadeIn animate__delay-1s mt-4 mb-6 lg:text-base xl:max-w-[1920px]" data-aos="zoom-in" data-aos-duration="1000">
-      Somos un equipo apasionado y dedicado, listos para hacer de tu viaje musical una experiencia emocionante y gratificante. Desde el primer momento, te recibiremos con una sonrisa y un abrazo musical. Creemos en la magia de la música y en el poder de la conexión humana. Más que un equipo, somos una familia de amantes de la música.
+      Aquí somos un equipo súper preparado y lleno de energía para hacer de tu experiencia musical algo único.
 
-      Estamos aquí para ti en cada paso del camino, desde responder tus preguntas hasta celebrar tus logros. Juntos, exploraremos el mundo del piano y la alegría de crear música. ¡Únete a nosotros en este emocionante viaje musical! ¡Estamos emocionados de conocerte y compartir nuestra pasión contigo!
+      Desde que entras por primera vez, te recibimos con buena onda y todas las ganas de compartir nuestra pasión.
+
+      No somos solo profes, somos una familia musical que cree en la magia de la música y en lo que nos conecta.
+
+      Estamos aquí para echarte una mano, resolver tus dudas y celebrar tus éxitos.
+
+      Únete a la aventura, ¡estamos deseando conocerte y compartir nuestra pasión contigo!
     </p>
   </section>
 
   <!-- Nuestros colaboradores -->
-  <?php include("colaboradores.php") ?>
+  <?php
+  // include("colaboradores.php") 
+  ?>
+  <section class="flex p-8 px-8 w-full justify-center items-center flex-col gap-4 sm:px-32 lg:px-48 lg:py-16 lg:mt-16" data-aos="fade-up" data-aos-duration="1000">
+    <h4 class="text-xl font-[Oswald] font-normal lg:text-3xl mb-4 lg:mb-8">
+      Equipo Docente
+    </h4>
+    <div class="flex justify-center items-center flex-wrap gap-4 lg:gap-10">
+      <div class="max-w-[500px]" onclick="changeProfe('juancarlos')">
+        <div class="rounded-full w-[50px] h-[50px] lg:w-[125px] lg:h-[125px] transition-all duration-300 overflow-hidden cursor-pointer" id="profe1">
+          <img src="./images/profes/juancarlosv2.jpeg" alt="" class="object-cover w-full h-full">
+        </div>
+      </div>
+      <div class="max-w-[500px]" onclick="changeProfe('santiago')">
+        <div class="rounded-full w-[50px] h-[50px] lg:w-[125px] lg:h-[125px] transition-all duration-300 overflow-hidden cursor-pointer grayscale hover:grayscale-0" id="profe2">
+          <img src="./images/profes/santiago.jpeg" alt="" class="object-cover w-full h-full">
+        </div>
+      </div>
+      <div class="max-w-[500px]" onclick="changeProfe('miguelangel')">
+        <div class="rounded-full w-[50px] h-[50px] lg:w-[125px] lg:h-[125px] transition-all duration-300 overflow-hidden cursor-pointer grayscale hover:grayscale-0" id="profe3">
+          <img src="./images/profes/miguelangel.jpeg" alt="" class="object-cover w-full h-full">
+        </div>
+      </div>
+    </div>
+    <div class="flex justify-center items-center flex-col mt-4 transition-all duration-300" id="profe-juancarlos">
+      <p class="font-light mt-2 mb-4 text-center text-xs md:text-base">Piano clásico <br> y moderno
+      </p>
+      <h3 class="text-sky-700 text-lg text-center">Juan Carlos</h3>
+      <span class="font-light text-center text-xs md:text-base">Coordinador del equipo docente</span>
+      <a href="profejuancarlos.php" class="text-sky-600 text-sm mt-4 border border-sky-600 hover:text-white hover:bg-sky-600 rounded-md px-4 py-2 transition-all duration-300">Conóceme</a>
+    </div>
+    <div class="flex hidden justify-center items-center flex-col mt-4 transition-all duration-300" id="profe-santiago">
+      <p class="font-light mt-2 mb-4 text-center text-xs md:text-base">Lenguaje musical, teoría <br> y producción musical
+      </p>
+      <h3 class="text-sky-700 text-lg text-center">Santiago Andrés Medina Gómez</h3>
+      <a href="profesantiago.php" class="text-sky-600 text-sm mt-4 border border-sky-600 hover:text-white hover:bg-sky-600 rounded-md px-4 py-2 transition-all duration-300">Conóceme</a>
+    </div>
+    <div class="flex hidden justify-center items-center flex-col mt-4 transition-all duration-300" id="profe-miguelangel">
+      <p class="font-light mt-2 mb-4 text-center  text-xs md:text-base">Historia de la <br> música
+      </p>
+      <h3 class="text-sky-700 text-lg text-center">Miguel Ángel Fonseca Orozco</h3>
+      <a href="profemiguel.php" class="text-sky-600 text-sm mt-4 border border-sky-600 hover:text-white hover:bg-sky-600 rounded-md px-4 py-2 transition-all duration-300">Conóceme</a>
+    </div>
+  </section>
+
+  <section class="flex p-8 px-8 w-full justify-center items-center flex-col gap-4 sm:px-32 lg:px-48 lg:pb-16 lg:pt-0" data-aos="fade-up" data-aos-duration="1000">
+    <h4 class="text-xl font-[Oswald] font-normal lg:text-3xl mb-4 lg:mb-8">
+      Equipo de gestión y administración
+    </h4>
+    <div class="flex justify-center items-center flex-wrap gap-4 lg:gap-10">
+      <div class="max-w-[500px]" onclick="changeAdmin('manuel')">
+        <div class="rounded-full w-[50px] h-[50px] lg:w-[125px] lg:h-[125px] transition-all duration-300 overflow-hidden cursor-pointer" id="admin1">
+          <img src="./images/admins/manuel.jpeg" alt="" class="object-cover w-full h-full">
+        </div>
+      </div>
+      <div class="max-w-[500px]" onclick="changeAdmin('ana')">
+        <div class="rounded-full w-[50px] h-[50px] lg:w-[125px] lg:h-[125px] transition-all duration-300 overflow-hidden cursor-pointer grayscale hover:grayscale-0" id="admin2">
+          <img src="./images/admins/ana.jpeg" alt="" class="object-cover w-full h-full">
+        </div>
+      </div>
+      <div class="max-w-[500px]" onclick="changeAdmin('lucia')">
+        <div class="rounded-full w-[50px] h-[50px] lg:w-[125px] lg:h-[125px] transition-all duration-300 overflow-hidden cursor-pointer grayscale hover:grayscale-0" id="admin3">
+          <img src="./images/admins/lucia.jpeg" alt="" class="object-cover w-full h-full">
+        </div>
+      </div>
+      <div class="max-w-[500px]" onclick="changeAdmin('marina')">
+        <div class="rounded-full w-[50px] h-[50px] lg:w-[125px] lg:h-[125px] transition-all duration-300 overflow-hidden cursor-pointer grayscale hover:grayscale-0" id="admin4">
+          <img src="./images/admins/marina.jpeg" alt="" class="object-cover w-full h-full">
+        </div>
+      </div>
+    </div>
+    <div class="flex justify-center items-center flex-col mt-4 transition-all duration-300" id="admin-manuel">
+      <p class="font-light mt-2 mb-4 text-center text-xs md:text-base">Se encarga de que todo esté en orden y <br> el equipo dé lo mejor de sí.
+      </p>
+      <h3 class="text-sky-700 text-lg text-center">Manuel</h3>
+      <span class="font-light text-center text-xs md:text-base">Director</span>
+      <a href="mailto:direccion.melodiasunidas@gmail.com?Subject=Quiero%20información" title="Contactame" class="flex justify-center items-center gap-2 text-sky-600 hover:underline text-sm mt-4 px-4 py-2 transition-all duration-300"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+        </svg>
+        direccion.melodiasunidas@gmail.com</a>
+    </div>
+    <div class="flex hidden justify-center items-center flex-col mt-4 transition-all duration-300" id="admin-ana">
+      <p class="font-light mt-2 mb-4 text-center text-xs md:text-base">Gestiona el calendario, cambios de clases y <br> cancelaciones para que no te pierdas de nada.
+      </p>
+      <h3 class="text-sky-700 text-lg text-center">Ana</h3>
+      <span class="font-light text-center text-xs md:text-base">Coordinadora académica</span>
+      <a href="mailto:coordacademica.melodiasunidas@gmail.com?Subject=Quiero%20información" title="Contactame" class="flex justify-center items-center gap-2 text-sky-600 hover:underline text-sm mt-4 px-4 py-2 transition-all duration-300"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+        </svg>
+        coordacademica.melodiasunidas@gmail.com</a>
+    </div>
+    <div class="flex hidden justify-center items-center flex-col mt-4 transition-all duration-300" id="admin-lucia">
+      <p class="font-light mt-2 mb-4 text-center text-xs md:text-base">La que controla que las cuotas y <br> las finanzas estén al día.
+      </p>
+      <h3 class="text-sky-700 text-lg text-center">Lucía</h3>
+      <span class="font-light text-center text-xs md:text-base">Contabilidad</span>
+      <a href="mailto:contabilidad.melodiasunidas@gmail.com?Subject=Quiero%20información" title="Contactame" class="flex justify-center items-center gap-2 text-sky-600 hover:underline text-sm mt-4 px-4 py-2 transition-all duration-300"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+        </svg>
+        contabilidad.melodiasunidas@gmail.com</a>
+    </div>
+    <div class="flex hidden justify-center items-center flex-col mt-4 transition-all duration-300" id="admin-marina">
+      <p class="font-light mt-2 mb-4 text-center text-xs md:text-base">Es la que siempre está al tanto para ayudarte y <br> organizar todo lo administrativo.
+      </p>
+      <h3 class="text-sky-700 text-lg text-center">Marina</h3>
+      <span class="font-light text-center text-xs md:text-base">Secretaría</span>
+      <a href="mailto:secretaria.melodiasunidas@gmail.com?Subject=Quiero%20información" title="Contactame" class="flex justify-center items-center gap-2 text-sky-600 hover:underline text-sm mt-4 px-4 py-2 transition-all duration-300"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+        </svg>
+        secretaria.melodiasunidas@gmail.com</a>
+    </div>
+  </section>
+
 
   <!-- Porque elegirnos -->
   <section class="flex p-8 w-full justify-center items-center flex-col gap-4 sm:px-32 lg:px-48">
     <h4 class="text-2xl font-[Oswald] font-medium lg:text-3xl">¿Por qué elegirnos?</h4>
-    <p class="text-[12px] text-justify lg:text-base lg:px-8" data-aos="zoom-in" data-aos-duration="1000">
-      En Melodías Unidas, la elección de nuestra academia se basa en una
-      sinfonía de elementos que transforman las lecciones musicales en
-      experiencias memorables y enriquecedoras.
+    <p class="text-[12px] lg:text-base lg:px-8 lg:mt-6 text-center" data-aos="zoom-in" data-aos-duration="1000">
+      En Melodías Unidas no solo damos clases, creamos experiencias musicales que recordarás. <br> ¿Por qué somos la mejor opción? <br><br> <span class="font-bold">Mira esto:</span>
     </p>
   </section>
 
@@ -183,7 +308,7 @@ $pagina = "inicio";
 
   <!-- Videos de comunidad estudiantil -->
   <section class="relative flex p-8 pt-12 w-full justify-center items-center flex-col gap-4 sm:px-32 lg:px-48 lg:py-0 xl:py-12">
-    <p class="w-full text-center lg:pt-8 font-['Oswald'] text-xl lg:text-2xl">Testimonios de la Comunidad Estudiantil</p>
+    <p class="w-full text-center lg:pt-8 font-['Oswald'] text-xl lg:text-2xl">Lo que dicen nuestros alumnos</p>
     <div class="relative flex flex-row justify-start gap-4 lg:pt-8 lg:gap-6 w-[275px] sm:w-[550px] py-4 lg:w-[750px] xl:w-[1200px] overflow-x-scroll" id="section-div-videos">
       <div class="relative flex bg-black/80 opacity-85 hover:opacity-100 shadow-md min-w-[260px] h-[160px]">
         <video class="w-full h-full" controls>
@@ -191,12 +316,13 @@ $pagina = "inicio";
         </video>
         <img src="./images/logo/logo.png" alt="" class="absolute w-[50px] h-[50px] right-0">
       </div>
-      <div class="relative flex bg-black/80 opacity-85 hover:opacity-100 shadow-md min-w-[260px] h-[160px]">
+      <!-- Comentado por error de carga -->
+      <!-- <div class="relative flex bg-black/80 opacity-85 hover:opacity-100 shadow-md min-w-[260px] h-[160px]">
         <video class="w-full h-full" controls>
           <source src="./videos/videos_alumnos/video1.mp4" type="video/mp4">
         </video>
         <img src="./images/logo/logo.png" alt="" class="absolute w-[50px] h-[50px] right-0">
-      </div>
+      </div> -->
       <div class="relative flex bg-black/80 opacity-85 hover:opacity-100 shadow-md min-w-[260px] h-[160px]">
         <video class="w-full h-full" controls>
           <source src="./videos/videos_alumnos/video2.mp4" type="video/mp4">

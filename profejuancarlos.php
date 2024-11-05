@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Melodías Unidas | Nuestro Profe | Aprende a tocar piano</title>
+    <title>Melodías Unidas | Profe Juan Carlos</title>
     <meta name="description" content="¡Siente el Vínculo Musical que Une Nuestros Corazones en Todo el Mundo!">
     <meta name="keywords" content="clases de musica, clases de piano, piano, clases online de piano, escuela de piano">
     <meta name="author" content="Melodías Unidas">
@@ -26,8 +26,8 @@ $pagina = "nosotros";
 
     <!-- Portada -->
     <section class="flex bg-black/30 h-[30vh] sm:h-[40vh] lg:h-[60vh] xl:h-[70vh]">
-        <!-- <img src="./images/nuestroprofe.webp" alt="portadanosotros" class="w-full object-cover"> -->
-        <video src="./videos/videoblog.mp4" autoplay muted loop class="w-full object-cover"></video>
+        <img src="./images/nuestroprofe.jpg" alt="portadanosotros" class="w-full object-cover">
+        <!-- <video src="./videos/videoblog.mp4" autoplay muted loop class="w-full object-cover"></video> -->
     </section>
 
     <!-- NUestro Profesor - Mobile -->
@@ -40,10 +40,10 @@ $pagina = "nosotros";
             <h3 class="font-medium text-start w-full font-['Oswald']">Juan Carlos Salazar Rico</h3>
         </div>
         <p class="text-[12px] text-justify">
-            Inicié mi travesía musical a la edad de 8 años, con profesores que hicieron crecer mi amor por la música. Mi formación se vio profundamente enriquecida gracias a mis estudios en Roma con el maestro Sasha Bajcic, cuyo enfoque y técnica han sido fundamentales en mi desarrollo artístico. Gracias a la guía de Verónica Metakovskaia, desarrollándome bajo la influencia de la reconocida escuela rusa de piano, el Conservatorio Adolfo Salazar me otorgó el Título de Grado Profesional en Piano, consolidando así mi formación académica.
+            Juan Carlos inició su travesía musical a la edad de 8 años, con profesores que hicieron crecer su amor por la música. Su formación se vio profundamente enriquecida gracias a sus estudios en Roma con el maestro Sasha Bajcic, cuyo enfoque y técnica han sido fundamentales en su desarrollo artístico. Gracias a la guía de Verónica Metakovskaia, desarrollándose bajo la influencia de la reconocida escuela rusa de piano, el Conservatorio Adolfo Salazar le otorgó el Título de Grado Profesional en Piano, consolidando así su formación académica.
         </p>
         <p class="text-[12px] text-justify">
-            Como profesor, diseño clases personalizadas para adaptarme a las necesidades únicas de cada alumno, fomentando en ellos la confianza y la pasión por la música. Con más de tres décadas de experiencia en el piano y doce años dedicados a la enseñanza, participo activamente en talleres y seminarios para enriquecer la comunidad musical. Mi objetivo es crear un entorno inspirador donde cada alumno pueda descubrir su lugar en la música y desarrollar plenamente su potencial artístico.
+            Como profesor, diseña clases personalizadas para adaptarse a las necesidades únicas de cada alumno, fomentando en ellos la confianza y la pasión por la música. Con más de tres décadas de experiencia en el piano y doce años dedicados a la enseñanza, participa activamente en talleres y seminarios para enriquecer la comunidad musical. Su objetivo es crear un entorno inspirador donde cada alumno pueda descubrir su lugar en la música y desarrollar plenamente su potencial artístico.
         </p>
         <div class="flex w-[200px] h-[200px] mt-2 rounded-full" data-aos="fade-up" data-aos-duration="1000">
             <img src="./images/profesorjuancarlos.webp" alt="Nuestro Profe" title="Nuestro Profe" srcset="" class="object-cover rounded-full w-[200px] h-[200px]" loading="lazy">
@@ -62,10 +62,10 @@ $pagina = "nosotros";
                     <h3 class="font-medium text-start w-full font-['Oswald'] text-xl">Juan Carlos Salazar Rico</h3>
                 </div>
                 <p class="text-[14px] text-justify">
-                    Inicié mi travesía musical a la edad de 8 años, con profesores que hicieron crecer mi amor por la música. Mi formación se vio profundamente enriquecida gracias a mis estudios en Roma con el maestro Sasha Bajcic, cuyo enfoque y técnica han sido fundamentales en mi desarrollo artístico. Gracias a la guía de Verónica Metakovskaia, desarrollándome bajo la influencia de la reconocida escuela rusa de piano, el Conservatorio Adolfo Salazar me otorgó el Título de Grado Profesional en Piano, consolidando así mi formación académica.
+                    Juan Carlos inició su travesía musical a la edad de 8 años, con profesores que hicieron crecer su amor por la música. Su formación se vio profundamente enriquecida gracias a sus estudios en Roma con el maestro Sasha Bajcic, cuyo enfoque y técnica han sido fundamentales en su desarrollo artístico. Gracias a la guía de Verónica Metakovskaia, desarrollándose bajo la influencia de la reconocida escuela rusa de piano, el Conservatorio Adolfo Salazar le otorgó el Título de Grado Profesional en Piano, consolidando así su formación académica.
                 </p>
-                <p class="text-[14px] text-justify mt-4">
-                    Como profesor, diseño clases personalizadas para adaptarme a las necesidades únicas de cada alumno, fomentando en ellos la confianza y la pasión por la música. Con más de tres décadas de experiencia en el piano y doce años dedicados a la enseñanza, participo activamente en talleres y seminarios para enriquecer la comunidad musical. Mi objetivo es crear un entorno inspirador donde cada alumno pueda descubrir su lugar en la música y desarrollar plenamente su potencial artístico.
+                <p class="text-[14px] text-justify lg:mt-4">
+                    Como profesor, diseña clases personalizadas para adaptarse a las necesidades únicas de cada alumno, fomentando en ellos la confianza y la pasión por la música. Con más de tres décadas de experiencia en el piano y doce años dedicados a la enseñanza, participa activamente en talleres y seminarios para enriquecer la comunidad musical. Su objetivo es crear un entorno inspirador donde cada alumno pueda descubrir su lugar en la música y desarrollar plenamente su potencial artístico.
                 </p>
             </div>
             <div class="flex w-full flex-col justify-center items-center gap-4">
@@ -78,11 +78,14 @@ $pagina = "nosotros";
 
     <!-- Mi formación -->
     <section class="flex p-8 py-16 w-full justify-center items-center flex-col gap-8 bg-[#272727] mt-8 sm:px-32 lg:px-16 lg:gap-12 lg:py-24">
-        <h3 class="text-white text-2xl font-['Oswald'] lg:text-4xl">Mi formación</h3>
+        <h3 class="text-white text-2xl font-['Oswald'] lg:text-4xl">Su formación</h3>
         <div class="flex flex-col gap-4 lg:px-32">
             <p class="flex text-[12px] text-white text-justify lg:text-sm">
-                Este conocimiento es el tesoro que tengo el privilegio de compartir contigo. Desde las majestuosas composiciones de Mozart hasta los ritmos vibrantes del jazz y los acordes que marcan épocas en el rock, te guiaré con maestría a través de este vasto universo musical.
-                Mi compromiso va más allá de las teclas del piano; es contigo, en cada paso de tu viaje musical. Ya sea que sueñes con conquistar el conservatorio, superar exámenes oficiales o simplemente explorar la música como un regalo diario, estoy aquí para inspirarte y brindarte una educación de la más alta calidad. ¡Juntos haremos que tu música cobre vida!
+                Todo lo que ha aprendido a lo largo de los años está preparado para compartirlo contigo, como si fuera un mapa del tesoro musical.
+
+                Desde las melodías de Mozart hasta los ritmos más cool del jazz y el rock, te llevará de la mano por este fantástico mundo. No solo es un crack con el piano, también lo es acompañándote en cada paso, asegurándose de que disfrutes mientras aprendes.
+                <br><br>
+                ¿Buscas conquistar el conservatorio, superar exámenes o simplemente disfrutar del piano como hobby? ¡Cuenta con él para que todo vaya sobre ruedas! Juntos haréis que la música cobre vida de verdad.
             </p>
         </div>
         <div class="flex flex-col gap-4 sm:flex-row sm:gap-8 sm:justify-between sm:w-full lg:justify-start lg:px-32">
@@ -114,7 +117,7 @@ $pagina = "nosotros";
                 </ul>
             </div>
         </div>
-        <h3 class="text-white text-2xl font-['Oswald'] lg:text-4xl">Mis Títulos</h3>
+        <h3 class="text-white text-2xl font-['Oswald'] lg:text-4xl">Sus Títulos</h3>
         <div class="flex flex-wrap w-full gap-4 lg:px-32 justify-center sm:justify-between lg:justify-between xl:justify-evenly">
             <div class="h-[200px] w-[250px] sm:w-[225px] overflow-hidden relative flex justify-center items-center" onclick="viewCertificado('certificado1')">
                 <img src="./images/certificados/certificado1.jpeg" class="cursor-pointer" alt="Ver Certificado" title="Ver Certificado">
@@ -157,27 +160,21 @@ $pagina = "nosotros";
 
     <!-- Mi enfoque pedagogico -->
     <section class="flex p-8 pt-14 w-full justify-center items-center flex-col gap-6 sm:px-16 lg:px-32 xl:px-48 xl:pt-20">
-        <h5 class="text-xl font-['Oswald'] text-center lg:text-2xl xl:text-3xl">
-            Mi enfoque pedagógico
+        <h5 class="text-xl font-['Oswald'] text-center lg:text-2xl xl:text-3xl lg:mb-5">
+            Su enfoque pedagógico
         </h5>
         <p class="flex overflow-y-auto max-h-[300px] text-[12px] text-justify lg:text-sm xl:text-base">
-            Alta experiencia como docente. A lo largo de más de 12 años, he tenido el privilegio de formar a personas de todas las edades con mis conocimientos musicales.
-            Mi enfoque esencialmente consiste en adaptarme a las necesidades de mis alumnos, independientemente de su nivel de conocimiento musical.
-            <br>
-            He tenido la satisfacción de guiar a alumnos hacia la admisión en conservatorios, utilizando enfoques personalizados para convertir los exámenes de ingreso en un proceso más ameno y efectivo.
-            Mi método educativo se caracteriza por su flexibilidad y personalización. No impongo una selección rígida de piezas, sino que permito a los alumnos elegir entre una variedad de estilos musicales, combinando elementos clásicos y modernos.
-            En mi enseñanza, abordo aspectos como la relajación y la gestión de la ansiedad escénica, proporcionando herramientas para que mis alumnos se sientan cómodos al interpretar frente a otros. Busco asegurarme de que tus dedos adquieran la técnica adecuada.
-            Ofrezco un enfoque integral en lenguaje musical, teoría y armonía, siguiendo un enfoque de equilibrio entre teoría y práctica, adapto la proporción según las preferencias individuales.
-            <br>
-            En resumen, mi objetivo es compartir la emoción que experimento al tocar música, a través de un enfoque accesible y personalizado.
-            Encaro la música como un proceso gradual y agradable, incentivando a los estudiantes a seguir sus aspiraciones musicales con confianza.
-            Animo a explorar tus metas musicales, ya que mi objetivo es convertir cada paso en una experiencia gratificante.
+            Juan Carlos lleva más de 12 años haciendo que la música sea divertida y accesible para todos. ¿Su truco? Personalización total. Aquí no hay métodos cuadrados ni aburridos. Con él, cada alumno va a su ritmo, eligiendo entre estilos que van desde lo más clásico hasta lo más moderno. ¡Porque la música es mucho más que partituras!
+            <br><br>
+            Cuando se trata de preparar a sus alumnos para conservatorios, Juan Carlos tiene un enfoque que convierte los exámenes en un reto emocionante, no en un dolor de cabeza. Y sabe bien que los nervios antes de tocar son lo peor, por eso también enseña a relajarse y a controlar la ansiedad escénica. ¿El objetivo? Que cada uno toque con confianza, ¡como si estuviera en casa!
+            <br><br>
+            Su método combina lo mejor de la teoría y la práctica, siempre adaptando las clases según lo que cada alumno prefiera. En resumen, Juan Carlos quiere que la música no solo se toque, ¡sino que se viva y se disfrute a tope! Porque, al final, lo importante es pasarlo bien mientras aprendes.
         </p>
     </section>
 
     <!-- Formándose con los mejores -->
     <section class="flex p-8 pb-16 w-full justify-center items-center flex-col gap-6 xl:gap-8 sm:px-16 lg:px-32 xl:px-48 lg:py-16">
-        <h4 class="text-xl font-['Oswald'] text-center sm:text-2xl lg:text-3xl">Formándome con los mejores</h4>
+        <h4 class="text-xl font-['Oswald'] text-center sm:text-2xl lg:text-3xl">Formándose con los mejores</h4>
         <div class="flex w-full rounded-full justify-center">
             <img src="./images/certificados/profe_veronica.jpeg" alt="imagen profesora" title="imagen profesora" class="rounded-full w-[160px] h-[160px] lg:w-[200px] lg:h-[200px] object-cover" data-aos="zoom-in-up" data-aos-duration="1000">
         </div>

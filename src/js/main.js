@@ -142,3 +142,115 @@ document
         console.error("Error al enviar el formulario:", error);
       });
   });
+
+function changeProfe(profe) {
+  console.log(profe);
+  if (profe == "juancarlos") {
+    document.getElementById("profe-juancarlos").classList.remove("hidden");
+    document.getElementById("profe-santiago").classList.add("hidden");
+    document.getElementById("profe-miguelangel").classList.add("hidden");
+    document.getElementById("profe1").classList.remove("grayscale");
+    document.getElementById("profe2").classList.add("grayscale");
+    document.getElementById("profe3").classList.add("grayscale");
+  } else {
+    if (profe == "santiago") {
+      document.getElementById("profe-santiago").classList.remove("hidden");
+      document.getElementById("profe-juancarlos").classList.add("hidden");
+      document.getElementById("profe-miguelangel").classList.add("hidden");
+      document.getElementById("profe2").classList.remove("grayscale");
+      document.getElementById("profe1").classList.add("grayscale");
+      document.getElementById("profe3").classList.add("grayscale");
+    } else {
+      document.getElementById("profe-miguelangel").classList.remove("hidden");
+      document.getElementById("profe-santiago").classList.add("hidden");
+      document.getElementById("profe-juancarlos").classList.add("hidden");
+      document.getElementById("profe3").classList.remove("grayscale");
+      document.getElementById("profe2").classList.add("grayscale");
+      document.getElementById("profe1").classList.add("grayscale");
+    }
+  }
+}
+
+function changeAdmin(admin) {
+  console.log(admin);
+  if (admin == "manuel") {
+    document.getElementById("admin-manuel").classList.remove("hidden");
+    document.getElementById("admin-ana").classList.add("hidden");
+    document.getElementById("admin-lucia").classList.add("hidden");
+    document.getElementById("admin-marina").classList.add("hidden");
+    document.getElementById("admin1").classList.remove("grayscale");
+    document.getElementById("admin2").classList.add("grayscale");
+    document.getElementById("admin3").classList.add("grayscale");
+    document.getElementById("admin4").classList.add("grayscale");
+  } else {
+    if (admin == "ana") {
+      document.getElementById("admin-ana").classList.remove("hidden");
+      document.getElementById("admin-manuel").classList.add("hidden");
+      document.getElementById("admin-lucia").classList.add("hidden");
+      document.getElementById("admin-marina").classList.add("hidden");
+      document.getElementById("admin2").classList.remove("grayscale");
+      document.getElementById("admin1").classList.add("grayscale");
+      document.getElementById("admin3").classList.add("grayscale");
+      document.getElementById("admin4").classList.add("grayscale");
+    } else {
+      if (admin == "lucia") {
+        document.getElementById("admin-lucia").classList.remove("hidden");
+        document.getElementById("admin-ana").classList.add("hidden");
+        document.getElementById("admin-manuel").classList.add("hidden");
+        document.getElementById("admin-marina").classList.add("hidden");
+        document.getElementById("admin3").classList.remove("grayscale");
+        document.getElementById("admin1").classList.add("grayscale");
+        document.getElementById("admin2").classList.add("grayscale");
+        document.getElementById("admin4").classList.add("grayscale");
+      } else {
+        document.getElementById("admin-marina").classList.remove("hidden");
+        document.getElementById("admin-ana").classList.add("hidden");
+        document.getElementById("admin-manuel").classList.add("hidden");
+        document.getElementById("admin-lucia").classList.add("hidden");
+        document.getElementById("admin4").classList.remove("grayscale");
+        document.getElementById("admin1").classList.add("grayscale");
+        document.getElementById("admin2").classList.add("grayscale");
+        document.getElementById("admin3").classList.add("grayscale");
+      }
+    }
+  }
+}
+
+function viewText(circlenumber) {
+  console.log(circlenumber);
+  circles = document.querySelectorAll(".message-circle");
+
+  circles.forEach((circle) => {
+    if (circle.classList.contains("hidden")) {
+      // Si el círculo ya está oculto, no hacemos nada
+    } else {
+      // Ocultamos el círculo y le agregamos la clase de opacidad
+      circle.classList.add("hidden");
+      circle.classList.remove("opacity-100");
+      circle.classList.add("opacity-0");
+    }
+  });
+
+  // Mostramos el círculo correspondiente
+  document.getElementById("circle-" + circlenumber).classList.remove("hidden");
+  document
+    .getElementById("circle-" + circlenumber)
+    .classList.remove("opacity-0");
+  document
+    .getElementById("circle-" + circlenumber)
+    .classList.add("opacity-100");
+}
+
+function closeText() {
+  circles = document.querySelectorAll(".message-circle");
+
+  circles.forEach((circle) => {
+    if (circle.classList.contains("hidden")) {
+      // Si el círculo ya está oculto, no hacemos nada
+    } else {
+      // Ocultamos el círculo y le agregamos la clase de opacidad
+      circle.classList.add("hidden");
+      circle.classList.add("opacity-0");
+    }
+  });
+}
