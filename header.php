@@ -14,7 +14,7 @@
           <?php } ?>
           <li><a href="nosotros.php" class="font-['Oswald'] text-xl">Nosotros</a></li>
           <li><a href="profejuancarlos.php" class="font-['Oswald'] text-xl">Nuestro Profe</a></li>
-          <li><a href="inicio.php" class="font-['Oswald'] text-xl">Blog</a></li>
+          <li><a href="blog.php" class="font-['Oswald'] text-xl">Blog</a></li>
           <li class="font-['Oswald']">
             <button class="bg-secondary-color text-black/80 px-3 py-1 rounded-sm font-['Oswald'] text-lg">
               Iniciar Sesión
@@ -36,7 +36,7 @@
         <?php } ?>
         <li><a href="nosotros.php" class="font-['Oswald']">Nosotros</a></li>
         <li><a href="profejuancarlos.php" class="font-['Oswald']">Nuestro Profe</a></li>
-        <li><a href="inicio.php" class="font-['Oswald']">Blog</a></li>
+        <li><a href="blog.php" class="font-['Oswald']">Blog</a></li>
         <li class="font-['Oswald']">
           <button class="bg-secondary-color text-black/80 px-2 py-1 rounded-sm font-['Oswald'] text-lg">
             Iniciar Sesión
