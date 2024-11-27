@@ -11,7 +11,7 @@
     <link rel="icon" href="./images/logo/iconoround.png" type="image/x-icon">
     <link rel="apple-touch-icon" href="./images/logo/iconoround.png">
     <link rel="canonical" href="https://www.melodiasunidas.com">
-    <link href="./src/output_v3.css" rel="stylesheet" />
+    <link href="./src/output_v4.css" rel="stylesheet" />
     <link href="./src/css/main.css" rel="stylesheet" />
     <script src="src/js/main.js" defer></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
@@ -27,54 +27,54 @@ $pagina = "nosotros";
     <?php include("header.php") ?>
 
     <!-- Portada -->
-    <section class="flex bg-black/30 h-[30vh] sm:h-[50vh] lg:h-[70vh] xl:h-[85vh]">
+    <section class="flex bg-black/80 h-[30vh] sm:h-[50vh] lg:h-[70vh] xl:h-[85vh]">
         <img src="./images/portada.jpeg" alt="portadanosotros" class="w-full object-cover">
     </section>
 
     <!-- Intro -->
-    <section class="flex flex-col pt-14 p-8 gap-6 sm:px-32 xl:px-48 xl:py-32">
-        <h4 class="text-center text-lg font-medium font-['Oswald'] sm:text-xl xl:text-3xl xl:mb-4 lg:pb-10">¡Bienvenid@ a un mundo de música y buenas vibras!</h4>
-        <div class="flex flex-col gap-8 lg:flex-row lg:justify-between xl:px-16">
-            <p class="text-justify text-[12px] lg:text-[13px] xl:text-base lg:flex animate__animated animate__fadeIn animate__delay-1s">
+    <section class="flex flex-col pt-14 p-8 gap-6 sm:px-32 xl:px-48 xl:py-40">
+        <h4 class="text-center text-lg font-medium font-['Oswald'] sm:text-xl xl:text-4xl xl:mb-4 lg:pb-10 ">¡Bienvenid@ a un mundo de música y buenas vibras!</h4>
+        <div class="flex flex-col gap-8 xl:gap-12 lg:flex-row lg:justify-between xl:px-16">
+            <p class="flex flex-col text-justify text-[12px] lg:text-[13px] xl:text-lg lg:flex animate__animated animate__fadeIn animate__delay-1s">
                 En Melodías Unidas somos un equipo que respira música y está preparado para acompañarte en este increíble viaje. Desde el primer día te recibimos con los brazos abiertos y con todas las ganas de que disfrutes aprendiendo.
                 <br /><br />
                 Aquí no solo se trata de clases, ¡se trata de formar parte de algo más grande! Estaremos a tu lado en cada paso, ayudándote, apoyándote y celebrando tus avances.
                 <br /><br />
-                ¡Ven a compartir esta aventura musical con nosotros!
+                <span class="font-semibold">¡Ven a compartir esta aventura musical con nosotros!</span>
             </p>
-            <video class="sm:w-[520px] lg:flex lg:justify-center lg:items-center lg:w-[320px] xl:w-[400px]" controls muted data-aos="fade-up" data-aos-duration="1000">
-                <source src="./videos/nosotros.mp4" type="video/mp4">
+            <video class="sm:w-[520px] lg:flex lg:justify-center lg:items-center lg:w-[320px] xl:w-[400px] shadow-md" muted autoplay data-aos="fade-up" data-aos-duration="1000">
+                <source src="./videos/nosotros.webm" type="video/mp4">
             </video>
         </div>
     </section>
 
     <!-- Oferta educativa -->
     <!-- <section class="flex flex-col p-8 gap-6 sm:px-32 xl:px-48 xl:py-20"> -->
-    <section class="flex text-white flex-col p-16 px-8 bg-slate-900/90 sm:px-16 lg:px-48 lg:py-32 lg:justify-center lg:items-center" id="nuestroequipo2-parallax">
+    <section class="flex text-white flex-col p-16 px-8 bg-black/90 sm:px-16 lg:px-48 lg:py-32 lg:justify-center lg:items-center" id="nuestroequipo2-parallax">
         <div class="flex w-full flex-col gap-4 justify-center mb-6">
-            <h4 class="text-center text-2xl font-medium font-['Oswald'] lg:text-3xl xl:text-4xl xl:mb-4">Oferta educativa</h4>
+            <h4 class="text-center text-2xl font-medium font-['Oswald'] lg:text-3xl xl:text-5xl xl:mb-4">Oferta educativa</h4>
             <!-- <div class="w-full flex justify-center items-center">
                 <img src="./images/pianista.png" alt="pianista" title="pianista" class="w-[125px] h-[125px] lg:w-[175px] lg:h-[175px]" data-aos="fade-right" data-aos-duration="1000">
             </div> -->
         </div>
         <div class="flex flex-col gap-8 pb-10 sm:gap-8 xl:px-16 sm:pb-8">
             <div class="flex flex-col gap-2 sm:gap-4">
-                <h5 class="font-semibold sm:text-lg">
+                <h5 class="font-semibold sm:text-lg xl:text-3xl text-secondary-color xl:mb-2">
                     Formación Oficial
                 </h5>
-                <p class="text-[12px] text-justify overflow-auto max-h-[225px] lg:text-sm">
+                <p class="text-[12px] text-justify overflow-auto max-h-[225px] lg:text-sm xl:text-base">
                     Si tu sueño es entrar en el conservatorio o conseguir un título oficial, nuestra formación oficial te llevará directo a la meta. Te preparamos para pruebas de acceso y títulos de prestigio como ABRSM y Rock School. ¡Todo lo que necesitas para validar tu progreso y convertirte en un crack musical!
                     <br><br>
-                    <span class="font-bold">Beneficios:</span>
+                    <span class="font-bold ">Beneficios:</span>
                     <br>
-                    <span class="italic">Además de mejorar tu técnica, aprenderás a ser constante y disciplinado, con exámenes que te guían hacia tus objetivos. ¡Cada paso es una victoria que demuestra tu evolución!</span>
+                    <span>Además de mejorar tu técnica, aprenderás a ser constante y disciplinado, con exámenes que te guían hacia tus objetivos. ¡Cada paso es una victoria que demuestra tu evolución!</span>
                 </p>
             </div>
             <div class="flex flex-col gap-2 sm:gap-4 mt-2">
-                <h5 class="font-semibold sm:text-lg">
+                <h5 class="font-semibold sm:text-lg xl:text-3xl text-secondary-color">
                     Formación No Oficial
                 </h5>
-                <p class="text-[12px] text-justify overflow-auto max-h-[225px] lg:text-sm">
+                <p class="text-[12px] text-justify overflow-auto max-h-[225px] lg:text-sm xl:text-base">
                     Si lo que buscas es aprender música por puro placer, sin prisas ni exámenes, nuestras clases no oficiales son lo tuyo. Aquí aprendes a tu ritmo, sin estrés, y haces de la música una parte divertida de tu día a día. ¡Vas a disfrutar del proceso mientras desarrollas tu creatividad y bienestar emocional!
                     <br><br>
                     Al final, lo importante es que elijas lo que mejor se adapta a ti. Tanto si prefieres una formación oficial como algo más relajado, en Melodías Unidas tenemos lo que necesitas, con un equipo docente que lleva más de 12 años en esto. ¡Tú eliges cómo disfrutar de la música!

@@ -11,12 +11,13 @@
     <link rel="icon" href="./images/logo/iconoround.png" type="image/x-icon">
     <link rel="apple-touch-icon" href="./images/logo/iconoround.png">
     <link rel="canonical" href="https://www.melodiasunidas.com">
-    <link href="./src/output_v3.css" rel="stylesheet" />
+    <link href="./src/output_v4.css" rel="stylesheet" />
     <link href="./src/css/main.css" rel="stylesheet" />
     <script src="src/js/main.js" defer></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <?php
 $pagina = "nosotros";
@@ -33,7 +34,9 @@ $pagina = "nosotros";
     </section>
 
     <section class="flex flex-col p-8 gap-4 sm:px-32 xl:px-48 xl:py-20 z-50">
-        
+        <div class="flex justify-end w-full">
+            <button class="btn bg-red-500 w-32 py-2 text-white">Iniciar Sesion</button>
+        </div>
     </section>
 
     <!-- Pie de Pagina -->

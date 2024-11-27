@@ -14,7 +14,7 @@
     <link href="./src/css/main.css" rel="stylesheet" />
     <link href="./src/css/aos-master/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" defer />
-    <link href="./src/output_v3.css" rel="stylesheet" defer />
+    <link href="./src/output_v4.css" rel="stylesheet" defer />
 </head>
 <?php
 $pagina = "nosotros";
@@ -26,7 +26,7 @@ $pagina = "nosotros";
 
     <!-- Portada -->
     <section class="flex bg-black/30 h-[30vh] sm:h-[40vh] lg:h-[60vh] xl:h-[70vh]">
-        <img src="./images/nuestroprofe.jpg" alt="portadanosotros" class="w-full object-cover">
+        <img src="./images/nuestroprofe.webp" alt="portadanosotros" class="w-full object-cover">
         <!-- <video src="./videos/videoblog.mp4" autoplay muted loop class="w-full object-cover"></video> -->
     </section>
 
@@ -51,20 +51,20 @@ $pagina = "nosotros";
     </section>
 
     <!-- NUestro Profesor - Desktop-->
-    <section class="hidden lg:flex p-8 py-16 w-full justify-center items-center flex-col gap-4 mb-6 sm:px-16 lg:px-48">
-        <h2 class="text-3xl font-medium mb-4 font-['Oswald']">Nuestro Profesor</h2>
+    <section class="hidden lg:flex p-8 py-16 w-full justify-center items-center flex-col gap-4 mb-6 sm:px-16 lg:px-48 xl:py-32">
+        <h2 class="text-3xl font-medium mb-4 font-['Oswald'] xl:text-4xl">Nuestro Profesor</h2>
         <div class="flex flex-row gap-8 max-px-16 xl:max-w-[1920px]">
             <div class="flex flex-col">
                 <div class="flex justify-start items-center w-full gap-1 mb-6" data-aos="fade-right" data-aos-duration="1000">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6 text-primary-color">
                         <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
                     </svg>
-                    <h3 class="font-medium text-start w-full font-['Oswald'] text-xl">Juan Carlos Salazar Rico</h3>
+                    <h3 class="font-medium text-start w-full font-['Oswald'] text-xl xl:text-2xl">Juan Carlos Salazar Rico</h3>
                 </div>
-                <p class="text-[14px] text-justify">
+                <p class="text-[14px] text-justify xl:text-base">
                     Juan Carlos inició su travesía musical a la edad de 8 años, con profesores que hicieron crecer su amor por la música. Su formación se vio profundamente enriquecida gracias a sus estudios en Roma con el maestro Sasha Bajcic, cuyo enfoque y técnica han sido fundamentales en su desarrollo artístico. Gracias a la guía de Verónica Metakovskaia, desarrollándose bajo la influencia de la reconocida escuela rusa de piano, el Conservatorio Adolfo Salazar le otorgó el Título de Grado Profesional en Piano, consolidando así su formación académica.
                 </p>
-                <p class="text-[14px] text-justify lg:mt-4">
+                <p class="text-[14px] text-justify lg:mt-4 xl:text-base">
                     Como profesor, diseña clases personalizadas para adaptarse a las necesidades únicas de cada alumno, fomentando en ellos la confianza y la pasión por la música. Con más de tres décadas de experiencia en el piano y doce años dedicados a la enseñanza, participa activamente en talleres y seminarios para enriquecer la comunidad musical. Su objetivo es crear un entorno inspirador donde cada alumno pueda descubrir su lugar en la música y desarrollar plenamente su potencial artístico.
                 </p>
             </div>
@@ -78,9 +78,9 @@ $pagina = "nosotros";
 
     <!-- Mi formación -->
     <section class="flex p-8 py-16 w-full justify-center items-center flex-col gap-8 bg-[#272727] mt-8 sm:px-32 lg:px-16 lg:gap-12 lg:py-24">
-        <h3 class="text-white text-2xl font-['Oswald'] lg:text-4xl">Su formación</h3>
+        <h3 class="text-white text-2xl font-['Oswald'] lg:text-4xl xl:text-5xl">Su formación</h3>
         <div class="flex flex-col gap-4 lg:px-32">
-            <p class="flex text-[12px] text-white text-justify lg:text-sm">
+            <p class="flex text-[12px] text-white text-justify lg:text-sm xl:text-base">
                 Todo lo que ha aprendido a lo largo de los años está preparado para compartirlo contigo, como si fuera un mapa del tesoro musical.
 
                 Desde las melodías de Mozart hasta los ritmos más cool del jazz y el rock, te llevará de la mano por este fantástico mundo. No solo es un crack con el piano, también lo es acompañándote en cada paso, asegurándose de que disfrutes mientras aprendes.
@@ -90,7 +90,7 @@ $pagina = "nosotros";
         </div>
         <div class="flex flex-col gap-4 sm:flex-row sm:gap-8 sm:justify-between sm:w-full lg:justify-start lg:px-32">
             <div class="flex gap-2 flex-col">
-                <h5 class="text-primary-color text-sm lg:text-xl">
+                <h5 class="text-secondary-color text-sm lg:text-xl">
                     GRADO ELEMENTAL (4 AÑOS)
                 </h5>
                 <ul class="text-white pl-5">
@@ -101,7 +101,7 @@ $pagina = "nosotros";
                 </ul>
             </div>
             <div class="flex gap-2 flex-col">
-                <h5 class="text-primary-color text-sm lg:text-xl">
+                <h5 class="text-secondary-color text-sm lg:text-xl">
                     GRADO PROFESIONAL (6 AÑOS)
                 </h5>
                 <ul class="text-white pl-5">
@@ -159,7 +159,7 @@ $pagina = "nosotros";
     </section>
 
     <!-- Mi enfoque pedagogico -->
-    <section class="flex p-8 pt-14 w-full justify-center items-center flex-col gap-6 sm:px-16 lg:px-32 xl:px-48 xl:pt-20">
+    <section class="flex p-8 pt-14 w-full justify-center items-center flex-col gap-6 sm:px-16 lg:px-32 xl:px-48 xl:pt-24">
         <h5 class="text-xl font-['Oswald'] text-center lg:text-2xl xl:text-3xl lg:mb-5">
             Su enfoque pedagógico
         </h5>
@@ -176,7 +176,7 @@ $pagina = "nosotros";
     <section class="flex p-8 pb-16 w-full justify-center items-center flex-col gap-6 xl:gap-8 sm:px-16 lg:px-32 xl:px-48 lg:py-16">
         <h4 class="text-xl font-['Oswald'] text-center sm:text-2xl lg:text-3xl">Formándose con los mejores</h4>
         <div class="flex w-full rounded-full justify-center">
-            <img src="./images/certificados/profe_veronica.jpeg" alt="imagen profesora" title="imagen profesora" class="rounded-full w-[160px] h-[160px] lg:w-[200px] lg:h-[200px] object-cover" data-aos="zoom-in-up" data-aos-duration="1000">
+            <img src="./images/certificados/profe_veronica.jpeg" alt="imagen profesora" title="imagen profesora" class="rounded-full w-[160px] h-[160px] lg:w-[200px] lg:h-[200px] object-cover cursor-pointer" data-aos="zoom-in-up" data-aos-duration="1000">
         </div>
         <div class="w-full">
             <h5 class="text-sm text-center sm:text-base lg:text-lg" data-aos="fade-right" data-aos-duration="1000"><b>Profesora:</b> Veronika Metakovskaya</h5>

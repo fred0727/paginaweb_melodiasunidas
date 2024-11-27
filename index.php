@@ -14,7 +14,7 @@
   <link href="./src/css/main.css" rel="stylesheet" />
   <link href="./src/css/aos-master/dist/aos.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" defer />
-  <link href="./src/output_v3.css" rel="stylesheet" defer />
+  <link href="./src/output_v4.css" rel="stylesheet" defer />
 </head>
 <?php
 $pagina = "inicio";
@@ -30,13 +30,13 @@ $pagina = "inicio";
     <img id="image2" loading="lazy" class="object-cover" src="./images/slider/imagen2.webp" alt="Imagen Cambiante" />
     <img id="image3" loading="lazy" class="object-cover" src="./images/slider/imagen3.webp" alt="Imagen Cambiante" />
     <img id="image1" loading="lazy" class="object-cover" src="./images/slider/imagen1.webp" alt="Imagen Cambiante" />
-    <div class="absolute z-10 bottom-10 animate__animated animate__backInUp animate__delay-1s lg:bottom-20">
-      <a href="#footer" class="bg-secondary-color text-black/80 rounded-full p-2 px-4 text-base lg:text-xl font-['Oswald']">
+    <div class="absolute z-10 bottom-10 animate__animated animate__backInUp animate__delay-1s lg:bottom-24">
+      <a href="#footer" class="bg-secondary-color hover:bg-yellow-400 text-black p-3 rounded-full px-4 text-base lg:text-xl font-['Oswald'] transition-all duration-300">
         ¡Dale play a tu aventura musical!
       </a>
     </div>
     <div class="absolute z-10 top-12 px-12 animate__animated animate__backInDown animate__delay-1s sm:px-40 lg:px-60 lg:top-36">
-      <p class="text-white text-center font-bold sm:text-xl lg:text-2xl xl:text-3xl font-['Oswald']">
+      <p class="text-white text-center font-bold sm:text-xl lg:text-2xl xl:text-4xl font-['Oswald']">
         ¡La música es nuestro idioma común, no importa donde estes!
       </p>
     </div>
@@ -58,16 +58,16 @@ $pagina = "inicio";
   </section>
 
   <!-- Nuestras clases online + logo - Desktop -->
-  <section class="hidden lg:flex bg-primary-color text-white flex-row p-8 px-48 lg:justify-center gap-20 lg:py-12">
+  <section class="hidden lg:flex bg-primary-color text-white flex-row p-8 px-48 lg:justify-center gap-20 lg:py-12 lg:px-32 xl:px-24 xl:py-24">
     <div class="flex justify-center items-center mb-5 w-[250px]">
       <img src="./images/logo/logo_sinfondo.webp" alt="Logo" title="Logo" class="w-[200px]" />
     </div>
-    <div class="flex flex-col flex-1 max-w-[600px]">
+    <div class="flex flex-col flex-1 max-w-[600px] xl:max-w-[800px]">
       <h4 class="text-center text-2xl font-['Oswald']">
         NUESTRAS CLASES ONLINE: <br /> ¡Como si estuviéramos ahí, pero sin salir de casa!
       </h4>
       <br />
-      <p class="text-justify text-[13px] animate__animated animate__fadeIn animate__delay-1s sm:px-16 lg:px-0">
+      <p class="text-justify text-[13px] animate__animated animate__fadeIn animate__delay-1s sm:px-16 lg:px-0 xl:text-base">
         Nuestros profes están siempre al pie del cañón para acompañarte en esta aventura musical. Con clases online a tu medida, se aseguran de que no se te escape ni un detalle: desde cómo te sientas al tocar hasta que te sientas un crack en la técnica. ¡Vas a tener una base tan sólida que los desafíos van a parecer pan comido!
       </p>
     </div>
@@ -97,7 +97,7 @@ $pagina = "inicio";
       Además, participa en un montón de talleres y seminarios para seguir creciendo. Su misión es clara: que cada alumno encuentre su lugar en la música y saque todo su potencial.
     </p>
     <div class="flex w-[200px] h-[200px] mt-2 rounded-full" data-aos="fade-up" data-aos-duration="1000">
-      <img src="./images/profesorjuancarlos.webp" alt="Nuestro Profe" title="Nuestro Profe" srcset="" class="object-cover rounded-full w-[200px] h-[200px]" loading="lazy">
+      <img src="./images/profes/juancarlosinicio.jpeg" alt="Nuestro Profe" title="Nuestro Profe" srcset="" class="object-cover rounded-full w-[200px] h-[200px] grayscale hover:grayscale-0" loading="lazy">
     </div>
     <div class="flex justify-center items-center pt-4">
       <a href="profejuancarlos.php" class="bg-primary-color rounded-full px-4 py-1 flex justify-center items-center text-white font-['Oswald']">Conoceme mas</a>
@@ -105,8 +105,8 @@ $pagina = "inicio";
   </section>
 
   <!-- NUestro Profesor - Desktop-->
-  <section class="hidden lg:flex p-8 py-16 w-full justify-center items-center flex-col gap-4 mb-6 sm:px-16 lg:px-48">
-    <h2 class="text-3xl font-medium mb-4 font-['Oswald']">Nuestras clases de piano</h2>
+  <section class="hidden lg:flex p-8 py-16 w-full justify-center items-center flex-col gap-4 mb-6 sm:px-16 lg:px-48 lg:py-24 xl:gap-8">
+    <h2 class="text-3xl font-medium mb-4 font-['Oswald'] xl:text-4xl">Nuestras clases de piano</h2>
     <div class="flex flex-row gap-8 max-px-16 xl:max-w-[1920px]">
       <div class="flex flex-col">
         <div class="flex justify-start items-center w-full gap-1 mb-6" data-aos="fade-right" data-aos-duration="1000">
@@ -115,14 +115,14 @@ $pagina = "inicio";
           </svg>
           <h3 class="font-medium text-start w-full font-['Oswald'] text-xl">Juan Carlos Salazar Rico</h3>
         </div>
-        <p class="text-[14px] text-justify">
+        <p class="text-[14px] text-justify xl:text-base">
           Juan Carlos es nuestro profe de piano y el que coordina a todo el equipo docente.
 
           Empezó su aventura en la música cuando tenía solo 8 años, y desde entonces no ha parado.
 
           Después de estudiar en Roma con el maestro Sasha Bajcic, y tras pasar por la escuela rusa de piano de la mano de Verónica Metakovskaia, Juan Carlos consiguió su Título de Grado Profesional en Piano, otorgado por el Conservatorio Adolfo Salazar. ¡Todo un crack!
         </p>
-        <p class="text-[14px] text-justify mt-4">
+        <p class="text-[14px] text-justify mt-4 xl:text-base">
           A la hora de enseñar, Juan Carlos adapta sus clases a cada alumno, porque sabe que cada uno tiene su propio ritmo y estilo.
 
           Lleva más de tres décadas tocando el piano y más de doce años enseñando.
@@ -132,7 +132,7 @@ $pagina = "inicio";
       </div>
       <div class="flex w-full flex-col justify-center items-center gap-4">
         <div class="flex w-[300px] h-[300px] mt-2 rounded-full" data-aos="fade-up" data-aos-duration="1000">
-          <img src="./images/profesorjuancarlos.jpeg" alt="Nuestro Profe" title="Nuestro Profe" class="object-cover rounded-full w-[300px] h-[300px]" loading="lazy">
+          <img src="./images/profes/juancarlosinicio.jpeg" alt="Nuestro Profe" title="Nuestro Profe" class="object-cover rounded-full w-[300px] h-[300px] grayscale hover:grayscale-0 cursor-pointer" loading="lazy">
         </div>
         <div class="flex justify-center items-center pt-4">
           <a href="profejuancarlos.php" class="bg-primary-color rounded-full px-6 py-2 flex justify-center items-center text-white font-['Oswald'] text-xl">Conoceme mas</a>
@@ -142,16 +142,16 @@ $pagina = "inicio";
   </section>
 
   <!-- Nuestro Equipo -->
-  <section class="flex text-white flex-col p-16 px-8 bg-black/60 sm:px-16 lg:px-48 lg:justify-center lg:items-center" id="nuestroequipo-parallax">
-    <h4 class="text-center text-2xl font-medium lg:text-4xl">
+  <section class="flex text-white flex-col p-16 px-8 bg-black/70 sm:px-16 lg:px-48 xl:py-48 lg:justify-center lg:items-center" id="nuestroequipo-parallax">
+    <h4 class="text-center text-2xl font-bold lg:text-4xl xl:text-5xl">
       Nuestro equipo
     </h4>
     <br />
     <span class="text-lg font-['Oswald'] lg:text-2xl lg:text-start w-full xl:max-w-[1920px]">
       ¡Hey, bienvenidos a Melodías Unidas!
     </span>
-    <p class="text-justify text-[12px] animate__animated animate__fadeIn animate__delay-1s mt-4 mb-6 lg:text-base xl:max-w-[1920px]" data-aos="zoom-in" data-aos-duration="1000">
-      Aquí somos un equipo súper preparado y lleno de energía para hacer de tu experiencia musical algo único.
+    <p class="text-justify text-[12px] animate__animated animate__fadeIn animate__delay-1s mt-4 mb-6 lg:text-base xl:max-w-[1920px] xl:text-lg" data-aos="zoom-in" data-aos-duration="1000">
+      Aquí somos un equipo súper preparado y lleno de energía para hacer de tu experieancia musical algo único.
 
       Desde que entras por primera vez, te recibimos con buena onda y todas las ganas de compartir nuestra pasión.
 
@@ -168,109 +168,109 @@ $pagina = "inicio";
   // include("colaboradores.php") 
   ?>
   <section class="flex p-8 px-8 w-full justify-center items-center flex-col gap-4 sm:px-32 lg:px-48 lg:py-16 lg:mt-16" data-aos="fade-up" data-aos-duration="1000">
-    <h4 class="text-xl font-[Oswald] font-normal lg:text-3xl mb-4 lg:mb-8">
+    <h4 class="text-xl font-[Oswald] font-normal lg:text-3xl mb-4 lg:mb-8 xl:text-4xl">
       Equipo Docente
     </h4>
     <div class="flex justify-center items-center flex-wrap gap-4 lg:gap-10">
       <div class="max-w-[500px]" onclick="changeProfe('juancarlos')">
-        <div class="rounded-full w-[50px] h-[50px] lg:w-[125px] lg:h-[125px] transition-all duration-300 overflow-hidden cursor-pointer" id="profe1">
+        <div class="rounded-full w-[50px] h-[50px] lg:w-[125px] lg:h-[125px] xl:w-[150px] xl:h-[150px] transition-all duration-300 overflow-hidden cursor-pointer" id="profe1">
           <img src="./images/profes/juancarlosv2.jpeg" alt="" class="object-cover w-full h-full">
         </div>
       </div>
       <div class="max-w-[500px]" onclick="changeProfe('santiago')">
-        <div class="rounded-full w-[50px] h-[50px] lg:w-[125px] lg:h-[125px] transition-all duration-300 overflow-hidden cursor-pointer grayscale hover:grayscale-0" id="profe2">
+        <div class="rounded-full w-[50px] h-[50px] lg:w-[125px] lg:h-[125px] xl:w-[150px] xl:h-[150px] transition-all duration-300 overflow-hidden cursor-pointer grayscale hover:grayscale-0" id="profe2">
           <img src="./images/profes/santiago.jpeg" alt="" class="object-cover w-full h-full">
         </div>
       </div>
       <div class="max-w-[500px]" onclick="changeProfe('miguelangel')">
-        <div class="rounded-full w-[50px] h-[50px] lg:w-[125px] lg:h-[125px] transition-all duration-300 overflow-hidden cursor-pointer grayscale hover:grayscale-0" id="profe3">
+        <div class="rounded-full w-[50px] h-[50px] lg:w-[125px] lg:h-[125px] xl:w-[150px] xl:h-[150px] transition-all duration-300 overflow-hidden cursor-pointer grayscale hover:grayscale-0" id="profe3">
           <img src="./images/profes/miguelangel.jpeg" alt="" class="object-cover w-full h-full">
         </div>
       </div>
     </div>
     <div class="flex justify-center items-center flex-col mt-4 transition-all duration-300" id="profe-juancarlos">
-      <p class="font-light mt-2 mb-4 text-center text-xs md:text-base">Piano clásico <br> y moderno
+      <p class="font-light mt-2 mb-4 text-center text-xs md:text-base lg:text-lg">Piano clásico <br> y moderno
       </p>
-      <h3 class="text-sky-700 text-lg text-center">Juan Carlos</h3>
-      <span class="font-light text-center text-xs md:text-base">Coordinador del equipo docente</span>
-      <a href="profejuancarlos.php" class="text-sky-600 text-sm mt-4 border border-sky-600 hover:text-white hover:bg-sky-600 rounded-md px-4 py-2 transition-all duration-300">Conóceme</a>
+      <h3 class="text-sky-700 text-lg text-center lg:text-xl">Juan Carlos</h3>
+      <span class="font-light text-center text-xs md:text-base lg:text-lg">Coordinador del equipo docente</span>
+      <a href="profejuancarlos.php" class="text-sky-600 text-sm lg:text-base mt-4 border border-sky-600 hover:text-white hover:bg-sky-600 rounded-md px-4 py-2 transition-all duration-300">Conóceme</a>
     </div>
     <div class="flex hidden justify-center items-center flex-col mt-4 transition-all duration-300" id="profe-santiago">
-      <p class="font-light mt-2 mb-4 text-center text-xs md:text-base">Lenguaje musical, teoría <br> y producción musical
+      <p class="font-light mt-2 mb-4 text-center text-xs md:text-base lg:text-lg">Lenguaje musical, teoría <br> y producción musical
       </p>
-      <h3 class="text-sky-700 text-lg text-center">Santiago Andrés Medina Gómez</h3>
-      <a href="profesantiago.php" class="text-sky-600 text-sm mt-4 border border-sky-600 hover:text-white hover:bg-sky-600 rounded-md px-4 py-2 transition-all duration-300">Conóceme</a>
+      <h3 class="text-sky-700 text-lg text-center lg:text-xl">Santiago Andrés Medina Gómez</h3>
+      <a href="profesantiago.php" class="text-sky-600 text-sm lg:text-base mt-4 border border-sky-600 hover:text-white hover:bg-sky-600 rounded-md px-4 py-2 transition-all duration-300">Conóceme</a>
     </div>
     <div class="flex hidden justify-center items-center flex-col mt-4 transition-all duration-300" id="profe-miguelangel">
-      <p class="font-light mt-2 mb-4 text-center  text-xs md:text-base">Historia de la <br> música
+      <p class="font-light mt-2 mb-4 text-center  text-xs md:text-base lg:text-lg">Historia de la <br> música
       </p>
-      <h3 class="text-sky-700 text-lg text-center">Miguel Ángel Fonseca Orozco</h3>
-      <a href="profemiguel.php" class="text-sky-600 text-sm mt-4 border border-sky-600 hover:text-white hover:bg-sky-600 rounded-md px-4 py-2 transition-all duration-300">Conóceme</a>
+      <h3 class="text-sky-700 text-lg text-center lg:text-xl">Miguel Ángel Fonseca Orozco</h3>
+      <a href="profemiguel.php" class="text-sky-600 text-sm lg:text-base mt-4 border border-sky-600 hover:text-white hover:bg-sky-600 rounded-md px-4 py-2 transition-all duration-300">Conóceme</a>
     </div>
   </section>
 
-  <section class="flex p-8 px-8 w-full justify-center items-center flex-col gap-4 sm:px-32 lg:px-48 lg:pb-16 lg:pt-0" data-aos="fade-up" data-aos-duration="1000">
-    <h4 class="text-xl font-[Oswald] font-normal lg:text-3xl mb-4 lg:mb-8">
+  <section class="flex p-8 px-8 w-full justify-center items-center flex-col gap-4 sm:px-32 lg:px-48 lg:pb-16 lg:pt-0 xl:mt-16" data-aos="fade-up" data-aos-duration="1000">
+    <h4 class="text-xl font-[Oswald] font-normal lg:text-3xl mb-4 lg:mb-8 xl:text-4xl">
       Equipo de gestión y administración
     </h4>
     <div class="flex justify-center items-center flex-wrap gap-4 lg:gap-10">
       <div class="max-w-[500px]" onclick="changeAdmin('manuel')">
-        <div class="rounded-full w-[50px] h-[50px] lg:w-[125px] lg:h-[125px] transition-all duration-300 overflow-hidden cursor-pointer" id="admin1">
+        <div class="rounded-full w-[50px] h-[50px] lg:w-[125px] lg:h-[125px] xl:w-[150px] xl:h-[150px] transition-all duration-300 overflow-hidden cursor-pointer" id="admin1">
           <img src="./images/admins/manuel.jpeg" alt="" class="object-cover w-full h-full">
         </div>
       </div>
       <div class="max-w-[500px]" onclick="changeAdmin('ana')">
-        <div class="rounded-full w-[50px] h-[50px] lg:w-[125px] lg:h-[125px] transition-all duration-300 overflow-hidden cursor-pointer grayscale hover:grayscale-0" id="admin2">
+        <div class="rounded-full w-[50px] h-[50px] lg:w-[125px] lg:h-[125px] xl:w-[150px] xl:h-[150px] transition-all duration-300 overflow-hidden cursor-pointer grayscale hover:grayscale-0" id="admin2">
           <img src="./images/admins/ana.jpeg" alt="" class="object-cover w-full h-full">
         </div>
       </div>
       <div class="max-w-[500px]" onclick="changeAdmin('lucia')">
-        <div class="rounded-full w-[50px] h-[50px] lg:w-[125px] lg:h-[125px] transition-all duration-300 overflow-hidden cursor-pointer grayscale hover:grayscale-0" id="admin3">
+        <div class="rounded-full w-[50px] h-[50px] lg:w-[125px] lg:h-[125px] xl:w-[150px] xl:h-[150px] transition-all duration-300 overflow-hidden cursor-pointer grayscale hover:grayscale-0" id="admin3">
           <img src="./images/admins/lucia.jpeg" alt="" class="object-cover w-full h-full">
         </div>
       </div>
       <div class="max-w-[500px]" onclick="changeAdmin('marina')">
-        <div class="rounded-full w-[50px] h-[50px] lg:w-[125px] lg:h-[125px] transition-all duration-300 overflow-hidden cursor-pointer grayscale hover:grayscale-0" id="admin4">
+        <div class="rounded-full w-[50px] h-[50px] lg:w-[125px] lg:h-[125px] xl:w-[150px] xl:h-[150px] transition-all duration-300 overflow-hidden cursor-pointer grayscale hover:grayscale-0" id="admin4">
           <img src="./images/admins/marina.jpeg" alt="" class="object-cover w-full h-full">
         </div>
       </div>
     </div>
     <div class="flex justify-center items-center flex-col mt-4 transition-all duration-300" id="admin-manuel">
-      <p class="font-light mt-2 mb-4 text-center text-xs md:text-base">Se encarga de que todo esté en orden y <br> el equipo dé lo mejor de sí.
+      <p class="font-light mt-2 mb-4 text-center text-xs md:text-base xl:text-lg">Se encarga de que todo esté en orden y <br> el equipo dé lo mejor de sí.
       </p>
-      <h3 class="text-sky-700 text-lg text-center">Manuel</h3>
-      <span class="font-light text-center text-xs md:text-base">Director</span>
-      <a href="mailto:direccion.melodiasunidas@gmail.com?Subject=Quiero%20información" title="Contactame" class="flex justify-center items-center gap-2 text-sky-600 hover:underline text-sm mt-4 px-4 py-2 transition-all duration-300"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+      <h3 class="text-sky-700 text-lg lg:text-xl text-center">Manuel</h3>
+      <span class="font-light text-center text-xs md:text-base xl:text-lg">Director</span>
+      <a href="mailto:direccion.melodiasunidas@gmail.com?Subject=Quiero%20información" title="Contactame" class="flex justify-center items-center gap-2 text-sky-600 hover:underline text-sm lg:text-base mt-4 px-4 py-2 transition-all duration-300"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
           <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
         </svg>
         direccion.melodiasunidas@gmail.com</a>
     </div>
     <div class="flex hidden justify-center items-center flex-col mt-4 transition-all duration-300" id="admin-ana">
-      <p class="font-light mt-2 mb-4 text-center text-xs md:text-base">Gestiona el calendario, cambios de clases y <br> cancelaciones para que no te pierdas de nada.
+      <p class="font-light mt-2 mb-4 text-center text-xs md:text-base xl:text-lg">Gestiona el calendario, cambios de clases y <br> cancelaciones para que no te pierdas de nada.
       </p>
-      <h3 class="text-sky-700 text-lg text-center">Ana</h3>
-      <span class="font-light text-center text-xs md:text-base">Coordinadora académica</span>
-      <a href="mailto:coordacademica.melodiasunidas@gmail.com?Subject=Quiero%20información" title="Contactame" class="flex justify-center items-center gap-2 text-sky-600 hover:underline text-sm mt-4 px-4 py-2 transition-all duration-300"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+      <h3 class="text-sky-700 text-lg lg:text-xl text-center">Ana</h3>
+      <span class="font-light text-center text-xs md:text-base xl:text-lg">Coordinadora académica</span>
+      <a href="mailto:coordacademica.melodiasunidas@gmail.com?Subject=Quiero%20información" title="Contactame" class="flex justify-center items-center gap-2 text-sky-600 hover:underline text-sm lg:text-base mt-4 px-4 py-2 transition-all duration-300"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
           <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
         </svg>
         coordacademica.melodiasunidas@gmail.com</a>
     </div>
     <div class="flex hidden justify-center items-center flex-col mt-4 transition-all duration-300" id="admin-lucia">
-      <p class="font-light mt-2 mb-4 text-center text-xs md:text-base">La que controla que las cuotas y <br> las finanzas estén al día.
+      <p class="font-light mt-2 mb-4 text-center text-xs md:text-base xl:text-lg">La que controla que las cuotas y <br> las finanzas estén al día.
       </p>
-      <h3 class="text-sky-700 text-lg text-center">Lucía</h3>
-      <span class="font-light text-center text-xs md:text-base">Contabilidad</span>
-      <a href="mailto:contabilidad.melodiasunidas@gmail.com?Subject=Quiero%20información" title="Contactame" class="flex justify-center items-center gap-2 text-sky-600 hover:underline text-sm mt-4 px-4 py-2 transition-all duration-300"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+      <h3 class="text-sky-700 text-lg lg:text-xl text-center">Lucía</h3>
+      <span class="font-light text-center text-xs md:text-base xl:text-lg">Contabilidad</span>
+      <a href="mailto:contabilidad.melodiasunidas@gmail.com?Subject=Quiero%20información" title="Contactame" class="flex justify-center items-center gap-2 text-sky-600 hover:underline text-sm lg:text-base mt-4 px-4 py-2 transition-all duration-300"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
           <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
         </svg>
         contabilidad.melodiasunidas@gmail.com</a>
     </div>
     <div class="flex hidden justify-center items-center flex-col mt-4 transition-all duration-300" id="admin-marina">
-      <p class="font-light mt-2 mb-4 text-center text-xs md:text-base">Es la que siempre está al tanto para ayudarte y <br> organizar todo lo administrativo.
+      <p class="font-light mt-2 mb-4 text-center text-xs md:text-base xl:text-lg">Es la que siempre está al tanto para ayudarte y <br> organizar todo lo administrativo.
       </p>
-      <h3 class="text-sky-700 text-lg text-center">Marina</h3>
-      <span class="font-light text-center text-xs md:text-base">Secretaría</span>
-      <a href="mailto:secretaria.melodiasunidas@gmail.com?Subject=Quiero%20información" title="Contactame" class="flex justify-center items-center gap-2 text-sky-600 hover:underline text-sm mt-4 px-4 py-2 transition-all duration-300"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+      <h3 class="text-sky-700 text-lg lg:text-xl text-center">Marina</h3>
+      <span class="font-light text-center text-xs md:text-base xl:text-lg">Secretaría</span>
+      <a href="mailto:secretaria.melodiasunidas@gmail.com?Subject=Quiero%20información" title="Contactame" class="flex justify-center items-center gap-2 text-sky-600 hover:underline text-sm lg:text-base mt-4 px-4 py-2 transition-all duration-300"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
           <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
         </svg>
         secretaria.melodiasunidas@gmail.com</a>
@@ -280,9 +280,9 @@ $pagina = "inicio";
 
   <!-- Porque elegirnos -->
   <section class="flex p-8 w-full justify-center items-center flex-col gap-4 sm:px-32 lg:px-48">
-    <h4 class="text-2xl font-[Oswald] font-medium lg:text-3xl">¿Por qué elegirnos?</h4>
+    <h4 class="text-2xl font-[Oswald] font-medium lg:text-3xl xl:text-4xl">¿Por qué elegirnos?</h4>
     <p class="text-[12px] lg:text-base lg:px-8 lg:mt-6 text-center" data-aos="zoom-in" data-aos-duration="1000">
-      En Melodías Unidas no solo damos clases, creamos experiencias musicales que recordarás. <br> ¿Por qué somos la mejor opción? <br><br> <span class="font-bold">Mira esto:</span>
+      En Melodías Unidas no solo damos clases, creamos experiencias musicales que recordarás. <br> ¿Por qué somos la mejor opción? <br><br> <span class="font-medium lg:text-lg">Mira esto:</span>
     </p>
   </section>
 
@@ -290,7 +290,7 @@ $pagina = "inicio";
   <?php include("ventajas.php") ?>
 
   <!-- Testimonio Veronica Metakovskaya -->
-  <section class="flex p-8 py-16 w-full justify-center items-center flex-col gap-8 bg-[#272727] mt-8 sm:px-32 lg:px-48 lg:flex-row lg:gap-16 lg:py-24" id="testimonios">
+  <section class="flex p-8 py-16 w-full justify-center items-center flex-col gap-8 bg-gray-900 mt-8 sm:px-32 lg:px-48 lg:flex-row lg:gap-16 lg:py-24" id="testimonios">
     <div class="flex justify-center items-center flex-col gap-6 lg:max-w-[300px]">
       <div class="flex justify-center items-center w-[120px] h-[120px] lg:w-[200px] lg:h-[200px] rounded-full" data-aos="zoom-in" data-aos-duration="1000">
         <img src="./images/veronicamet.webp" alt="Veronica Metakovskaya" title="Veronica Metakovskaya" class="object-cover w-full h-full rounded-full" loading="lazy">
@@ -306,86 +306,9 @@ $pagina = "inicio";
     </div> -->
   </section>
 
-  <!-- Videos de comunidad estudiantil -->
-  <section class="relative flex p-8 pt-12 w-full justify-center items-center flex-col gap-4 sm:px-32 lg:px-48 lg:py-0 xl:py-12">
-    <p class="w-full text-center lg:pt-8 font-['Oswald'] text-xl lg:text-2xl">Lo que dicen nuestros alumnos</p>
-    <div class="relative flex flex-row justify-start gap-4 lg:pt-8 lg:gap-6 w-[275px] sm:w-[550px] py-4 lg:w-[750px] xl:w-[1200px] overflow-x-scroll" id="section-div-videos">
-      <div class="relative flex bg-black/80 opacity-85 hover:opacity-100 shadow-md min-w-[260px] h-[160px]">
-        <video class="w-full h-full" controls>
-          <source src="./videos/videos_alumnos/video8.mp4" type="video/mp4">
-        </video>
-        <img src="./images/logo/logo.png" alt="" class="absolute w-[50px] h-[50px] right-0">
-      </div>
-      <!-- Comentado por error de carga -->
-      <!-- <div class="relative flex bg-black/80 opacity-85 hover:opacity-100 shadow-md min-w-[260px] h-[160px]">
-        <video class="w-full h-full" controls>
-          <source src="./videos/videos_alumnos/video1.mp4" type="video/mp4">
-        </video>
-        <img src="./images/logo/logo.png" alt="" class="absolute w-[50px] h-[50px] right-0">
-      </div> -->
-      <div class="relative flex bg-black/80 opacity-85 hover:opacity-100 shadow-md min-w-[260px] h-[160px]">
-        <video class="w-full h-full" controls>
-          <source src="./videos/videos_alumnos/video2.mp4" type="video/mp4">
-        </video>
-        <img src="./images/logo/logo.png" alt="" class="absolute w-[50px] h-[50px] right-0">
-      </div>
-      <div class="relative flex bg-black/80 opacity-85 hover:opacity-100 shadow-md min-w-[260px] h-[160px]">
-        <video class="w-full h-full" controls>
-          <source src="./videos/videos_alumnos/video3.mp4" type="video/mp4">
-        </video>
-        <img src="./images/logo/logo.png" alt="" class="absolute w-[50px] h-[50px] right-0">
-      </div>
-      <div class="relative flex bg-black/80 opacity-85 hover:opacity-100 shadow-md min-w-[260px] h-[160px]">
-        <video class="w-full h-full" controls>
-          <source src="./videos/videos_alumnos/video4.mp4" type="video/mp4">
-        </video>
-        <img src="./images/logo/logo.png" alt="" class="absolute w-[50px] h-[50px] right-0">
-      </div>
-      <div class="relative flex bg-black/80 opacity-85 hover:opacity-100 shadow-md min-w-[260px] h-[160px]">
-        <video class="w-full h-full" controls>
-          <source src="./videos/videos_alumnos/video5.mp4" type="video/mp4">
-        </video>
-        <img src="./images/logo/logo.png" alt="" class="absolute w-[50px] h-[50px] right-0">
-      </div>
-      <div class="relative flex bg-black/80 opacity-85 hover:opacity-100 shadow-md min-w-[260px] h-[160px]">
-        <video class="w-full h-full" controls>
-          <source src="./videos/videos_alumnos/video6.mp4" type="video/mp4">
-        </video>
-        <img src="./images/logo/logo.png" alt="" class="absolute w-[50px] h-[50px] right-0">
-      </div>
-      <div class="relative flex bg-black/80 opacity-85 hover:opacity-100 shadow-md min-w-[260px] h-[160px]">
-        <video class="w-full h-full" controls>
-          <source src="./videos/videos_alumnos/video7.mp4" type="video/mp4">
-        </video>
-        <img src="./images/logo/logo.png" alt="" class="absolute w-[50px] h-[50px] right-0">
-      </div>
-      <div class="relative flex bg-black/80 opacity-85 hover:opacity-100 shadow-md min-w-[260px] h-[160px]">
-        <video class="w-full h-full" controls>
-          <source src="./videos/videos_alumnos/video9.mp4" type="video/mp4">
-        </video>
-        <img src="./images/logo/logo.png" alt="" class="absolute w-[50px] h-[50px] right-0">
-      </div>
-      <div class="relative flex bg-black/80 opacity-85 hover:opacity-100 shadow-md min-w-[260px] h-[160px]">
-        <video class="w-full h-full" controls>
-          <source src="./videos/videos_alumnos/video10.mp4" type="video/mp4">
-        </video>
-        <img src="./images/logo/logo.png" alt="" class="absolute w-[50px] h-[50px] right-0">
-      </div>
-    </div>
-    <div class="absolute bottom-5 lg:-bottom-5 xl:bottom-3 flex w-full justify-center items-center">
-      <div class="flex gap-3">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 lg:size-8 text-secondary-color cursor-pointer" id="scrollLeft">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75 3 12m0 0 3.75-3.75M3 12h18" />
-        </svg>
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 lg:size-8 text-secondary-color cursor-pointer" id="scrollRight">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
-        </svg>
-      </div>
-    </div>
-  </section>
-
   <!-- Reseñas de estudiantes -->
-  <section class="flex p-8 pt-0 w-full justify-center items-center flex-col gap-4 sm:px-32 lg:px-48 lg:py-12 xl:py-0 xl:mb-12">
+  <section class="flex p-8 pt-12 pb-0 w-full justify-center items-center flex-col gap-4 sm:px-32 lg:px-48 xl:px-52 lg:py-12 xl:pt-24 xl:mb-0">
+    <p class="w-full text-center lg:pt-8 font-['Oswald'] text-xl lg:text-2xl xl:text-3xl">Lo que dicen nuestros alumnos</p>
     <div class="slider-resenia w-full mt-2 lg:max-w-[1200px]">
       <div class="slides-resenia">
         <div class="slide-resenia gap-2">
@@ -457,15 +380,153 @@ $pagina = "inicio";
     </div>
   </section>
 
+
+  <!-- Videos de comunidad estudiantil -->
+  <section class="relative flex p-8 pt-12 w-full justify-center items-center flex-col gap-4 sm:px-32 lg:px-48 lg:py-0 xl:py-12 xl:pt-0 xl:mb-10">
+    <div class="relative flex flex-row justify-start gap-4 lg:pt-8 lg:gap-6 w-[275px] sm:w-[550px] py-4 lg:w-[750px] xl:w-[1200px] overflow-x-scroll" id="section-div-videos">
+      <!-- <div class="relative flex bg-black/80 opacity-85 hover:opacity-100 shadow-md min-w-[260px] h-[160px]">
+        <video class="w-full h-full" controls preload="none">
+          <source src="./videos/videos_alumnos/video8.mp4" type="video/mp4">
+        </video>
+        <img src="./images/logo/logo.png" alt="" class="absolute w-[50px] h-[50px] right-0">
+      </div> -->
+
+      <div class="relative flex bg-black/80 shadow-md min-w-[260px] h-[160px]">
+        <!-- Contenedor de la miniatura -->
+        <div class="w-full h-full cursor-pointer flex flex-col justify-center items-center relative p-4" id="container1" onclick="viewvideo('container1','video1')">
+          <img src="./images/logo/logo.png" alt="Logo" class="absolute w-[50px] h-[50px] right-0 top-0">
+          <img src="./images/iconvideo.png" alt="Video thumbnail" style="width: 65px !important;">
+        </div>
+        <!-- Video oculto inicialmente -->
+        <video class="w-full h-full hidden" id="video1" controls>
+          <source src="./videos/videos_alumnos/video8.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="relative flex bg-black/80 shadow-md min-w-[260px] h-[160px]">
+        <!-- Contenedor de la miniatura -->
+        <div class="w-full h-full cursor-pointer flex flex-col justify-center items-center relative p-4" id="container2" onclick="viewvideo('container2','video2')">
+          <img src="./images/logo/logo.png" alt="Logo" class="absolute w-[50px] h-[50px] right-0 top-0">
+          <img src="./images/iconvideo.png" alt="Video thumbnail" style="width: 65px !important;">
+        </div>
+        <!-- Video oculto inicialmente -->
+        <video class="w-full h-full hidden" id="video2" controls>
+          <source src="./videos/videos_alumnos/video2.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="relative flex bg-black/80 shadow-md min-w-[260px] h-[160px]">
+        <!-- Contenedor de la miniatura -->
+        <div class="w-full h-full cursor-pointer flex flex-col justify-center items-center relative p-4" id="container3" onclick="viewvideo('container3','video3')">
+          <img src="./images/logo/logo.png" alt="Logo" class="absolute w-[50px] h-[50px] right-0 top-0">
+          <img src="./images/iconvideo.png" alt="Video thumbnail" style="width: 65px !important;">
+        </div>
+        <!-- Video oculto inicialmente -->
+        <video class="w-full h-full hidden" id="video3" controls>
+          <source src="./videos/videos_alumnos/video3.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="relative flex bg-black/80 shadow-md min-w-[260px] h-[160px]">
+        <!-- Contenedor de la miniatura -->
+        <div class="w-full h-full cursor-pointer flex flex-col justify-center items-center relative p-4" id="container4" onclick="viewvideo('container4','video4')">
+          <img src="./images/logo/logo.png" alt="Logo" class="absolute w-[50px] h-[50px] right-0 top-0">
+          <img src="./images/iconvideo.png" alt="Video thumbnail" style="width: 65px !important;">
+        </div>
+        <!-- Video oculto inicialmente -->
+        <video class="w-full h-full hidden" id="video4" controls>
+          <source src="./videos/videos_alumnos/video4.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="relative flex bg-black/80 shadow-md min-w-[260px] h-[160px]">
+        <!-- Contenedor de la miniatura -->
+        <div class="w-full h-full cursor-pointer flex flex-col justify-center items-center relative p-4" id="container5" onclick="viewvideo('container5','video5')">
+          <img src="./images/logo/logo.png" alt="Logo" class="absolute w-[50px] h-[50px] right-0 top-0">
+          <img src="./images/iconvideo.png" alt="Video thumbnail" style="width: 65px !important;">
+        </div>
+        <!-- Video oculto inicialmente -->
+        <video class="w-full h-full hidden" id="video5" controls>
+          <source src="./videos/videos_alumnos/video5.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="relative flex bg-black/80 shadow-md min-w-[260px] h-[160px]">
+        <!-- Contenedor de la miniatura -->
+        <div class="w-full h-full cursor-pointer flex flex-col justify-center items-center relative p-4" id="container6" onclick="viewvideo('container6','video6')">
+          <img src="./images/logo/logo.png" alt="Logo" class="absolute w-[50px] h-[50px] right-0 top-0">
+          <img src="./images/iconvideo.png" alt="Video thumbnail" style="width: 65px !important;">
+        </div>
+        <!-- Video oculto inicialmente -->
+        <video class="w-full h-full hidden" id="video6" controls>
+          <source src="./videos/videos_alumnos/video6.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="relative flex bg-black/80 shadow-md min-w-[260px] h-[160px]">
+        <!-- Contenedor de la miniatura -->
+        <div class="w-full h-full cursor-pointer flex flex-col justify-center items-center relative p-4" id="container7" onclick="viewvideo('container7','video7')">
+          <img src="./images/logo/logo.png" alt="Logo" class="absolute w-[50px] h-[50px] right-0 top-0">
+          <img src="./images/iconvideo.png" alt="Video thumbnail" style="width: 65px !important;">
+        </div>
+        <!-- Video oculto inicialmente -->
+        <video class="w-full h-full hidden" id="video7" controls>
+          <source src="./videos/videos_alumnos/video7.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="relative flex bg-black/80 shadow-md min-w-[260px] h-[160px]">
+        <!-- Contenedor de la miniatura -->
+        <div class="w-full h-full cursor-pointer flex flex-col justify-center items-center relative p-4" id="container8" onclick="viewvideo('container8','video8')">
+          <img src="./images/logo/logo.png" alt="Logo" class="absolute w-[50px] h-[50px] right-0 top-0">
+          <img src="./images/iconvideo.png" alt="Video thumbnail" style="width: 65px !important;">
+        </div>
+        <!-- Video oculto inicialmente -->
+        <video class="w-full h-full hidden" id="video8" controls>
+          <source src="./videos/videos_alumnos/video9.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="relative flex bg-black/80 shadow-md min-w-[260px] h-[160px]">
+        <!-- Contenedor de la miniatura -->
+        <div class="w-full h-full cursor-pointer flex flex-col justify-center items-center relative p-4" id="container9" onclick="viewvideo('container9','video9')">
+          <img src="./images/logo/logo.png" alt="Logo" class="absolute w-[50px] h-[50px] right-0 top-0">
+          <img src="./images/iconvideo.png" alt="Video thumbnail" style="width: 65px !important;">
+        </div>
+        <!-- Video oculto inicialmente -->
+        <video class="w-full h-full hidden" id="video9" controls>
+          <source src="./videos/videos_alumnos/video10.mp4" type="video/mp4">
+        </video>
+      </div>
+
+    </div>
+    <div class="absolute bottom-1 lg:-bottom-5 xl:bottom-3 flex w-full justify-center items-center">
+      <div class="flex gap-3">
+        <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 16" stroke-width="1.5" stroke="currentColor" class="size-6 lg:size-10 text-secondary-color cursor-pointer" id="scrollLeft">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75 3 12m0 0 3.75-3.75M3 12h18" />
+        </svg> -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-left-circle-fil text-secondary-color cursor-pointer" viewBox="0 0 16 16" id="scrollLeft">
+          <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z" />
+        </svg>
+        <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 lg:size-8 text-secondary-color cursor-pointer" id="scrollRight">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+        </svg> -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-right-circle-fill text-secondary-color cursor-pointer" viewBox="0 0 16 16" id="scrollRight">
+          <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z" />
+        </svg>
+      </div>
+    </div>
+  </section>
+
   <!-- Contactanos -->
-  <section class="flex p-8 py-16 pt-8 w-full justify-center items-center flex-col sm:px-32 lg:px-48" id="contacto">
+  <section class="flex p-8 py-16 pt-8 w-full justify-center items-center flex-col sm:px-32 lg:px-48 xl:mb-12" id="contacto">
     <form id="contactForm" method="post" class="flex flex-col gap-4 w-full sm:max-w-[520px] lg:max-w-[800px]">
-      <h5 class="font-['Oswald'] text-lg lg:text-2xl">Escribenos</h5>
-      <input type="text" placeholder="Ingresa tu nombre" name="nombre" id="nombre" class="w-full border border-primary-color rounded-sm px-2 py-2 text-sm lg:text-base" required>
-      <input type="text" placeholder="Ingresa tu correo" name="email" id="email" class="w-full border border-primary-color rounded-sm px-2 py-2 text-sm lg:text-base" required>
-      <input type="text" placeholder="Ingresa tu numero (opcional)" name="celcontacto" id="celcontacto" class="w-full border border-primary-color rounded-sm px-2 py-2 text-sm lg:text-base">
-      <textarea name="content" id="content" placeholder="Dejanos un mensaje" rows="6" class="w-full border border-primary-color rounded-sm px-2 py-1 text-sm lg:text-base" required></textarea>
-      <input type="submit" class="bg-secondary-color text-black/80 px-2 py-2 rounded-sm font-['Oswald'] text-lg lg:text-2xl lg:py-3 cursor-pointer" value="Enviar mensaje">
+      <h5 class="font-['Oswald'] text-lg lg:text-2xl xl:text-3xl lg:mb-2">Escribenos</h5>
+      <input type="text" placeholder="Ingresa tu nombre" name="nombre" id="nombre" class="w-full border border-primary-color/80 rounded-md px-3 py-2 text-sm lg:text-base outline-none" required>
+      <input type="text" placeholder="Ingresa tu correo" name="email" id="email" class="w-full border border-primary-color/80 rounded-md px-3 py-2 text-sm lg:text-base outline-none" required>
+      <input type="text" placeholder="Ingresa tu numero (opcional)" name="celcontacto" id="celcontacto" class="w-full border border-primary-color/80 rounded-md px-3 py-2 text-sm lg:text-base outline-none">
+      <textarea name="content" id="content" placeholder="Dejanos un mensaje" rows="6" class="w-full border border-primary-color/80 rounded-md px-3 py-1 text-sm lg:text-base outline-none" required></textarea>
+      <input type="submit" class="bg-secondary-color hover:bg-yellow-400/80 text-black/60 px-2 py-2 rounded-md font-['Oswald'] text-lg lg:text-2xl lg:py-3 cursor-pointer" value="Enviar mensaje">
     </form>
   </section>
 

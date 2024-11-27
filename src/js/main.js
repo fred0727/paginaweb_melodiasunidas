@@ -24,12 +24,14 @@ window.addEventListener("scroll", function () {
       // Scroll down
       header.classList.remove("lg:bg-transparent");
       header.classList.add("bg-primary-color");
+      header.classList.add("shadow-md");
       document.getElementById("btn-up").classList.remove("hidden");
       document.getElementById("btn-contact").classList.remove("hidden");
     } else {
       if (scrollTop == 0) {
         header.classList.remove("bg-primary-color");
         header.classList.add("lg:bg-transparent");
+        header.classList.remove("shadow-md");
         document.getElementById("btn-up").classList.add("hidden");
         document.getElementById("btn-contact").classList.add("hidden");
       }
@@ -253,4 +255,13 @@ function closeText() {
       circle.classList.add("opacity-0");
     }
   });
+}
+
+
+function viewvideo(id,video){
+  document.getElementById(id).style.display = 'none';
+
+  document.getElementById(video).classList.remove('hidden');
+  // Carga y reproduce el video
+  document.getElementById(video).play();
 }

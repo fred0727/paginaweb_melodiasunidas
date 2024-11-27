@@ -149,7 +149,7 @@
 
 @media (min-width: 1024px) {
   #nuestroequipo-parallax {
-    height: 50vh;
+    height: 60vh;
   }
   #nuestroequipopage-parallax {
     height: 50vh;
@@ -159,7 +159,7 @@
   }
 
   #nuestroequipo2-parallax {
-    height: 65vh;
+    height: 75vh;
   }
 }
 
