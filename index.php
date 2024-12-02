@@ -132,7 +132,7 @@ $pagina = "inicio";
       </div>
       <div class="flex w-full flex-col justify-center items-center gap-4">
         <div class="flex w-[300px] h-[300px] mt-2 rounded-full" data-aos="fade-up" data-aos-duration="1000">
-          <img src="./images/profes/juancarlosinicio.jpeg" alt="Nuestro Profe" title="Nuestro Profe" class="object-cover rounded-full w-[300px] h-[300px] grayscale hover:grayscale-0 cursor-pointer" loading="lazy">
+          <img src="./images/profes/juancarlos.webp" alt="Nuestro Profe" title="Nuestro Profe" class="object-cover rounded-full w-[300px] h-[300px] grayscale hover:grayscale-0 cursor-pointer" loading="lazy">
         </div>
         <div class="flex justify-center items-center pt-4">
           <a href="profejuancarlos.php" class="bg-primary-color rounded-full px-6 py-2 flex justify-center items-center text-white font-['Oswald'] text-xl">Conoceme mas</a>
@@ -174,7 +174,7 @@ $pagina = "inicio";
     <div class="flex justify-center items-center flex-wrap gap-4 lg:gap-10">
       <div class="max-w-[500px]" onclick="changeProfe('juancarlos')">
         <div class="rounded-full w-[50px] h-[50px] lg:w-[125px] lg:h-[125px] xl:w-[150px] xl:h-[150px] transition-all duration-300 overflow-hidden cursor-pointer" id="profe1">
-          <img src="./images/profes/juancarlosv2.jpeg" alt="" class="object-cover w-full h-full">
+          <img src="./images/profes/juancarlos.webp" alt="" class="object-cover w-full h-full">
         </div>
       </div>
       <div class="max-w-[500px]" onclick="changeProfe('santiago')">
@@ -182,9 +182,9 @@ $pagina = "inicio";
           <img src="./images/profes/santiago.jpeg" alt="" class="object-cover w-full h-full">
         </div>
       </div>
-      <div class="max-w-[500px]" onclick="changeProfe('miguelangel')">
+      <div class="max-w-[500px]" onclick="changeProfe('joseantonio')">
         <div class="rounded-full w-[50px] h-[50px] lg:w-[125px] lg:h-[125px] xl:w-[150px] xl:h-[150px] transition-all duration-300 overflow-hidden cursor-pointer grayscale hover:grayscale-0" id="profe3">
-          <img src="./images/profes/miguelangel.jpeg" alt="" class="object-cover w-full h-full">
+          <img src="./images/profes/joseantonio.webp" alt="" class="object-cover w-full h-full">
         </div>
       </div>
     </div>
@@ -201,11 +201,11 @@ $pagina = "inicio";
       <h3 class="text-sky-700 text-lg text-center lg:text-xl">Santiago Andrés Medina Gómez</h3>
       <a href="profesantiago.php" class="text-sky-600 text-sm lg:text-base mt-4 border border-sky-600 hover:text-white hover:bg-sky-600 rounded-md px-4 py-2 transition-all duration-300">Conóceme</a>
     </div>
-    <div class="flex hidden justify-center items-center flex-col mt-4 transition-all duration-300" id="profe-miguelangel">
+    <div class="flex hidden justify-center items-center flex-col mt-4 transition-all duration-300" id="profe-joseantonio">
       <p class="font-light mt-2 mb-4 text-center  text-xs md:text-base lg:text-lg">Historia de la <br> música
       </p>
-      <h3 class="text-sky-700 text-lg text-center lg:text-xl">Miguel Ángel Fonseca Orozco</h3>
-      <a href="profemiguel.php" class="text-sky-600 text-sm lg:text-base mt-4 border border-sky-600 hover:text-white hover:bg-sky-600 rounded-md px-4 py-2 transition-all duration-300">Conóceme</a>
+      <h3 class="text-sky-700 text-lg text-center lg:text-xl">José Antonio Aguilar González</h3>
+      <a href="profejoseantonio.php" class="text-sky-600 text-sm lg:text-base mt-4 border border-sky-600 hover:text-white hover:bg-sky-600 rounded-md px-4 py-2 transition-all duration-300">Conóceme</a>
     </div>
   </section>
 

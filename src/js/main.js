@@ -150,7 +150,7 @@ function changeProfe(profe) {
   if (profe == "juancarlos") {
     document.getElementById("profe-juancarlos").classList.remove("hidden");
     document.getElementById("profe-santiago").classList.add("hidden");
-    document.getElementById("profe-miguelangel").classList.add("hidden");
+    document.getElementById("profe-joseantonio").classList.add("hidden");
     document.getElementById("profe1").classList.remove("grayscale");
     document.getElementById("profe2").classList.add("grayscale");
     document.getElementById("profe3").classList.add("grayscale");
@@ -158,12 +158,12 @@ function changeProfe(profe) {
     if (profe == "santiago") {
       document.getElementById("profe-santiago").classList.remove("hidden");
       document.getElementById("profe-juancarlos").classList.add("hidden");
-      document.getElementById("profe-miguelangel").classList.add("hidden");
+      document.getElementById("profe-joseantonio").classList.add("hidden");
       document.getElementById("profe2").classList.remove("grayscale");
       document.getElementById("profe1").classList.add("grayscale");
       document.getElementById("profe3").classList.add("grayscale");
     } else {
-      document.getElementById("profe-miguelangel").classList.remove("hidden");
+      document.getElementById("profe-joseantonio").classList.remove("hidden");
       document.getElementById("profe-santiago").classList.add("hidden");
       document.getElementById("profe-juancarlos").classList.add("hidden");
       document.getElementById("profe3").classList.remove("grayscale");

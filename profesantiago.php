@@ -26,7 +26,7 @@ $pagina = "nosotros";
 
     <!-- Portada -->
     <section class="flex bg-black/30 h-[30vh] sm:h-[40vh] lg:h-[60vh] xl:h-[70vh]">
-    <img src="./images/nuestroprofe.jpg" alt="portadanosotros" class="w-full object-cover">
+    <img src="./images/nuestroprofe.webp" alt="portadanosotros" class="w-full object-cover">
         <!-- <video src="./videos/videoblog.mp4" autoplay muted loop class="w-full object-cover"></video> -->
     </section>
 

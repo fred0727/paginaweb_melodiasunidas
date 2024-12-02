@@ -26,7 +26,7 @@ $pagina = "nosotros";
 
     <!-- Portada -->
     <section class="flex bg-black/30 h-[30vh] sm:h-[40vh] lg:h-[60vh] xl:h-[70vh]">
-        <img src="./images/nuestroprofe.jpg" alt="portadanosotros" class="w-full object-cover">
+        <img src="./images/nuestroprofe.webp" alt="portadanosotros" class="w-full object-cover">
         <!-- <video src="./videos/videoblog.mp4" autoplay muted loop class="w-full object-cover"></video> -->
     </section>
 
@@ -37,29 +37,30 @@ $pagina = "nosotros";
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6 text-primary-color">
                 <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
             </svg>
-            <h3 class="font-medium text-start w-full font-['Oswald']">Miguel Ángel Fonseca Orozco</h3>
+            <h3 class="font-medium text-start w-full font-['Oswald']">José Antonio Aguilar González</h3>
         </div>
         <p class="text-[12px] text-justify">
-            Miguel Ángel es de esos profes que hacen que la Historia de la Música sea todo menos aburrida.
-            Con más de 12 años de experiencia y una formación que lo respalda al 100%, ha conseguido que sus clases sean como un viaje en el tiempo donde te sumerges de lleno en las historias más fascinantes detrás de cada acorde.
+            ¡Con José Antonio no solo aprendes música, la vives! Este crack de la enseñanza lleva años compartiendo su pasión por la música, el canto y la producción musical. Para él, cada clase es una fiesta creativa donde los alumnos descubren su propio ritmo y estilo.
         </p>
         <p class="text-[12px] text-justify">
-            Y no es solo que sepa mucho de música; además, tiene un Licenciado en Ciencias Sociales por la Universidad Pedagógica y Tecnológica de Colombia. ¿Qué significa esto? Que no solo conoce de música, sino que entiende el mundo, la sociedad y cómo la cultura ha moldeado todo lo que escuchamos hoy.
-            Con esa combinación explosiva de conocimientos, sus clases son como un recorrido por el pasado que te hace entender el presente.
+            En la Academia Momentos, fue el alma de la dirección académica, organizando todo como un maestro del backstage mientras daba clases que hacían que la teoría y la práctica fueran tan divertidas como una buena jam session. ¿Su truco? Enseñar música de una forma que te engancha desde el primer día. Y si hablamos de sus clases en la Universidad Anáhuac Puebla, fundó nada menos que una compañía de canto, ¡ahí es nada!
         </p>
         <br>
         <p class="text-[12px] text-justify">
-            No solo tiene un conocimiento profundo de los contextos musicales históricos, sino que ha dedicado buena parte de su carrera a perfeccionar su método.
-            En sus clases, aprendes a apreciar cómo la música, desde las grandes obras clásicas hasta los ritmos más modernos, ha sido clave en la evolución de la sociedad. ¡Y lo mejor es que lo hace de forma súper amena y cercana!
+            Además, José Antonio es un auténtico crack en Historia de la Música. Sus alumnos no solo descubren cómo surgieron las obras más emblemáticas, sino que aprenden a entender la música como un reflejo de cada época, sus movimientos y hasta sus revoluciones. ¿Por qué esto importa? Porque cuando comprendes de dónde viene la música, la tocas y la escuchas con otro nivel de conexión. Con José Antonio, la historia no es un rollo; es una fuente de inspiración que te hace amar aún más lo que tocas.
         </p>
         <p class="text-[12px] text-justify">
-            Miguel Ángel combina lo mejor de su experiencia como docente con su formación académica, siempre adaptando sus clases para que cada alumno se sienta parte de la historia. Aquí no solo aprendes de memoria, aquí vives la música.
+            Y, como si eso no fuera suficiente, en FreshPots Records, José Antonio se dedica a descubrir y lanzar artistas emergentes, convirtiendo ideas en temazos que no puedes dejar de escuchar. Antes, en Alquimia Soundlab, ya apuntaba maneras como el cerebro detrás de proyectos musicales súper frescos.
         </p>
         <p class="text-[12px] text-justify">
-            <span class="font-bold">Su meta:</span> <span class="italic">que cada alumno vea en la música una historia viva, que sientan la emoción detrás de cada época y se diviertan mientras aprenden algo que va mucho más allá de lo académico.</span>
+            <span class="font-bold">¿Por qué mola tanto? </span> <span class="italic"> Porque domina instrumentos de cuerda, percusiones y además es un genio con Logic Pro, el DAW que convierte cualquier idea en un hit. Ah, y si le preguntas por cualquier estilo musical, te puede contar su historia con tanta pasión que saldrás corriendo a escucharlo.</span>
+        </p>
+        <br>
+        <p class="text-[12px] text-justify">
+            <span class="font-bold">¿Su filosofía? </span> <span class="italic"> Que aprender música sea un viaje lleno de buen rollo, risas y mucha pasión. Con José Antonio no hay formalidades aburridas, solo ganas de tocar, cantar, aprender y crear algo único. ¡La música no se estudia, se disfruta!</span>
         </p>
         <div class="flex w-[200px] h-[200px] mt-2 rounded-full" data-aos="fade-up" data-aos-duration="1000">
-            <img src="./images/profes/miguelangel.jpeg" alt="Nuestro Profe" title="Nuestro Profe" srcset="" class="object-cover rounded-full w-[200px] h-[200px]" loading="lazy">
+            <img src="./images/profes/joseantonio.webp" alt="Nuestro Profe" title="Nuestro Profe" srcset="" class="object-cover rounded-full w-[200px] h-[200px]" loading="lazy">
         </div>
     </section>
 
@@ -72,31 +73,32 @@ $pagina = "nosotros";
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6 text-primary-color">
                         <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
                     </svg>
-                    <h3 class="font-medium text-start w-full font-['Oswald'] text-xl">Miguel Ángel Fonseca Orozco</h3>
+                    <h3 class="font-medium text-start w-full font-['Oswald'] text-xl">José Antonio Aguilar González</h3>
                 </div>
                 <p class="text-[14px] text-justify">
-                    Miguel Ángel es de esos profes que hacen que la Historia de la Música sea todo menos aburrida.
-                    Con más de 12 años de experiencia y una formación que lo respalda al 100%, ha conseguido que sus clases sean como un viaje en el tiempo donde te sumerges de lleno en las historias más fascinantes detrás de cada acorde.
+                    ¡Con José Antonio no solo aprendes música, la vives! Este crack de la enseñanza lleva años compartiendo su pasión por la música, el canto y la producción musical. Para él, cada clase es una fiesta creativa donde los alumnos descubren su propio ritmo y estilo.
                 </p>
                 <p class="text-[14px] text-justify lg:mt-4">
-                    Y no es solo que sepa mucho de música; además, tiene un Licenciado en Ciencias Sociales por la Universidad Pedagógica y Tecnológica de Colombia. ¿Qué significa esto? Que no solo conoce de música, sino que entiende el mundo, la sociedad y cómo la cultura ha moldeado todo lo que escuchamos hoy.
-                    Con esa combinación explosiva de conocimientos, sus clases son como un recorrido por el pasado que te hace entender el presente.
+                    En la Academia Momentos, fue el alma de la dirección académica, organizando todo como un maestro del backstage mientras daba clases que hacían que la teoría y la práctica fueran tan divertidas como una buena jam session. ¿Su truco? Enseñar música de una forma que te engancha desde el primer día. Y si hablamos de sus clases en la Universidad Anáhuac Puebla, fundó nada menos que una compañía de canto, ¡ahí es nada!
                 </p>
                 <p class="text-[14px] text-justify lg:mt-4">
-                    No solo tiene un conocimiento profundo de los contextos musicales históricos, sino que ha dedicado buena parte de su carrera a perfeccionar su método.
-                    En sus clases, aprendes a apreciar cómo la música, desde las grandes obras clásicas hasta los ritmos más modernos, ha sido clave en la evolución de la sociedad. ¡Y lo mejor es que lo hace de forma súper amena y cercana!
+                    Además, José Antonio es un auténtico crack en Historia de la Música. Sus alumnos no solo descubren cómo surgieron las obras más emblemáticas, sino que aprenden a entender la música como un reflejo de cada época, sus movimientos y hasta sus revoluciones. ¿Por qué esto importa? Porque cuando comprendes de dónde viene la música, la tocas y la escuchas con otro nivel de conexión. Con José Antonio, la historia no es un rollo; es una fuente de inspiración que te hace amar aún más lo que tocas.
                 </p>
                 <p class="text-[14px] text-justify">
-                    Miguel Ángel combina lo mejor de su experiencia como docente con su formación académica, siempre adaptando sus clases para que cada alumno se sienta parte de la historia. Aquí no solo aprendes de memoria, aquí vives la música.
+                    Y, como si eso no fuera suficiente, en FreshPots Records, José Antonio se dedica a descubrir y lanzar artistas emergentes, convirtiendo ideas en temazos que no puedes dejar de escuchar. Antes, en Alquimia Soundlab, ya apuntaba maneras como el cerebro detrás de proyectos musicales súper frescos.
                 </p>
                 <br>
                 <p class="text-[14px] text-justify">
-                    <span class="font-bold">Su meta:</span> <span class="italic">Que cada alumno vea en la música una historia viva, que sientan la emoción detrás de cada época y se diviertan mientras aprenden algo que va mucho más allá de lo académico.</span>
+                    <span class="font-bold">¿Por qué mola tanto? </span> <span class="italic"> Porque domina instrumentos de cuerda, percusiones y además es un genio con Logic Pro, el DAW que convierte cualquier idea en un hit. Ah, y si le preguntas por cualquier estilo musical, te puede contar su historia con tanta pasión que saldrás corriendo a escucharlo.</span>
+                </p>
+                <br>
+                <p class="text-[14px] text-justify">
+                    <span class="font-bold">¿Su filosofía? </span> <span class="italic"> Que aprender música sea un viaje lleno de buen rollo, risas y mucha pasión. Con José Antonio no hay formalidades aburridas, solo ganas de tocar, cantar, aprender y crear algo único. ¡La música no se estudia, se disfruta!</span>
                 </p>
             </div>
             <div class="flex w-full flex-col justify-center items-center gap-4">
                 <div class="flex w-[300px] h-[300px] mt-2 rounded-full" data-aos="fade-up" data-aos-duration="1000">
-                    <img src="./images/profes/miguelangel.jpeg" alt="Nuestro Profe" title="Nuestro Profe" class="object-cover rounded-full w-[300px] h-[300px]" loading="lazy">
+                    <img src="./images/profes/joseantonio.webp" alt="Nuestro Profe" title="Nuestro Profe" class="object-cover rounded-full w-[300px] h-[300px]" loading="lazy">
                 </div>
             </div>
         </div>
