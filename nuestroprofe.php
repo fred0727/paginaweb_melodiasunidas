@@ -14,7 +14,7 @@
     <link href="./src/css/main.css" rel="stylesheet" />
     <link href="./src/css/aos-master/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" defer />
-    <link href="./src/output_v4.css" rel="stylesheet" defer />
+    <link href="./src/output_v5.css" rel="stylesheet" defer />
 </head>
 <?php
 $pagina = "nosotros";

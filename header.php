@@ -1,6 +1,6 @@
   <header class="bg-primary-color lg:bg-transparent lg:fixed min-w-full flex justify-evenly items-center p-6 py-5 lg:px-14 xl:px-24 z-50" id="header">
     <div class="flex justify-around items-center w-full lg:justify-between xl:max-w-[1920px]">
-      <a class="flex flex-col justify-center items-center w-full lg:max-w-[300px]" href="inicio.php">
+      <a class="flex flex-col justify-center items-center w-full lg:max-w-[300px]" href="index.php">
         <h3 class="text-lg lg:text-xl text-white font-semibold underline underline-offset-[5px] font-['Playwrite_ZA']">
           Melodías Unidas
         </h3>
