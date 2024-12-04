@@ -45,7 +45,6 @@ $pagina = "nosotros";
         <p class="text-[12px] text-justify">
             En la Academia Momentos, fue el alma de la dirección académica, organizando todo como un maestro del backstage mientras daba clases que hacían que la teoría y la práctica fueran tan divertidas como una buena jam session. ¿Su truco? Enseñar música de una forma que te engancha desde el primer día. Y si hablamos de sus clases en la Universidad Anáhuac Puebla, fundó nada menos que una compañía de canto, ¡ahí es nada!
         </p>
-        <br>
         <p class="text-[12px] text-justify">
             Además, José Antonio es un auténtico crack en Historia de la Música. Sus alumnos no solo descubren cómo surgieron las obras más emblemáticas, sino que aprenden a entender la música como un reflejo de cada época, sus movimientos y hasta sus revoluciones. ¿Por qué esto importa? Porque cuando comprendes de dónde viene la música, la tocas y la escuchas con otro nivel de conexión. Con José Antonio, la historia no es un rollo; es una fuente de inspiración que te hace amar aún más lo que tocas.
         </p>
@@ -55,7 +54,6 @@ $pagina = "nosotros";
         <p class="text-[12px] text-justify">
             <span class="font-bold">¿Por qué mola tanto? </span> <span class="italic"> Porque domina instrumentos de cuerda, percusiones y además es un genio con Logic Pro, el DAW que convierte cualquier idea en un hit. Ah, y si le preguntas por cualquier estilo musical, te puede contar su historia con tanta pasión que saldrás corriendo a escucharlo.</span>
         </p>
-        <br>
         <p class="text-[12px] text-justify">
             <span class="font-bold">¿Su filosofía? </span> <span class="italic"> Que aprender música sea un viaje lleno de buen rollo, risas y mucha pasión. Con José Antonio no hay formalidades aburridas, solo ganas de tocar, cantar, aprender y crear algo único. ¡La música no se estudia, se disfruta!</span>
         </p>
