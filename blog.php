@@ -17,6 +17,8 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="main.css" />
 </head>
 <?php
 $pagina = "nosotros";
@@ -32,8 +34,209 @@ $pagina = "nosotros";
         <video src="./videos/videoblog2.mp4" autoplay muted loop class="w-full object-cover"></video>
     </section>
 
-    <section class="flex flex-col p-8 gap-4 sm:px-32 xl:px-48 xl:py-20 z-50">
+    <section > 
+
+ <div class=" h-24 " data-aos="fade-up" data-aos-duration="1000">
+
+      <div  class="absolute top-5 right-4">  
+            <button id="open-modal" class="bg-primary-color rounded-full px-4 py-1 flex justify-center items-center text-white font-['Oswald'] ">iniciar sesion </button> 
+      
+        </div> 
+ 
+</div>
+
+      
         
+    <div id="modal-component-container" class="hidden fixed inset-0">
+      <div class="modal-flex-container
+      flex
+      items-end
+      justify-center
+      min-h-screen
+      pt-4
+      px-4
+      pb-20
+      text-center
+      sm:block sm:p-0">
+        <div class="modal-bg-container fixed inset-0 bg-gray-700 bg-opacity-75" >
+
+        </div>
+        <div class="modal-space-container
+         hidden
+         sm:inline-block
+         sm:align-middle
+         sm:h-screen
+        "></div>
+        <div id="modal-container" class="
+        modal-container 
+        inline-block 
+        align-bottom 
+        bg-white 
+        rounded-lg 
+        text-left 
+        overflow-hidden 
+        shadow-xl
+        transform
+        transition-all
+        sm:my-8
+        sm:align-middle
+        sm:max-w-lg
+        w-full
+        ">
+            <div class="modal-wrapper bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+                <div class="modal-wrapper-flex sm:flex sm:items-start">
+                   
+                <div class=" modal-icon 
+                    mx-auto 
+                    flex-shrink-0 flex 
+                    items-center 
+                    justify-center 
+                    h-12 
+                    w-12
+                    rounded-full
+                    bg-blue-100
+                    sm:mx-0 sm:h-10 sm:w-10
+                     "> 
+                     <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#3480f9"><path d="M120-160v-112q0-34 17.5-62.5T184-378q62-31 126-46.5T440-440q20 0 40 1.5t40 4.5q-4 58 21 109.5t73 84.5v80H120ZM760-40l-60-60v-186q-44-13-72-49.5T600-420q0-58 41-99t99-41q58 0 99 41t41 99q0 45-25.5 80T790-290l50 50-60 60 60 60-80 80ZM440-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47Zm300 80q17 0 28.5-11.5T780-440q0-17-11.5-28.5T740-480q-17 0-28.5 11.5T700-440q0 17 11.5 28.5T740-400Z"/></svg>
+                    </div>
+
+                    <div class="
+                    modal-content
+                    text-center
+                    mt-3
+                    sm:mt-0 sm:ml-4 sm:text-left
+                    ">
+                        <h3 class="text-xl font-medium text-gray-700">Iniciar Sesión</h3>
+                        <div class="modal-text mt-2">
+                        <p class="text-gray-500 text-sm">
+
+                        <form action="" class="space-y-6 text-gray-700 ">
+
+                <div class="relative " >
+                    <div class="absolute top-1 left-1 bg-white-medium rounded-md p-2 flex items-center justify-center text-blue-300 ">
+                        <i class="fa-solid fa-envelope-open"></i>
+                    </div>
+                    <input type="email" placeholder="Usuario" class="w-80 border-solid border-2 border-blue-300/50 bg-white-ligth py-2 px-12 
+                    rounded-md ring-blue-500/50 focus:bg-red focus:outline-none focus:ring-1  focus:drop-shadow-xl"/>
+                </div>
+
+                <div class="relative">
+                    <div class="absolute top-1 left-1 bg-white-medium rounded-full p-2 flex items-center justify-center text-blue-300">
+                        <i class="fa-solid fa-lock"></i>
+                    </div>
+                    <input type="text" placeholder="Contraseña" class="w-80 border-solid border-2 border-blue-300/50 bg-white-light py-2 px-12 
+                    rounded-md focus:bg-black-dark focus:outline-none focus:ring-1 focus:ring-neon-blue focus:drop-shadow-xl"/>
+                </div>
+                
+            </form>
+
+                        </p> 
+                     </div>
+                    </div>
+                    
+                </div>  
+            </div>
+            <div class="modal-actions
+             bg-gray-50
+              px-4 
+              py-3 
+              sm:px-6 sm:flex sm:flex-row-reverse">
+                <button class="
+                w-full 
+                inline-flex 
+                justify-center
+                rounded-md
+                border border-transparent
+                shadow-md
+                px-4
+                py-2
+                bg-blue-500 
+                font-medium
+                text-white
+                hover:bg-blue-600
+
+                focus:outline-none
+                focus:ring-2
+                focus:ring-offset-2
+                focus:ring-blue-200
+                sm:mt-0 sm:ml-3 sm:w-auto
+
+                "
+                >iniciar sesion</button>
+
+                <button id="close-modal"
+                class="
+                   w-full 
+                inline-flex 
+                justify-center
+                rounded-md
+                border border-gray-300
+                shadow-md
+                px-4
+                py-2
+                mt-3
+                bg-white
+                font-medium
+                text-gray-700
+                hover:bg-gray-100
+                focus:outline-none
+                focus:ring-2
+                focus:ring-offset-2
+                focus:ring-gray-200
+                sm:mt-0 sm:ml-3 sm:w-auto
+                ">cancelar</button>
+            </div>
+        </div>
+      </div>
+    </div>
+    <script >
+    const closeButton = document.querySelector("#close-modal");
+    const openButton = document.querySelector("#open-modal");
+    const modalContainer = document.querySelector("#modal-component-container");
+    const modal =document.querySelector("#modal-container");
+    
+    openButton.addEventListener("click",() => {
+        openModal();
+    });
+
+    closeButton.addEventListener("click", () =>{
+        closeModal();
+    });
+
+    function openModal() {
+        showAndHide(modalContainer,
+        ["block",],
+        ["hidden"]
+    );
+        showAndHide(modal,["modal-scaleIn"],["modal-scaleOut"]);
+
+    }
+    function closeModal() {
+        showAndHide(modalContainer, ["bg-fadeOut"], ["bg-fadeIn"] );
+        showAndHide(modal,["modal-scaleOut"],["modal-scaleIn"] );
+   
+        setTimeout(() =>{
+            showAndHide(modalContainer, ["hidden"], ["block"]);
+
+        }, 500);
+   
+    }
+
+    function showAndHide(element, classesToAdd, classessToRemove) {
+
+        element.classList.remove(...classessToRemove);
+        element.classList.add(...classessToAdd);
+}
+
+    </script>
+      
+    
+
+
+
+ 
+
+
     </section>
 
     <!-- Pie de Pagina -->
