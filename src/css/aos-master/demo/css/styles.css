@@ -1,3 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-fadeIn{
+  animation: fadeIn 0.5s ease-in forwards;
+  animation-iteration-count: 1;
+}
+
+.bg-fadeOut{
+  animation: fadeOut 0.5s ease-in forwards;
+  animation-iteration-count: 1;
+}
+
+.modal-scaleIn{
+  animation: fadeOut 0.3s ease-in forwards;
+  animation-iteration-count: 1;
+}
+
+.modal-scaleOut{
+  animation: fadeOut 0.3s ease-in forwards;
+  animation-iteration-count: 1;
+}
+
+
+
 body {
   font-family: Helvetica,Tahoma;
 }
@@ -16,7 +42,7 @@ body {
 
 .aos-item {
   display: inline-block;
-  float: left;
+  float:  left;
   width: 33.3333%;
   height: 300px;
   padding: 20px;
