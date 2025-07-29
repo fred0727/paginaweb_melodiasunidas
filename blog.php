@@ -11,7 +11,7 @@
     <link rel="icon" href="./images/logo/iconoround.png" type="image/x-icon">
     <link rel="apple-touch-icon" href="./images/logo/iconoround.png">
     <link rel="canonical" href="https://www.melodiasunidas.com">
-    <link href="./src/output_v5.css" rel="stylesheet" />
+    <link href="./src/output_v6.css" rel="stylesheet" />
     <link href="./src/css/main.css" rel="stylesheet" />
     <script src="src/js/main.js" defer></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />

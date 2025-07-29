@@ -77,6 +77,32 @@ document.addEventListener("DOMContentLoaded", function () {
   //   // Limpiar la bandera después de la recarga para permitir futuras recargas
   //   localStorage.removeItem("reloaded");
   // }
+
+  // const video = document.getElementById("video-audicion");
+  // const source = video.querySelector("source");
+  // source.src = source.getAttribute("data-src");
+  // video.load();
+  // document.getElementById('video-thumbnail').addEventListener('click', function () {
+  //   const video = document.getElementById('video-audicion');
+  //   const source = video.querySelector('source');
+
+  //   // Cargar el video solo cuando el usuario haga clic
+  //   source.src = source.getAttribute('data-src');
+  //   video.load();
+
+  //   // Cambiar la miniatura por el video
+  //   this.style.display = 'none'; // Ocultar la imagen de vista previa
+  //   video.style.display = 'block'; // Mostrar el video
+  //   video.play(); // Opcional: iniciar la reproducción automáticamente
+  // });
+  const thumbnail = document.getElementById("video-thumbnail");
+  const video = document.getElementById("video-audicion");
+
+  thumbnail.addEventListener("click", () => {
+    thumbnail.style.display = "none";
+    video.style.display = "block";
+    video.play();
+  });
 });
 
 function changeProfe(id) {
@@ -258,7 +284,7 @@ function closeText() {
 }
 
 
-function viewvideo(id,video){
+function viewvideo(id, video) {
   document.getElementById(id).style.display = 'none';
 
   document.getElementById(video).classList.remove('hidden');

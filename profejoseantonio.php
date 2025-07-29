@@ -11,10 +11,10 @@
     <link rel="icon" href="./images/logo/iconoround.png" type="image/x-icon">
     <link rel="apple-touch-icon" href="./images/logo/iconoround.png">
     <link rel="canonical" href="https://www.melodiasunidas.com">
-    <link href="./src/css/main.css" rel="stylesheet" />
+    <link href="./src/css/main.css?v=20250728" rel="stylesheet" />
     <link href="./src/css/aos-master/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" defer />
-    <link href="./src/output_v5.css" rel="stylesheet" defer />
+    <link href="./src/output_v6.css?v=20250728" rel="stylesheet" defer />
 </head>
 <?php
 $pagina = "nosotros";
@@ -121,7 +121,7 @@ $pagina = "nosotros";
     <!-- Pie de Pagina -->
     <?php include("footer.php") ?>
 
-    <script src="src/js/main.js"></script>
+    <script src="src/js/main.js?v=20250728"></script>
     <script src="./src/css/aos-master/dist/aos.js"></script>
 
 </body>

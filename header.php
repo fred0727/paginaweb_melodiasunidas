@@ -14,11 +14,12 @@
           <?php } ?>
           <li><a href="nosotros.php" class="font-['Oswald'] text-xl">Nosotros</a></li>
           <li><a href="profejuancarlos.php" class="font-['Oswald'] text-xl">Nuestro Profe</a></li>
-          <li><a href="blog.php" class="font-['Oswald'] text-xl">Blog</a></li>
-          <li class="">
+          <li><a href="contenido-digital.php" class="font-['Oswald'] text-xl">Contenido Digital</a></li>
+          <li><a href="faq.php" class="font-['Oswald'] text-xl">FAQ</a></li>
+          <!-- <li class="">
             <button class="bg-secondary-color hover:bg-yellow-400 text-black px-6 py-2 rounded-full font-['Oswald'] text-base xl:text-lg transition-all duration-300">
               Iniciar Sesión
-            </button>
+            </button> -->
           </li>
         </ul>
       </nav>
@@ -36,12 +37,13 @@
         <?php } ?>
         <li><a href="nosotros.php" class="font-['Oswald']">Nosotros</a></li>
         <li><a href="profejuancarlos.php" class="font-['Oswald']">Nuestro Profe</a></li>
-        <li><a href="blog.php" class="font-['Oswald']">Blog</a></li>
-        <li class="font-['Oswald']">
+        <li><a href="contenido-digital.php" class="font-['Oswald']">Contenido Digital</a></li>
+        <li><a href="faq.php" class="font-['Oswald'] text-xl">FAQ</a></li>
+        <!-- <li class="font-['Oswald']">
           <button class="bg-secondary-color hover:bg-yellow-400 text-black px-4 py-1 rounded-full font-['Oswald'] text-lg transition-all duration-300">
             Iniciar Sesión
           </button>
-        </li>
+        </li> -->
       </ul>
     </nav>
   </header>

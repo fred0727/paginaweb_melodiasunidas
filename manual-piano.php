@@ -11,30 +11,63 @@
     <link rel="icon" href="./images/logo/iconoround.png" type="image/x-icon">
     <link rel="apple-touch-icon" href="./images/logo/iconoround.png">
     <link rel="canonical" href="https://www.melodiasunidas.com">
-    <link href="./src/output_v6.css" rel="stylesheet" />
-    <link href="./src/css/main.css" rel="stylesheet" />
-    <script src="src/js/main.js" defer></script>
+    <link href="./src/output_v6.css?v=20250728" rel="stylesheet" />
+    <link href="./src/css/main.css?v=20250728" rel="stylesheet" />
+    <script src="src/js/main.js?v=20250728" defer></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="main.css" />
 </head>
 <?php
 $pagina = "nosotros";
 ?>
 
-<body class="relative">
+<body>
     <!-- Encabezado -->
     <?php include("header.php") ?>
 
     <!-- Portada -->
-    <section class="flex bg-black/30 h-[30vh] sm:h-[40vh] lg:h-[60vh]">
-        <!-- <img src="./images/portada.jpeg" alt="portadanosotros" class="w-full object-cover"> -->
-        <video src="./videos/videoblog2.mp4" autoplay muted loop class="w-full object-cover"></video>
+    <section class="flex bg-black/80 h-[30vh] sm:h-[50vh] lg:h-[70vh] xl:h-[85vh]">
+        <img src="./images/portada.jpeg" alt="portadanosotros" class="w-full object-cover">
     </section>
 
-    <section>
+    <!-- Intro -->
+    <section class="flex flex-col pt-14 p-8 gap-6 sm:px-32 xl:px-48 xl:py-40">
+        <!-- Contenido del Manual de Piano para Principiantes -->
+        <div class="max-w-3xl mx-auto bg-white shadow-lg rounded-2xl p-8 space-y-6" data-aos="fade-up">
+
+            <h2 class="text-3xl font-bold text-center text-gray-900">
+                Manual de Piano para Principiantes – Edición Digital
+            </h2>
+
+            <p class="text-center text-5xl text-yellow-500 font-semibold">15 €</p>
+
+            <div class="text-gray-700 text-lg leading-relaxed space-y-4">
+                <p>
+                    Este manual digital ha sido diseñado para acompañarte desde tus primeros pasos en el aprendizaje del piano.
+                </p>
+                <p>
+                    Más que un simple PDF, es una guía reflexiva, pedagógica y motivadora para sentar una base firme en tu formación musical.
+                </p>
+                <ul class="list-disc list-inside space-y-2">
+                    <li>Una introducción clara y profunda sobre el compromiso con el aprendizaje.</li>
+                    <li>Ejercicios mentales y musicales adaptados a principiantes absolutos.</li>
+                    <li>Herramientas prácticas para la disciplina, la escucha activa y la progresión real.</li>
+                </ul>
+                <p>Archivo en formato PDF descargable.</p>
+                <p>Una vez realizada la compra, recibirás automáticamente un correo con el enlace de descarga.</p>
+            </div>
+
+            <div class="text-center pt-4">
+                <a
+                    href="https://api.whatsapp.com/send/?phone=+34604369473&text=Hola%2C%20me%20gustar%C3%ADa%20comprar%20el%20manual%20de%20Piano"
+                    class="inline-block bg-primary-color hover:bg-primary-color-dark text-white text-lg font-semibold py-3 px-6 rounded-xl shadow-md transition duration-200">
+                    Contactar para Comprar
+                </a>
+                <p class="mt-2 text-sm text-gray-500">También puedes escribirnos a contacto@melodiasunidas.com</p>
+            </div>
+
+        </div>
 
     </section>
 
