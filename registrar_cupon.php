@@ -1,19 +1,19 @@
 <?php
 // Configuración de la base de datos
-// define('HOST', 'srv1689.hstgr.io');
-// define('DB', 'u603781914_app');
-// define('USER', 'u603781914_admin');
-// define('PASSWORD', '@dminDb2024');
-// define('CHARSET', 'utf8mb4');
-// define('PORT', '3306');
-
-// Configuración de la base de datos en local
-define('HOST', 'localhost');
-define('DB', 'mycalendar_2805');
-define('USER', 'root');
-define('PASSWORD', '');
+define('HOST', 'srv1689.hstgr.io');
+define('DB', 'u603781914_app');
+define('USER', 'u603781914_admin');
+define('PASSWORD', '@dminDb2024');
 define('CHARSET', 'utf8mb4');
 define('PORT', '3306');
+
+// Configuración de la base de datos en local
+// define('HOST', 'localhost');
+// define('DB', 'mycalendar_2805');
+// define('USER', 'root');
+// define('PASSWORD', '');
+// define('CHARSET', 'utf8mb4');
+// define('PORT', '3306');
 
 // Función para generar contraseña simple
 function generar_contrasena($longitud = 8)
@@ -36,8 +36,8 @@ function sendMessageAdmin($message)
     CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
     CURLOPT_CUSTOMREQUEST => "POST",
     CURLOPT_POSTFIELDS => json_encode([
-      // 'chatId' => "34604369473@c.us",
-      'chatId' => "51924471461@c.us",
+      'chatId' => "34604369473@c.us",
+      // 'chatId' => "51924471461@c.us",
       'message' => $message
     ]),
     CURLOPT_HTTPHEADER => [
@@ -48,7 +48,7 @@ function sendMessageAdmin($message)
   ]);
 
   // Solo local
-  curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
+  // curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
 
   $response = curl_exec($curl);
   $err = curl_error($curl);
@@ -147,7 +147,7 @@ if ($tipocupon === 'cursos') {
               <ul style="list-style: none; padding-left: 0; margin-bottom: 16px;">
                 <li>🎹🎸 <strong>Cuatro cursos completos:</strong> Lenguaje musical, Teoría musical, Producción musical, Improvisación al piano</li>
                 <li>🎁 <strong>Acceso gratis a un paquete de diez partituras</strong> con mucho flow de nuestros dos catálogos oficiales, para que empieces a tocar sin esperar ni un minuto.<br>
-                  👉 <a href="https://drive.google.com/drive/folders/1vF6h6Qk6n8KQkQhKQkQhKQkQhKQkQhKQ?usp=sharing" style="color: #1d4ed8;">Accede aquí a las 10 partituras de regalo (Google Drive)</a>
+                  👉 <a href="https://drive.google.com/drive/folders/1RmIn9GmARJUDKy2DXnCMja1fKctD6Bs8?usp=drive_link" style="color: #1d4ed8;">Accede aquí a las 10 partituras de regalo (Google Drive)</a>
                 </li>
                 <li>📎 También te adjuntamos un resumen con el contenido detallado de cada curso para que sepas exactamente qué vas a aprender en cada clase.</li>
               </ul>
@@ -161,7 +161,7 @@ if ($tipocupon === 'cursos') {
               </p>
               <p>Empieza hoy, aunque solo sea 10 minutos. A veces solo hace falta volver a escuchar algo que ya tenías dentro.</p>
               <p>¿Alguna duda con tu acceso o con el contenido incluido? Puedes consultar nuestra sección de preguntas frecuentes, está muy clara y se actualiza a menudo:<br>
-                👉 <a href="https://melodiasunidas.com/FAQ" style="color: #1d4ed8;">melodiasunidas.com/FAQ</a>
+                👉 <a href="https://melodiasunidas.com/faq.php" style="color: #1d4ed8;">melodiasunidas.com/FAQ</a>
               </p>
               <blockquote style="font-style: italic; color: #555; border-left: 3px solid #1d4ed8; margin: 20px 0; padding-left: 12px;">
                 🗣️ “Tenía miedo de no entender nada... pero en menos de una hora ya estaba tocando una melodía que me encantaba.”<br>
@@ -210,10 +210,10 @@ if ($tipocupon === 'cursos') {
               <p>Hola <strong>' . htmlspecialchars($nombre . ' ' . $apellido) . '</strong>,</p>
               <p>Gracias por adquirir el acceso completo a nuestro catálogo digital de partituras didácticas. Desde este momento, tienes acceso vitalicio a:</p>
               <ul style="list-style: none; padding-left: 0; margin-bottom: 16px;">
-                <li>📚 <strong>Catálogo “Melodías en 10”:</strong> Partituras progresivas para piano con digitación, nombres de nota y estructura clara, diseñadas para tocar con solo diez teclas, sin necesidad de mover las manos.</li>
+                <li>📚 <strong>Catálogo “Melodías en Diez”:</strong> Partituras progresivas para piano con digitación, nombres de nota y estructura clara, diseñadas para tocar con solo diez teclas, sin necesidad de mover las manos.</li>
                 <li>📅 <strong>Catálogo “Partitura del Mes”:</strong> Obras cuidadosamente seleccionadas y organizadas en 4 niveles de dificultad, con nuevo contenido cada mes.</li>
                 <li>🎁 Como complemento perfecto para tus partituras, te damos acceso completo a nuestro curso de Lenguaje Musical, para que puedas reforzar conceptos esenciales mientras practicas.<br>
-                  👉 <a href="https://drive.google.com/drive/folders/1vF6h6Qk6n8KQkQhKQkQhKQkQhKQkQhKQ?usp=sharing" style="color: #1d4ed8;">Accede aquí al curso completo de Lenguaje Musical (Google Drive)</a>
+                  👉 <a href="https://drive.google.com/drive/folders/19asXK1fU-TvGy_LQCe6BNMsFg1qJfb7W?usp=drive_link" style="color: #1d4ed8;">Accede aquí al curso completo de Lenguaje Musical (Google Drive)</a>
                 </li>
               </ul>
               <p><strong>🔐 Credenciales de acceso a todo el contenido:</strong><br></p>
@@ -226,7 +226,7 @@ if ($tipocupon === 'cursos') {
               </p>
               <p>Empieza hoy, aunque solo sea 10 minutos. A veces solo hace falta volver a escuchar algo que ya tenías dentro.</p>
               <p>¿Tienes dudas sobre cómo acceder o cómo empezar a practicar? Aquí puedes consultarlo todo:<br>
-                👉 <a href="https://melodiasunidas.com/FAQ" style="color: #1d4ed8;">melodiasunidas.com/FAQ</a>
+                👉 <a href="https://melodiasunidas.com/faq.php" style="color: #1d4ed8;">melodiasunidas.com/FAQ</a>
               </p>
               <blockquote style="font-style: italic; color: #555; border-left: 3px solid #1d4ed8; margin: 20px 0; padding-left: 12px;">
                 🗣️ “Me enamoré del catálogo de partituras. Enseguida encontré piezas que podía tocar sin complicaciones.”<br>
