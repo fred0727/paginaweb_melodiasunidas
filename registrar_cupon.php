@@ -146,7 +146,7 @@ if ($tipocupon === 'cursos') {
               <p>Gracias por adquirir el acceso completo a nuestra biblioteca digital de formación musical. Desde este momento, tienes acceso vitalicio a:</p>
               <ul style="list-style: none; padding-left: 0; margin-bottom: 16px;">
                 <li>🎹🎸 <strong>Cuatro cursos completos:</strong> Lenguaje musical, Teoría musical, Producción musical, Improvisación al piano</li>
-                <li>🎁 <strong>Acceso gratis a un paquete de diez partituras</strong> con mucho flow de nuestros dos catálogos oficiales, para que empieces a tocar sin esperar ni un minuto.<br>
+                <li>🎁 <strong>Te damos acceso gratis a un paquete de diez partituras</strong> con mucho flow de nuestros dos catálogos oficiales, para que empieces a tocar sin esperar ni un minuto.<br>
                   👉 <a href="https://drive.google.com/drive/folders/1RmIn9GmARJUDKy2DXnCMja1fKctD6Bs8?usp=drive_link" style="color: #1d4ed8;">Accede aquí a las 10 partituras de regalo (Google Drive)</a>
                 </li>
                 <li>📎 También te adjuntamos un resumen con el contenido detallado de cada curso para que sepas exactamente qué vas a aprender en cada clase.</li>
@@ -283,6 +283,22 @@ try {
   $mail->setFrom('soporte.promociones@melodiasunidas.com', 'Melodías Unidas');
   $mail->addAddress($email, "$nombre $apellido");
   $mail->addBCC('soporte.promociones@melodiasunidas.com');
+
+  // Adjuntar archivos PDF si es cupón de cursos
+  if ($tipocupon === 'cursos') {
+    $archivos_pdf = [
+      'src/pdf/cursoscuponatic/CURSO DE LENGUAJE MUSICAL.pdf',
+      'src/pdf/cursoscuponatic/CURSO DE TEORÍA MUSICAL.pdf',
+      'src/pdf/cursoscuponatic/CURSO DE PRODUCCIÓN MUSICAL.pdf',
+      'src/pdf/cursoscuponatic/CURSO DE IMPROVISACIÓN AL PIANO.pdf'
+    ];
+    
+    foreach ($archivos_pdf as $archivo) {
+      if (file_exists($archivo)) {
+        $mail->addAttachment($archivo);
+      }
+    }
+  }
 
   $mail->isHTML(true);
   $mail->Subject = $subject;

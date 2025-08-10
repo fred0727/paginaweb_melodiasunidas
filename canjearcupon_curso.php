@@ -31,68 +31,122 @@ $pagina = "nosotros";
         <img src="./images/portada.jpeg" alt="portadanosotros" class="w-full object-cover">
     </section>
 
-    <!-- Intro -->
-    <section class="flex flex-col pt-14 p-8 gap-6 sm:px-24 xl:px-48 bg-gray-50 rounded-3xl shadow-inner">
-        <div class="text-center max-w-3xl mx-auto" data-aos="fade-up">
-            <h2 class="text-2xl sm:text-3xl font-semibold text-gray-800 mb-4">🎫 ¿Compraste en Cuponatic?</h2>
-            <p class="text-sm sm:text-base text-gray-600 mb-6">
-                Si adquiriste el acceso a nuestro contenido a través de Cuponatic, completa este formulario para activar tu acceso completo y vitalicio al campus virtual de <strong>Melodías Unidas</strong>. Solo necesitas registrar tu número de cupón y datos de contacto. Te enviaremos el acceso inmediatamente, despúes de tu registro.
-            </p>
+    <!-- Contenido Principal -->
+    <section class="flex flex-col pt-14 px-4 sm:px-8 lg:px-24 xl:px-48 bg-gradient-to-br from-gray-50 to-white min-h-screen">
+        <div class="max-w-4xl mx-auto space-y-12 py-8">
+            
+            <!-- Header con diseño moderno -->
+            <div class="text-center" data-aos="fade-up">
+                <div class="inline-flex items-center justify-center w-20 h-20 bg-blue-100 rounded-3xl mb-6">
+                    <span class="text-3xl">🎫</span>
+                </div>
+                <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">¿Compraste en Cuponatic?</h1>
+                <p class="text-lg text-gray-600 leading-relaxed max-w-3xl mx-auto">
+                    Si adquiriste el acceso a nuestro contenido a través de Cuponatic, completa este formulario para activar tu acceso completo y vitalicio al campus virtual de <span class="font-semibold text-blue-600">Melodías Unidas</span>. Solo necesitas registrar tu número de cupón y datos de contacto. Te enviaremos el acceso inmediatamente, después de tu registro.
+                </p>
+            </div>
+
+            <!-- Formulario con diseño premium -->
+            <div class="relative" data-aos="fade-up" data-aos-delay="200">
+                <!-- Fondo decorativo sutil -->
+                <div class="absolute inset-0 bg-gradient-to-r from-blue-600 to-blue-800 rounded-3xl transform rotate-1 opacity-5"></div>
+                
+                <!-- Contenido del formulario -->
+                <div class="relative bg-white rounded-3xl p-8 sm:p-12 shadow-2xl border border-gray-100">
+                    <form action="registrar_cupon.php" method="POST" class="space-y-8">
+                        
+                        <!-- Tipo de cupón -->
+                        <div class="space-y-2">
+                            <label for="tipocupon" class="text-sm font-semibold text-gray-800">Cupón a canjear</label>
+                            <div class="relative">
+                                <select name="tipocupon" id="tipocupon" required
+                                    class="w-full px-4 py-4 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 bg-gray-50">
+                                    <option value="cursos" selected>🎥 Cursos Digitales</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Número de cupón -->
+                        <div class="space-y-2">
+                            <label for="cupon" class="text-sm font-semibold text-gray-800">Número de Cupón *</label>
+                            <input type="text" id="cupon" name="cupon" required placeholder="Ej. 123456789"
+                                class="w-full px-4 py-4 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 hover:border-gray-400" />
+                        </div>
+
+                        <!-- Grid para nombre y apellido -->
+                        <div class="grid sm:grid-cols-2 gap-6">
+                            <div class="space-y-2">
+                                <label for="nombre" class="text-sm font-semibold text-gray-800">Nombres *</label>
+                                <input type="text" id="nombre" name="nombre" required placeholder="Ingresa tu nombre"
+                                    class="w-full px-4 py-4 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 hover:border-gray-400" />
+                            </div>
+                            <div class="space-y-2">
+                                <label for="apellido" class="text-sm font-semibold text-gray-800">Apellidos *</label>
+                                <input type="text" id="apellido" name="apellido" required placeholder="Ingresa tus apellidos"
+                                    class="w-full px-4 py-4 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 hover:border-gray-400" />
+                            </div>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="space-y-2">
+                            <label for="email" class="text-sm font-semibold text-gray-800">Correo electrónico *</label>
+                            <input type="email" id="email" name="email" required placeholder="nombre@correo.com"
+                                class="w-full px-4 py-4 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 hover:border-gray-400" />
+                        </div>
+
+                        <!-- Teléfono -->
+                        <div class="space-y-2">
+                            <label class="text-sm font-semibold text-gray-800">Número de WhatsApp o contacto *</label>
+                            <div class="flex gap-4">
+                                <div class="w-32">
+                                    <input type="text" id="codigo" name="codigo" required placeholder="Código país"
+                                        class="w-full px-4 py-4 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 hover:border-gray-400" />
+                                    <p class="text-xs text-gray-500 mt-1">Ej. +57</p>
+                                </div>
+                                <div class="flex-1">
+                                    <input type="text" id="numero" name="numero" required placeholder="Número de teléfono"
+                                        class="w-full px-4 py-4 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 hover:border-gray-400" />
+                                    <p class="text-xs text-gray-500 mt-1">Ej. 123 456 789</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Botón de envío -->
+                        <div class="pt-4">
+                            <button type="submit"
+                                class="w-full bg-gradient-to-r from-blue-600 to-blue-700 text-white font-bold py-4 px-8 rounded-xl hover:from-blue-700 hover:to-blue-800 transform hover:-translate-y-1 hover:shadow-xl transition-all duration-300 text-lg">
+                                <span class="mr-2">🚀</span>
+                                Registrar mi cupón
+                            </button>
+                        </div>
+
+                        <!-- Nota importante -->
+                        <div class="bg-red-50 rounded-2xl p-4 border-l-4 border-red-400">
+                            <p class="text-sm text-red-700 font-medium">
+                                <span class="font-bold">Importante:</span> Todos los campos marcados con (*) son requeridos.
+                            </p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Información adicional -->
+            <div class="hidden bg-amber-50 rounded-2xl p-6 border-l-4 border-amber-400" data-aos="fade-up" data-aos-delay="400">
+                <div class="flex items-start gap-4">
+                    <div class="w-10 h-10 bg-amber-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                        <span class="text-lg">💬</span>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-amber-800 mb-2">¿Necesitas ayuda?</h3>
+                        <p class="text-amber-700 text-sm leading-relaxed">
+                            Si ya registraste tu cupón y no recibiste el acceso en tu bandeja de correo, o si tienes alguna duda, 
+                            <a href="https://api.whatsapp.com/send/?phone=+34604369473&text=Hola%2C%20necesito%20ayuda%20con%20mi%20cup%C3%B3n" class="underline font-semibold hover:text-amber-600">escríbenos directamente por WhatsApp</a>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
         </div>
-
-        <form action="registrar_cupon.php" method="POST" class="max-w-2xl w-full mx-auto bg-white p-8 rounded-2xl shadow-lg flex flex-col gap-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="flex flex-col">
-                <label for="tipocupon" class="text-sm font-medium text-gray-700 mb-1">Cupón a canjear</label>
-                <select name="tipocupon" id="tipocupon" required
-                    class="px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500">
-                    <option value="cursos" selected>Cursos Digitales</option>
-                </select>
-            </div>
-
-            <div class="flex flex-col">
-                <label for="cupon" class="text-sm font-medium text-gray-700 mb-1">Número de Cupón</label>
-                <input type="text" id="cupon" name="cupon" required placeholder="Ej. 123456789"
-                    class="px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500" />
-            </div>
-
-            <div class="flex flex-col">
-                <label for="nombre" class="text-sm font-medium text-gray-700 mb-1">Nombres</label>
-                <input type="text" id="nombre" name="nombre" required placeholder="Ingresa tu nombre"
-                    class="px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500" />
-            </div>
-            <div class="flex flex-col">
-                <label for="apellido" class="text-sm font-medium text-gray-700 mb-1">Apellidos</label>
-                <input type="text" id="apellido" name="apellido" required placeholder="Ingresa tus apellidos"
-                    class="px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500" />
-            </div>
-
-            <div class="flex flex-col">
-                <label for="email" class="text-sm font-medium text-gray-700 mb-1">Correo electrónico</label>
-                <input type="email" id="email" name="email" required placeholder="nombre@correo.com"
-                    class="px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500" />
-            </div>
-
-            <div class="flex gap-2 w-full flex-wrap">
-                <div class="flex flex-col gap-4 max-w-[200px]">
-                    <label for="codigo" class="text-sm font-medium text-gray-700 mb-1">Codigo de Pais</label>
-                    <input type="text" id="codigo" name="codigo" required placeholder="Ej. 57"
-                        class="px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500" />
-                </div>
-                <div class="flex flex-col gap-4 flex-1">
-                    <label for="numero" class="text-sm font-medium text-gray-700 mb-1">Número de WhatsApp o contacto</label>
-                    <input type="text" id="numero" name="numero" required placeholder="Ej. 123 456 789"
-                        class="px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500" />
-                </div>
-            </div>
-
-            <button type="submit"
-                class="bg-blue-600 text-white font-semibold py-3 px-6 rounded-xl hover:bg-blue-700 transition duration-300">
-                Registrar mi cupón
-            </button>
-            <p class="text-sm text-red-600 italic">Todos los campos son requeridos.</p>
-        </form>
-
-        <p class="text-center text-xs text-gray-500 mt-6">* Si ya registraste tu cupón y no recibiste el acceso en tu bandeja de correo, escríbenos directamente por WhatsApp.</p>
     </section>
 
     <!-- Pie de Pagina -->

@@ -27,16 +27,16 @@
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 lg:w-6 lg:h-6">
         <path d="M11.54 22.351c-.19.206-.467.206-.656 0C6.174 17.45 3 13.576 3 10c0-4.168 3.134-7 7-7s7 2.832 7 7c0 3.576-3.174 7.45-5.46 12.351zM12 11.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z" />
       </svg>
-      <span>Madrid</span>
+      <span>Madrid - España</span>
     </div>
 
     <!-- Teléfono -->
-    <div class="flex items-center gap-2">
+    <!-- <div class="flex items-center gap-2">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 lg:w-6 lg:h-6">
         <path fill-rule="evenodd" d="M1.5 4.5a3 3 0 0 1 3-3h1.372a3 3 0 0 1 2.876 2.126l.591 1.775a3 3 0 0 1-.684 3.056l-.636.636a1.125 1.125 0 0 0-.21 1.31 11.308 11.308 0 0 0 5.349 5.349 1.125 1.125 0 0 0 1.31-.21l.636-.636a3 3 0 0 1 3.056-.684l1.775.591A3 3 0 0 1 22.5 18.128V19.5a3 3 0 0 1-3 3h-1.372c-5.713 0-11.183-3.537-13.46-8.316A17.509 17.509 0 0 1 1.5 4.5z" clip-rule="evenodd" />
       </svg>
       <span>604 369 473</span>
-    </div>
+    </div> -->
   </div>
 
   <!-- Créditos -->

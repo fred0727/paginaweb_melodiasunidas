@@ -11,9 +11,9 @@
     <link rel="icon" href="./images/logo/iconoround.png" type="image/x-icon">
     <link rel="apple-touch-icon" href="./images/logo/iconoround.png">
     <link rel="canonical" href="https://www.melodiasunidas.com">
-    <link href="./src/output_v6.css?v=20250728" rel="stylesheet" />
-    <link href="./src/css/main.css?v=20250728" rel="stylesheet" />
-    <script src="src/js/main.js?v=20250728" defer></script>
+    <link href="./src/output_v6.css?v=20250810" rel="stylesheet" />
+    <link href="./src/css/main.css?v=20250810" rel="stylesheet" />
+    <script src="src/js/main.js?v=20250810" defer></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
@@ -31,165 +31,283 @@ $pagina = "nosotros";
         <img src="./images/portada.jpeg" alt="portadanosotros" class="w-full object-cover">
     </section>
 
-    <!-- PROMOCIONES ACTIVAS -->
-    <!-- PROMOCIONES ACTIVAS -->
+    <!-- Contenido Principal -->
+    <section class="flex flex-col pt-14 px-4 sm:px-8 lg:px-24 xl:px-48 bg-gradient-to-br from-gray-50 to-white min-h-screen">
+        <div class="max-w-6xl mx-auto space-y-20 py-8">
 
-    <!-- Intro -->
-    <section class="flex flex-col pt-14 p-8 gap-6 sm:px-24 xl:px-48">
-        <!-- Contenido del Manual de Piano para Principiantes -->
-        <!-- Intro -->
-        <section class="flex flex-col pt-2 gap-6 sm:px-6 xl:px-24">
-            <!-- Contenido del Manual de Piano para Principiantes -->
-            <section class="py-8 px-2 lg:py-10 lg:px-8">
-                <div class="mx-auto space-y-14">
+            <!-- Título Principal -->
+            <div class="text-center" data-aos="fade-up">
+                <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight px-4">
+                    🎓 ACCESO COMPLETO A LOS CONTENIDOS DIGITALES DE 
+                    <span class="text-blue-600">MELODÍAS UNIDAS</span>
+                </h1>
+                
+                <p class="text-lg sm:text-xl text-gray-600 mb-12 leading-relaxed max-w-4xl mx-auto px-4">
+                    Disfruta de acceso completo, ilimitado y vitalicio a todo el contenido digital que Melodías Unidas ha creado y probado con éxito para que puedas aprender y avanzar a tu ritmo, sin depender de clases en vivo ni de horarios fijos.
+                </p>
+            </div>
 
-                    <!-- Título Principal -->
-                    <div class="text-center lg:px-6 xl:px-32" data-aos="fade-up">
-                        <h2 class="text-lg sm:text-3xl font-medium lg:px-16 xl:px-32">🎓 Acceso completo a los contenidos digitales de Melodías Unidas</h2>
-
-                        <p class="mt-4 text-xs sm:text-sm text-gray-600 mx-auto">
-                            Esta sección corresponde al acceso completo e ilimitado al contenido digital que <strong>Melodías Unidas</strong> ha desarrollado para el estudio autónomo y progresivo del piano, la lectura musical y la producción musical.
-                        </p>
-
-                        <p class="mt-4 text-gray-600 mx-auto text-xs sm:text-sm">
-                            Este contenido ha sido estructurado para estudiantes que desean avanzar a su ritmo, sin necesidad de clases en vivo ni horarios fijos. Los usuarios que adquieren este paquete tienen acceso inmediato, individual y vitalicio a todos los materiales descritos a continuación.
-                        </p>
-
-                        <!-- Llamado a la acción -->
-                        <div class="text-center mt-12" data-aos="zoom-in" data-aos-delay="400">
-                            <h3 class="text-2xl font-bold text-gray-800">¿Listo para aprender a tu ritmo?</h3>
-                            <p class="text-gray-600 mt-2">Accede hoy al contenido completo de Melodías Unidas por un único pago.</p>
-                            <!-- <a href="https://api.whatsapp.com/send/?phone=+34604369473&text=Hola%2C%20me%20gustar%C3%ADa%20obtener%20el%20acceso%20al%20contenido%20de%20Melodias%20Unidas" class="mt-6 inline-block bg-blue-600 text-white font-semibold py-3 px-8 rounded-full shadow-md hover:bg-blue-700 hover:scale-105 transition duration-300 transform">
-                                Contactanos por WhatsApp
-                            </a> -->
-                            <!-- <a href="canjearcupon.php" class="mt-6 inline-block bg-blue-600 text-white font-semibold py-3 px-8 rounded-full shadow-md hover:bg-blue-700 hover:scale-105 transition duration-300 transform">
-                                Canjear Cupón
-                            </a> -->
+            <!-- Grid de características principales -->
+            <div class="grid md:grid-cols-3 gap-8" data-aos="fade-up" data-aos-delay="100">
+                <!-- Incluye materiales -->
+                <div class="bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100">
+                    <div class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mb-6">
+                        <span class="text-2xl">📌</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-6">Incluye materiales para:</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-3 text-gray-700">
+                            <span class="w-2 h-2 bg-blue-500 rounded-full"></span>
+                            <span>🎹 Piano</span>
                         </div>
-                        <section class="pt-14 p-6">
-                            <div class="flex flex-col lg:flex-row lg:justify-center lg:items-center gap-8" id="card-container">
+                        <div class="flex items-center gap-3 text-gray-700">
+                            <span class="w-2 h-2 bg-blue-500 rounded-full"></span>
+                            <span>📖 Lectura musical</span>
+                        </div>
+                        <div class="flex items-center gap-3 text-gray-700">
+                            <span class="w-2 h-2 bg-blue-500 rounded-full"></span>
+                            <span>📚 Teoría musical</span>
+                        </div>
+                        <div class="flex items-center gap-3 text-gray-700">
+                            <span class="w-2 h-2 bg-blue-500 rounded-full"></span>
+                            <span>🎼 Improvisación</span>
+                        </div>
+                        <div class="flex items-center gap-3 text-gray-700">
+                            <span class="w-2 h-2 bg-blue-500 rounded-full"></span>
+                            <span>🎛️ Producción musical</span>
+                        </div>
+                    </div>
+                </div>
 
-                                <!-- PARTITURAS -->
-                                <div class="bg-white rounded-xl shadow-sm p-6 border border-gray-200 hover:shadow-md transition transform hover:-translate-y-1 hover:scale-[1.01] w-full lg:w-[400px]">
-                                    <h3 class="text-xl sm:text-2xl font-semibold text-gray-700 mb-4 text-center">
-                                        🎼 Partituras
-                                    </h3>
-                                    <!-- Precio -->
-                                    <div class="text-center mb-4">
-                                        <p class="text-gray-400 line-through text-sm">Precio normal: 109.000 COP</p>
-                                        <p class="text-2xl font-bold text-gray-800">Ahora: 34.900 COP</p>
-                                    </div>
-                                    <!-- Contenido asociado -->
-                                    <div class="text-sm sm:text-base text-gray-600">
-                                        <h4 class="font-medium text-gray-700 mb-2">Incluye:</h4>
-                                        <p>🎼 1. Catálogo exclusivo “Melodías en 10”</p>
-                                        <p>📅 2. Sistema “Partitura del Mes”</p>
-                                    </div>
-                                    <!-- Botón -->
-                                    <a href="canjearcupon_partitura.php"
-                                        class="block mt-6 text-center bg-gray-800 text-white font-medium py-3 px-6 rounded-full shadow-sm hover:bg-gray-900 hover:scale-105 transition duration-300">
-                                        Tengo mi cupon!
-                                    </a>
-                                </div>
+                <!-- Pensado para -->
+                <div class="bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100">
+                    <div class="w-16 h-16 bg-green-100 rounded-2xl flex items-center justify-center mb-6">
+                        <span class="text-2xl">👥</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-6">Pensado para:</h3>
+                    <div class="space-y-4 text-gray-700">
+                        <p>• Niños y adultos que quieran aprender de forma flexible.</p>
+                        <p>• Personas que estén practicando cualquier instrumento o que deseen iniciarse en la música sin experiencia previa.</p>
+                        <p>• Profesores que deseen ampliar su material didáctico.</p>
+                    </div>
+                </div>
 
-                                <!-- CURSOS DIGITALES -->
-                                <div class="bg-white rounded-xl shadow-sm p-6 border border-gray-200 hover:shadow-md transition transform hover:-translate-y-1 hover:scale-[1.01] w-full lg:w-[400px]">
-                                    <h3 class="text-xl sm:text-2xl font-semibold text-blue-600 mb-4 text-center">
-                                        🎥 Cursos Digitales
-                                    </h3>
-                                    <!-- Precio -->
-                                    <div class="text-center mb-4">
-                                        <p class="text-gray-400 line-through text-sm">Precio normal: 119.000 COP</p>
-                                        <p class="text-2xl font-bold text-blue-500">Ahora: 39.900 COP</p>
-                                    </div>
-                                    <!-- Contenido asociado -->
-                                    <div class="text-sm sm:text-base text-gray-600">
-                                        <h4 class="font-medium text-gray-700 mb-2">Incluye:</h4>
-                                        <p>🎥 3. Acceso a cuatro cursos completos en vídeo</p>
-                                    </div>
-                                    <!-- Botón -->
-                                    <a href="canjearcupon_curso.php"
-                                        class="block mt-6 text-center bg-blue-500 text-white font-medium py-3 px-6 rounded-full shadow-sm hover:bg-blue-600 hover:scale-105 transition duration-300">
-                                        Tengo mi cupon!
-                                    </a>
-                                </div>
-                            </div>
-                            <p class="mt-8 text-sm text-gray-500 text-center font-medium">
-                                *Promoción válida solo para Colombia.
-                            </p>
-                        </section>
+                <!-- Ventajas clave -->
+                <div class="bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100">
+                    <div class="w-16 h-16 bg-purple-100 rounded-2xl flex items-center justify-center mb-6">
+                        <span class="text-2xl">✨</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-6">Ventajas clave:</h3>
+                    <div class="space-y-4 text-gray-700">
+                        <p>• Acceso inmediato y sin caducidad.</p>
+                        <p>• Todo el material listo para usar desde el primer minuto.</p>
+                        <p>• Contenidos organizados de forma progresiva para que avances paso a paso.</p>
+                    </div>
+                </div>
+            </div>
 
+            <!-- CTA -->
+            <div class="text-center py-12" data-aos="zoom-in" data-aos-delay="200">
+                <h3 class="text-3xl font-bold text-gray-900 mb-4">¿Listo para aprender a tu ritmo?</h3>
+                <div class="w-24 h-1 bg-blue-500 mx-auto"></div>
+            </div>
+
+            <!-- Sección de Advertencias en Grid -->
+            <div class="grid lg:grid-cols-2 gap-6 px-4" data-aos="fade-up" data-aos-delay="300">
+                <!-- Condiciones de acceso -->
+                <div class="bg-red-50 rounded-3xl p-6 sm:p-8 border-l-8 border-red-400 shadow-lg">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-12 h-12 bg-red-100 rounded-xl flex items-center justify-center">
+                            <span class="text-xl">⚠️</span>
+                        </div>
+                        <h3 class="text-lg sm:text-xl font-bold text-red-800">CONDICIONES DE ACCESO Y SOPORTE</h3>
+                    </div>
+                    <p class="text-gray-700 mb-4 leading-relaxed">
+                        No hay soporte telefónico, ni por correo electrónico ni por WhatsApp. Esto se debe a que el curso ha sido diseñado para que el alumno pueda comenzar y avanzar de forma completamente autónoma.
+                    </p>
+                    <div class="bg-white p-4 rounded-xl">
+                        <p class="text-gray-700 font-semibold">
+                            📌 Para resolver cualquier duda, dispones de una FAQ completa que cubre todos los aspectos del curso y su acceso.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Recomendación técnica -->
+                <div class="bg-blue-50 rounded-3xl p-6 sm:p-8 border-l-8 border-blue-400 shadow-lg">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center">
+                            <span class="text-xl">📢</span>
+                        </div>
+                        <h3 class="text-lg sm:text-xl font-bold text-blue-800">RECOMENDACIÓN TÉCNICA</h3>
+                    </div>
+                    <p class="text-gray-700 mb-4 leading-relaxed">
+                        Para disfrutar de una experiencia fluida, es fundamental contar con una conexión a Internet estable y de calidad.
+                    </p>
+                    <div class="space-y-3">
+                        <div class="flex items-start gap-3">
+                            <span class="w-2 h-2 bg-blue-500 rounded-full mt-2"></span>
+                            <span class="text-gray-600">Con una buena conexión, las clases se reproducen de forma fluida y sin interrupciones.</span>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <span class="w-2 h-2 bg-blue-500 rounded-full mt-2"></span>
+                            <span class="text-gray-600">Si la conexión es deficiente, es posible que el vídeo se detenga momentáneamente mientras carga.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Atención al canjear - Ancho completo -->
+            <div class="bg-amber-50 rounded-3xl p-6 sm:p-8 border-l-8 border-amber-400 shadow-lg mx-4" data-aos="fade-up" data-aos-delay="400">
+                <div class="flex items-center gap-4 mb-6">
+                    <div class="w-12 h-12 bg-amber-100 rounded-xl flex items-center justify-center">
+                        <span class="text-xl">❗</span>
+                    </div>
+                    <h3 class="text-lg sm:text-xl font-bold text-amber-800">ATENCIÓN AL CANJEAR TU CUPÓN</h3>
+                </div>
+                
+                <p class="text-gray-700 mb-6 text-lg">Si al canjear tu cupón no recibes el correo electrónico con el acceso:</p>
+                
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-white p-6 rounded-2xl">
+                        <h4 class="font-bold text-gray-800 mb-4">Pasos a seguir:</h4>
+                        <ol class="list-decimal list-inside space-y-2 text-gray-600">
+                            <li>Revisa la carpeta de correo no deseado o spam.</li>
+                            <li>Espera unos minutos, ya que el correo puede tardar un poco en llegar.</li>
+                            <li>Vuelve a introducir tu email y el código del cupón en el formulario correspondiente.</li>
+                            <li>Si el sistema indica que el cupón ya está registrado pero aún no has recibido el correo de acceso, escríbenos a <a href="mailto:contacto@melodiasunidas.com" class="text-amber-600 underline font-semibold">contacto@melodiasunidas.com</a>.</li>
+                        </ol>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl">
+                        <h4 class="font-bold text-gray-800 mb-4">Tiempo de respuesta:</h4>
+                        <p class="text-gray-600 leading-relaxed">
+                            ✨ Te responderemos con mucho gusto y lo antes posible. En la mayoría de los casos recibirás nuestra respuesta en pocas horas, pero si tu consulta nos llega en fin de semana, festivo o en un momento de alta actividad, podría tardar hasta 24 horas. Queremos atenderte con calma y sin prisas, para que todo quede perfecto.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cursos Digitales - Destacado -->
+            <div class="relative px-4" data-aos="fade-up" data-aos-delay="500">
+                <!-- Fondo decorativo -->
+                <div class="absolute inset-0 bg-gradient-to-r from-blue-600 to-blue-800 rounded-3xl transform rotate-1"></div>
+                
+                <!-- Contenido principal -->
+                <div class="relative bg-white rounded-3xl p-6 sm:p-8 lg:p-12 shadow-2xl border border-gray-100">
+                    <!-- Header -->
+                    <div class="text-center mb-8">
+                        <div class="inline-flex items-center justify-center w-20 h-20 bg-blue-100 rounded-3xl mb-6">
+                            <span class="text-3xl">🎥</span>
+                        </div>
+                        <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Cursos Digitales</h2>
+                        <p class="text-lg text-gray-600">Aprende a tu ritmo con contenido de calidad profesional</p>
                     </div>
 
-                    <!-- Tarjetas de contenido -->
-                    <div class="flex flex-col gap-10 pb-6">
-
-                        <!-- Tarjeta 1: Melodías en 10 -->
-                        <div class="bg-white rounded-2xl p-6 border border-transparent hover:border-blue-200 shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-1 hover:scale-[1.02] group flex flex-col lg:flex-row gap-6 items-center" data-aos="fade-up" data-aos-delay="100">
-                            <div class="w-full lg:w-1/3 order-1 lg:order-none">
-                                <img src="./images/melodiasendiez.png" alt="Melodías en 10" class="rounded-xl shadow-sm w-full h-auto object-cover" />
+                    <!-- Precio con diseño premium -->
+                    <div class="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-2xl p-6 sm:p-8 mb-8">
+                        <div class="text-center">
+                            <p class="text-gray-500 line-through text-lg mb-2">Precio normal: 119.000 COP</p>
+                            <div class="flex items-center justify-center gap-4 mb-4">
+                                <span class="text-4xl sm:text-5xl lg:text-6xl font-bold text-blue-600">39.900</span>
+                                <div class="text-left">
+                                    <p class="text-lg font-semibold text-gray-800">COP</p>
+                                    <p class="text-sm text-gray-500">Precio especial</p>
+                                </div>
                             </div>
-                            <div class="flex-1">
-                                <h3 class="text-base sm:text-xl font-medium text-blue-700 group-hover:text-blue-900 transition-colors duration-200 mb-2">🎼 1. Catálogo exclusivo “Melodías en 10”</h3>
-                                <p class="text-sm sm:text-base text-gray-600 mb-4">
-                                    Colección de partituras didácticas adaptadas para piano, diseñadas bajo el sistema exclusivo “Melodías en 10”, que permite interpretar grandes piezas con solo diez teclas en posición fija. Cada partitura incluye:
-                                </p>
-                                <ul class="list-disc list-inside text-xs sm:text-sm text-gray-600 space-y-1">
-                                    <li>Nombre de nota, digitación y guía visual</li>
-                                    <li>Adaptación pedagógica real, no generada automáticamente</li>
-                                    <li>Tres niveles de dificultad: principiante absoluto, principiante y principiante experimentado</li>
-                                    <li>Acceso vitalicio al catálogo actual y a nuevas incorporaciones</li>
-                                    <li>Actualmente hay más de 40 partituras activas en esta sección</li>
-                                </ul>
+                            <div class="inline-flex items-center gap-2 bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-semibold">
+                                <span class="w-2 h-2 bg-green-500 rounded-full"></span>
+                                Disponible ahora
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Botón moderno y llamativo -->
+                    <div class="text-center mb-10">
+                        <a href="canjearcupon_curso.php" class="inline-flex items-center justify-center px-12 py-4 text-lg font-bold text-white bg-gradient-to-r from-blue-600 to-blue-700 rounded-xl shadow-lg hover:from-blue-700 hover:to-blue-800 transform hover:-translate-y-1 hover:shadow-2xl transition-all duration-300 border-0">
+                            <span class="mr-3">Canjear mi cupón</span>
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <!-- Contenido en dos columnas -->
+                    <div class="grid lg:grid-cols-2 gap-8">
+                        <!-- Columna izquierda: Información del programa -->
+                        <div class="space-y-6">
+                            <div class="bg-gray-50 rounded-2xl p-6">
+                                <h3 class="text-xl font-bold text-gray-900 mb-4 flex items-center gap-3">
+                                    <span class="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center">
+                                        <span class="text-blue-600 font-bold">✓</span>
+                                    </span>
+                                    Incluye:
+                                </h3>
+                                <p class="text-gray-700 font-medium text-lg">🎥 Acceso a cuatro cursos completos en vídeo</p>
+                            </div>
+                            
+                            <div class="bg-blue-50 rounded-2xl p-6">
+                                <div class="flex items-start gap-3">
+                                    <span class="text-2xl">💡</span>
+                                    <div>
+                                        <h4 class="font-bold text-gray-900 mb-2">Para todos los niveles</h4>
+                                        <p class="text-gray-700">
+                                            Este programa es apto para cualquier persona, con o sin experiencia musical previa, que quiera aprender, mejorar o iniciarse, independientemente de si toca un instrumento o no.
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
-                        <!-- Tarjeta 2: Partitura del Mes -->
-                        <div class="bg-white rounded-2xl p-6 border border-transparent hover:border-purple-200 shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-1 hover:scale-[1.02] group flex flex-col lg:flex-row gap-6 items-center" data-aos="fade-up" data-aos-delay="200">
-                            <div class="w-full lg:w-1/3 order-1 lg:order-none">
-                                <img src="./images/partiturasdelmes.png" alt="Partitura del Mes" class="rounded-xl shadow-sm w-full h-auto object-cover" />
-                            </div>
-                            <div class="flex-1">
-                                <h3 class="text-base sm:text-xl font-medium text-purple-700 group-hover:text-purple-900 transition-colors duration-200 mb-2">📅 2. Sistema “Partitura del Mes”</h3>
-                                <p class="text-sm sm:text-base text-gray-600 mb-4">
-                                    Un catálogo progresivo en constante crecimiento. Cada mes se incorpora una nueva partitura, previamente votada por los alumnos activos. Las partituras se presentan en cuatro niveles pedagógicos:
-                                </p>
-                                <ul class="list-disc list-inside text-xs sm:text-sm text-gray-600 space-y-1">
-                                    <li>Elemental</li>
-                                    <li>Muy fácil</li>
-                                    <li>Fácil</li>
-                                    <li>Intermedio</li>
-                                    <li>Cada obra incluye indicaciones técnicas, análisis estructural simplificado y sugerencias interpretativas</li>
-                                    <li>El acceso es acumulativo y vitalicio</li>
-                                </ul>
-                            </div>
-                        </div>
+                        <!-- Columna derecha: Lista de cursos -->
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-6">Cada curso contiene clases guiadas en vídeo, materiales descargables y ejercicios prácticos:</h3>
+                            
+                            <div class="space-y-4">
+                                <div class="bg-white border border-gray-200 rounded-xl p-4 hover:shadow-md transition-shadow duration-300">
+                                    <div class="flex items-start gap-4">
+                                        <span class="flex-shrink-0 w-8 h-8 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center font-bold text-sm">1</span>
+                                        <div>
+                                            <h4 class="font-bold text-gray-900">Lenguaje Musical</h4>
+                                            <p class="text-gray-600 text-sm">Lectura, entonación, ritmo y análisis musical.</p>
+                                        </div>
+                                    </div>
+                                </div>
 
-                        <!-- Tarjeta 3: Cursos en Video -->
-                        <div class="bg-white rounded-2xl p-6 border border-transparent hover:border-green-200 shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-1 hover:scale-[1.02] group flex flex-col lg:flex-row gap-6 items-center" data-aos="fade-up" data-aos-delay="300">
-                            <div class="w-full lg:w-1/3 order-1 lg:order-none">
-                                <img src="./images/cursos.png" alt="Cursos en Video" class="rounded-xl shadow-sm w-full h-auto object-cover" />
-                            </div>
-                            <div class="flex-1">
-                                <h3 class="text-base sm:text-xl font-medium text-green-700 group-hover:text-green-900 transition-colors duration-200 mb-2">🎥 3. Acceso a cuatro cursos completos en vídeo</h3>
-                                <p class="text-sm sm:text-base text-gray-600 mb-4">
-                                    El paquete incluye cinco cursos online grabados, con acceso inmediato y permanente. Cada curso está dividido en módulos, con clases guiadas en vídeo, materiales descargables y ejercicios prácticos:
-                                </p>
-                                <ol class="list-decimal list-inside text-xs sm:text-sm text-gray-600 space-y-1">
-                                    <li><strong>Lenguaje Musical aplicado al piano:</strong> Lectura, entonación, ritmo y análisis para pianistas.</li>
-                                    <li><strong>Teoría Musical completa:</strong> Tonalidad, escalas, intervalos, acordes y cifrados.</li>
-                                    <li><strong>Producción Musical básica:</strong> Uso de software gratuito, edición MIDI, mezclas y estructuras.</li>
-                                    <li><strong>Improvisación al piano:</strong> Técnicas de acompañamiento, armonía funcional y patrones creativos.</li>
-                                    <!-- <li><strong>Historia de la Música para pianistas:</strong> Recorrido cronológico, estilos musicales y contexto histórico.</li> -->
-                                </ol>
+                                <div class="bg-white border border-gray-200 rounded-xl p-4 hover:shadow-md transition-shadow duration-300">
+                                    <div class="flex items-start gap-4">
+                                        <span class="flex-shrink-0 w-8 h-8 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center font-bold text-sm">2</span>
+                                        <div>
+                                            <h4 class="font-bold text-gray-900">Teoría Musical completa</h4>
+                                            <p class="text-gray-600 text-sm">Tonalidad, escalas, intervalos, acordes y cifrados.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="bg-white border border-gray-200 rounded-xl p-4 hover:shadow-md transition-shadow duration-300">
+                                    <div class="flex items-start gap-4">
+                                        <span class="flex-shrink-0 w-8 h-8 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center font-bold text-sm">3</span>
+                                        <div>
+                                            <h4 class="font-bold text-gray-900">Producción Musical básica</h4>
+                                            <p class="text-gray-600 text-sm">Uso de software gratuito, edición MIDI, mezclas y estructuras.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="bg-white border border-gray-200 rounded-xl p-4 hover:shadow-md transition-shadow duration-300">
+                                    <div class="flex items-start gap-4">
+                                        <span class="flex-shrink-0 w-8 h-8 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center font-bold text-sm">4</span>
+                                        <div>
+                                            <h4 class="font-bold text-gray-900">Improvisación al piano</h4>
+                                            <p class="text-gray-600 text-sm">Técnicas de acompañamiento, armonía funcional y patrones creativos.</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
 
-        </section>
-
+        </div>
     </section>
 
     <!-- Pie de Pagina -->
