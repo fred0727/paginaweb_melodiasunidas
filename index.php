@@ -11,10 +11,10 @@
   <link rel="icon" href="./images/logo/iconoround.png" type="image/x-icon">
   <link rel="apple-touch-icon" href="./images/logo/iconoround.png">
   <link rel="canonical" href="https://www.melodiasunidas.com">
-  <link href="./src/css/main.css?v=20250728" rel="stylesheet" />
+  <link href="./src/css/main.css?v=20250810" rel="stylesheet" />
   <link href="./src/css/aos-master/dist/aos.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" defer />
-  <link href="./src/output_v6.css?v=20250728" rel="stylesheet" defer />
+  <link href="./src/output_v6.css?v=20250810" rel="stylesheet" defer />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
@@ -26,177 +26,339 @@ $pagina = "inicio";
   <!-- Encabezado -->
   <?php include("header.php") ?>
 
-  <!-- Portada -->
+  <!-- Hero Section Modernizado -->
   <section id="hero" class="relative w-full h-screen overflow-hidden">
-    <!-- Slides -->
+    <!-- Slides con optimización -->
     <div id="slider" class="absolute inset-0 w-full h-full">
       <!-- Slide 1 -->
       <picture class="slide opacity-100 transition-opacity duration-1000 absolute inset-0">
         <source srcset="./images/slider/imagen1.webp" type="image/webp" />
-        <source srcset="./images/slider/imagen1.webp" type="image/webp" />
-        <img src="./images/slider/imagen1.jpg" alt="Slide 1" class="w-full h-full object-cover" loading="lazy" />
+        <img src="./images/slider/imagen1.jpg" alt="Estudiantes de piano disfrutando clases online" class="w-full h-full object-cover" loading="eager" />
       </picture>
 
       <!-- Slide 2 -->
       <picture class="slide opacity-0 transition-opacity duration-1000 absolute inset-0">
         <source srcset="./images/slider/imagen2.webp" type="image/webp" />
-        <source srcset="./images/slider/imagen2.webp" type="image/webp" />
-        <img src="./images/slider/imagen2.jpg" alt="Slide 2" class="w-full h-full object-cover" loading="lazy" />
+        <img src="./images/slider/imagen2.jpg" alt="Clases de música personalizadas" class="w-full h-full object-cover" loading="lazy" />
       </picture>
 
       <!-- Slide 3 -->
       <picture class="slide opacity-0 transition-opacity duration-1000 absolute inset-0">
         <source srcset="./images/slider/imagen3.webp" type="image/webp" />
-        <source srcset="./images/slider/imagen3.webp" type="image/webp" />
-        <img src="./images/slider/imagen3.jpg" alt="Slide 3" class="w-full h-full object-cover" loading="lazy" />
+        <img src="./images/slider/imagen3.jpg" alt="Profesores expertos en música" class="w-full h-full object-cover" loading="lazy" />
       </picture>
     </div>
 
-    <!-- Overlay -->
-    <div class="absolute inset-0 bg-gradient-to-b from-black/70 to-black/30 z-10"></div>
+    <!-- Overlay mejorado -->
+    <div class="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/30 z-10"></div>
 
-    <!-- Contenido -->
-    <div class="relative z-20 flex flex-col items-center justify-center h-full text-center px-6 max-w-4xl mx-auto">
-      <h1 class="text-white font-bold text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-['Oswald'] animate__animated animate__fadeInDown">
+    <!-- Contenido principal -->
+    <div class="relative z-20 flex flex-col items-center justify-center h-full text-center px-6 max-w-5xl mx-auto">
+      <h1 class="text-white font-bold text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-['Oswald'] mb-6 animate__animated animate__fadeInDown leading-tight">
         ¡La música es nuestro idioma común, no importa dónde estés!
       </h1>
+      <p class="text-white/90 text-lg sm:text-xl lg:text-2xl mb-8 max-w-3xl mx-auto animate__animated animate__fadeInUp animate__delay-1s">
+        Descubre tu potencial musical con clases online personalizadas
+      </p>
       <a
-        href="#footer"
-        class="mt-8 inline-block bg-yellow-400 hover:bg-yellow-300 text-black font-semibold py-3 px-6 rounded-full text-lg sm:text-xl transition transform hover:scale-105 hover:shadow-lg font-['Oswald'] animate__animated animate__fadeInUp animate__delay-1s">
-        ¡Dale play a tu aventura musical!
+        href="#contacto"
+        class="inline-flex items-center gap-3 bg-gradient-to-r from-secondary-color to-yellow-400 hover:from-yellow-400 hover:to-secondary-color text-black font-bold py-4 px-8 rounded-full text-lg sm:text-xl transition-all duration-300 transform hover:scale-105 hover:shadow-2xl font-['Oswald'] animate__animated animate__fadeInUp animate__delay-2s"
+        aria-label="Comenzar aventura musical - Ir a contacto">
+        <span>¡Dale play a tu aventura musical!</span>
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+        </svg>
       </a>
     </div>
 
-    <!-- Botones navegación -->
+    <!-- Controles de navegación mejorados -->
     <div class="absolute top-1/2 w-full px-4 z-30 flex justify-between items-center -translate-y-1/2">
-      <button id="prevBtn" aria-label="Anterior" class="bg-black/40 hover:bg-black/70 text-white p-3 px-4 rounded-full transition">
-        &#8592;
-      </button>
-      <button id="nextBtn" aria-label="Siguiente" class="bg-black/40 hover:bg-black/70 text-white p-3 px-4 rounded-full transition">
-        &#8594;
-      </button>
-    </div>
-  </section>
-
-  <section class="bg-white text-[#0e1a2b] px-6 py-12 lg:px-24 lg:py-24">
-    <div class="max-w-7xl mx-auto flex flex-col-reverse lg:flex-row items-center gap-10 lg:gap-20">
-
-      <!-- Texto -->
-      <div class="flex flex-col text-center lg:text-left max-w-2xl animate__animated animate__fadeIn animate__delay-1s">
-        <h4 class="text-xl sm:text-2xl lg:text-3xl font-bold font-['Oswald'] mb-4 text-black">
-          NUESTRAS CLASES ONLINE:<br />
-          <span class="font-normal text-[#3c3c3c] text-lg">¡Como si estuviéramos ahí, pero sin salir de casa!</span>
-        </h4>
-        <p class="text-sm sm:text-base text-justify leading-relaxed text-[#4c4c4c]">
-          Nuestros profes están siempre al pie del cañón para acompañarte en esta aventura musical. Con clases online a tu medida, se aseguran de que no se te escape ni un detalle: desde cómo te sientas al tocar hasta que te sientas un crack en la técnica. ¡Vas a tener una base tan sólida que los desafíos van a parecer pan comido!
-        </p>
-      </div>
-
-      <!-- Logo con animación -->
-      <div class="flex justify-center items-center w-full lg:w-[250px] animate__animated animate__zoomIn animate__slow">
-        <img src="./images/logo/logo.png" alt="Logo" title="Logo"
-          class="w-[140px] sm:w-[180px] lg:w-[240px]" loading="lazy" />
-      </div>
-    </div>
-  </section>
-
-
-  <!-- Nuestras Audiciones -->
-  <section
-    class="flex flex-col items-center justify-center px-6 py-32 sm:px-10 lg:px-32 xl:px-64 bg-black/70 text-white"
-    id="audiciones-parallax">
-    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-center mb-4 animate__animated animate__fadeInDown">
-      Nuestras Audiciones
-    </h2>
-
-    <div
-      class="flex flex-col items-center gap-2 mb-4"
-      data-aos="fade-up"
-      data-aos-duration="1000">
-      <p class="text-center text-lg sm:text-xl font-medium">¡El momentazo del año!</p>
-      <!-- <span class="text-3xl sm:text-4xl">📽️</span> -->
-    </div>
-
-    <p
-      class="text-center max-w-4xl text-sm sm:text-base xl:text-lg leading-relaxed mb-8 animate__animated animate__fadeInUp animate__delay-1s"
-      data-aos="zoom-in"
-      data-aos-duration="1000">
-      En Melodías Unidas, las audiciones no son un concierto cualquiera… ¡son EL PLANAZO!
-      Es el momento en el que nuestros alumnos sacan todo su esfuerzo, sus ganas y, sobre todo, su pasión por la música.
-      Aquí no venimos a competir, venimos a disfrutar.
-    </p>
-
-    <!-- Video / Miniatura -->
-    <div class="relative flex justify-center items-center w-full max-w-[750px]">
-      <!-- Imagen previa -->
-      <img
-        id="video-thumbnail"
-        src="./images/logo/audiciones.png"
-        alt="Ver audición en video"
-        class="w-full object-cover rounded-xl shadow-lg cursor-pointer transition-transform duration-300 hover:scale-105"
-        loading="lazy"
-        aria-label="Haz clic para ver el video de las audiciones" />
-
-      <!-- Video oculto -->
-      <video
-        id="video-audicion"
-        class="w-full rounded-xl shadow-lg hidden"
-        controls>
-        <source src="./videos/audicion.mp4" type="video/mp4" />
-        Tu navegador no soporta el video.
-      </video>
-    </div>
-  </section>
-
-  <!-- Nuestro Profe -->
-  <section class="flex flex-col lg:flex-row justify-center items-center gap-10 px-6 py-32 sm:px-10 lg:px-32 xl:px-48 bg-white text-black" id="nuestro-profe">
-    <!-- Info del Profe -->
-    <div class="flex-1" data-aos="fade-right" data-aos-duration="1000">
-      <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold font-['Oswald'] text-center lg:text-left mb-4">
-        Nuestras clases de piano
-      </h2>
-
-      <!-- Nombre del profesor -->
-      <div class="flex items-center gap-2 mb-6">
-        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-primary-color" viewBox="0 0 24 24" fill="currentColor">
-          <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+      <button id="prevBtn" 
+              aria-label="Imagen anterior" 
+              class="bg-white/20 backdrop-blur-sm hover:bg-white/30 text-white p-4 rounded-full transition-all duration-300 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-white/50">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
         </svg>
-        <h3 class="text-lg sm:text-xl font-semibold font-['Oswald']">Juan Carlos Salazar Rico</h3>
-      </div>
-
-      <!-- Biografía -->
-      <div class="space-y-4 text-justify text-sm sm:text-base leading-relaxed">
-        <p>
-          Juan Carlos es nuestro profe de piano y el que coordina a todo el equipo docente.
-          Empezó su aventura en la música cuando tenía solo 8 años, y desde entonces no ha parado.
-        </p>
-        <p>
-          Después de estudiar en Roma con el maestro Sasha Bajcic, y tras pasar por la escuela rusa de piano de la mano de Verónica Metakovskaia,
-          Juan Carlos consiguió su Título de Grado Profesional en Piano, otorgado por el Conservatorio Adolfo Salazar. ¡Todo un crack!
-        </p>
-        <p>
-          A la hora de enseñar, adapta sus clases a cada alumno, porque sabe que cada uno tiene su propio ritmo y estilo.
-          Lleva más de tres décadas tocando el piano y más de doce años enseñando.
-          Además, participa en muchos talleres y seminarios para seguir creciendo. Su misión es clara:
-          que cada alumno encuentre su lugar en la música y saque todo su potencial.
-        </p>
-      </div>
-
-      <!-- Botón -->
-      <div class="mt-6 flex justify-center lg:justify-start">
-        <a href="profejuancarlos.php"
-          class="bg-secondary-color/70 hover:bg-secondary-color text-black px-6 py-2 rounded-full transition-all font-['Oswald'] text-sm sm:text-base">
-          Conóceme más
-        </a>
-      </div>
+      </button>
+      <button id="nextBtn" 
+              aria-label="Siguiente imagen" 
+              class="bg-white/20 backdrop-blur-sm hover:bg-white/30 text-white p-4 rounded-full transition-all duration-300 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-white/50">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+        </svg>
+      </button>
     </div>
 
-    <!-- Foto del Profe -->
-    <div class="flex justify-center items-center" data-aos="zoom-in" data-aos-duration="1000">
-      <img src="./images/profes/juancarlos.webp"
-        alt="Juan Carlos Salazar Rico"
-        class="w-[200px] h-[200px] sm:w-[250px] sm:h-[250px] lg:w-[300px] lg:h-[300px] object-cover rounded-full grayscale hover:grayscale-0 transition-all duration-500 shadow-lg"
-        loading="lazy" />
+    <!-- Indicadores de slide -->
+    <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-30 flex space-x-3">
+      <button class="slide-indicator active w-3 h-3 rounded-full bg-white transition-all duration-300" data-slide="0" aria-label="Ir a slide 1"></button>
+      <button class="slide-indicator w-3 h-3 rounded-full bg-white/50 hover:bg-white/75 transition-all duration-300" data-slide="1" aria-label="Ir a slide 2"></button>
+      <button class="slide-indicator w-3 h-3 rounded-full bg-white/50 hover:bg-white/75 transition-all duration-300" data-slide="2" aria-label="Ir a slide 3"></button>
+    </div>
+  </section>
+
+  <!-- Sección de Introducción Modernizada -->
+  <section class="bg-gradient-to-br from-white to-gray-50 text-gray-900 py-16 lg:py-24">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12">
+      <div class="flex flex-col-reverse lg:flex-row items-center gap-12 lg:gap-20">
+
+        <!-- Contenido de texto -->
+        <div class="flex-1 space-y-8 text-center lg:text-left" data-aos="fade-right" data-aos-duration="800">
+          <div class="space-y-4">
+            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold font-['Oswald'] leading-tight">
+              NUESTRAS CLASES ONLINE:
+            </h2>
+            <p class="text-xl lg:text-2xl text-gray-600 font-light">
+              ¡Como si estuviéramos ahí, pero sin salir de casa!
+            </p>
+          </div>
+          
+          <div class="w-20 h-1 bg-gradient-to-r from-primary-color to-secondary-color mx-auto lg:mx-0"></div>
+          
+          <p class="text-base lg:text-lg leading-relaxed text-gray-700 max-w-2xl mx-auto lg:mx-0">
+            Nuestros profes están siempre al pie del cañón para acompañarte en esta aventura musical. Con clases online a tu medida, se aseguran de que no se te escape ni un detalle: desde cómo te sientas al tocar hasta que te sientas un crack en la técnica. ¡Vas a tener una base tan sólida que los desafíos van a parecer pan comido!
+          </p>
+
+          <!-- Stats Cards -->
+          <div class="grid grid-cols-2 lg:grid-cols-3 gap-4 pt-8">
+            <div class="bg-white rounded-xl p-4 shadow-md border border-gray-100 text-center">
+              <div class="text-2xl font-bold text-primary-color mb-1">+12</div>
+              <div class="text-sm text-gray-600">Años de experiencia</div>
+            </div>
+            <div class="bg-white rounded-xl p-4 shadow-md border border-gray-100 text-center">
+              <div class="text-2xl font-bold text-primary-color mb-1">+500</div>
+              <div class="text-sm text-gray-600">Alumnos formados</div>
+            </div>
+            <!-- <div class="bg-white rounded-xl p-4 shadow-md border border-gray-100 text-center lg:col-span-1 col-span-2">
+              <div class="text-2xl font-bold text-primary-color mb-1">100%</div>
+              <div class="text-sm text-gray-600">Online</div>
+            </div> -->
+          </div>
+        </div>
+
+        <!-- Logo con efectos mejorados -->
+        <div class="flex-shrink-0 lg:flex-1 max-w-md" data-aos="fade-left" data-aos-duration="800">
+          <div class="relative group">
+            <!-- Círculo de fondo decorativo -->
+            <div class="absolute inset-0 bg-gradient-to-br from-primary-color/10 to-secondary-color/10 rounded-full transform rotate-6 group-hover:rotate-12 transition-transform duration-500"></div>
+            <div class="absolute inset-4 bg-gradient-to-br from-secondary-color/10 to-primary-color/10 rounded-full transform -rotate-6 group-hover:-rotate-12 transition-transform duration-500 delay-100"></div>
+            
+            <!-- Logo principal -->
+            <div class="relative bg-white rounded-full p-8 shadow-2xl group-hover:shadow-3xl transition-all duration-500">
+              <!-- Contenedor circular para la imagen -->
+              <div class="w-[140px] h-[140px] lg:w-[220px] lg:h-[220px] mx-auto rounded-full overflow-hidden bg-[#00011f] p-4">
+                <img src="./images/logo/logo.png" 
+                     alt="Logo Melodías Unidas - Escuela de música online" 
+                     class="w-full h-full object-contain transform group-hover:scale-105 transition-transform duration-500" 
+                     loading="lazy" />
+              </div>
+            </div>
+            
+            <!-- Elementos decorativos flotantes -->
+            <div class="absolute -top-4 -right-4 w-8 h-8 bg-secondary-color rounded-full opacity-60 animate-bounce" style="animation-delay: 0.5s;"></div>
+            <div class="absolute -bottom-6 -left-6 w-6 h-6 bg-primary-color rounded-full opacity-40 animate-bounce" style="animation-delay: 1s;"></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Sección de Audiciones Modernizada -->
+  <section class="relative bg-gradient-to-br from-gray-900 via-black to-gray-900 text-white overflow-hidden" id="audiciones-parallax">
+    <!-- Elementos decorativos de fondo -->
+    <div class="absolute inset-0 opacity-10">
+      <div class="absolute top-10 left-10 w-20 h-20 border border-white/20 rounded-full"></div>
+      <div class="absolute top-40 right-20 w-32 h-32 border border-white/10 rounded-full"></div>
+      <div class="absolute bottom-20 left-1/4 w-16 h-16 border border-white/15 rounded-full"></div>
+    </div>
+
+    <div class="relative z-10 px-6 py-16 lg:py-24">
+      <div class="max-w-6xl mx-auto text-center space-y-8">
+        
+        <!-- Header mejorado -->
+        <div class="space-y-6" data-aos="fade-down" data-aos-duration="800">
+          <div class="inline-flex items-center gap-3 bg-white/10 backdrop-blur-sm rounded-full px-6 py-2 border border-white/20">
+            <div class="w-2 h-2 bg-secondary-color rounded-full animate-pulse"></div>
+            <span class="text-sm font-medium">Eventos especiales</span>
+          </div>
+          
+          <h2 class="text-4xl sm:text-5xl lg:text-6xl font-bold font-['Oswald'] leading-tight">
+            Nuestras Audiciones
+          </h2>
+          
+          <div class="flex items-center justify-center gap-4">
+            <div class="w-12 h-px bg-gradient-to-r from-transparent to-secondary-color"></div>
+            <p class="text-xl lg:text-2xl font-medium text-secondary-color">¡El momentazo del año!</p>
+            <div class="w-12 h-px bg-gradient-to-l from-transparent to-secondary-color"></div>
+          </div>
+        </div>
+
+        <!-- Descripción -->
+        <div class="max-w-4xl mx-auto space-y-6" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+          <p class="text-lg lg:text-xl leading-relaxed text-gray-300">
+            En Melodías Unidas, las audiciones no son un concierto cualquiera… <span class="font-bold text-secondary-color">¡son EL PLANAZO!</span>
+          </p>
+          <p class="text-base lg:text-lg leading-relaxed text-gray-400">
+            Es el momento en el que nuestros alumnos sacan todo su esfuerzo, sus ganas y, sobre todo, su pasión por la música.
+            Aquí no venimos a competir, venimos a disfrutar.
+          </p>
+        </div>
+
+        <!-- Video Section mejorada -->
+        <div class="relative max-w-4xl mx-auto" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="400">
+          <div class="relative group">
+            <!-- Decoración del video -->
+            <div class="absolute -inset-4 bg-gradient-to-r from-primary-color/20 to-secondary-color/20 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-500"></div>
+            
+            <!-- Video container -->
+            <div class="relative bg-black rounded-2xl overflow-hidden shadow-2xl border border-white/10">
+              <!-- Thumbnail -->
+              <img
+                id="video-thumbnail"
+                src="./images/logo/audiciones.png"
+                alt="Ver audición en video - Estudiantes tocando piano"
+                class="w-full aspect-video object-cover cursor-pointer transition-all duration-500 group-hover:scale-105"
+                loading="lazy" />
+
+              <!-- Play button overlay -->
+              <div class="absolute inset-0 flex items-center justify-center bg-black/30 opacity-100 group-hover:opacity-90 transition-opacity duration-300 cursor-pointer" id="play-overlay">
+                <div class="bg-white/20 backdrop-blur-sm rounded-full p-6 group-hover:scale-110 transition-transform duration-300">
+                  <svg class="w-12 h-12 text-white ml-1" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M8 5v14l11-7z"/>
+                  </svg>
+                </div>
+              </div>
+
+              <!-- Video element -->
+              <video
+                id="video-audicion"
+                class="w-full aspect-video hidden"
+                controls
+                preload="none">
+                <source src="./videos/audicion.mp4" type="video/mp4" />
+                <p>Tu navegador no soporta el elemento video. <a href="./videos/audicion.mp4">Descargar video</a></p>
+              </video>
+            </div>
+          </div>
+
+          <!-- Video info -->
+          <div class="mt-6 text-center">
+            <p class="text-sm text-gray-400">Haz clic para ver las audiciones de nuestros estudiantes</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Nuestro Profe Modernizada -->
+  <section class="bg-gradient-to-br from-white to-gray-50 py-16 lg:py-24" id="nuestro-profe">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12">
+      <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+        
+        <!-- Información del Profesor -->
+        <div class="flex-1 space-y-8" data-aos="fade-right" data-aos-duration="800">
+          <!-- Header -->
+          <div class="space-y-4">
+            <div class="inline-flex items-center gap-2 bg-primary-color/10 rounded-full px-4 py-2">
+              <div class="w-2 h-2 bg-primary-color rounded-full"></div>
+              <span class="text-sm font-medium text-primary-color">Conoce a nuestro profesor</span>
+            </div>
+            
+            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold font-['Oswald'] text-gray-900 leading-tight">
+              Nuestras clases de piano
+            </h2>
+          </div>
+
+          <!-- Profesor Info -->
+          <div class="bg-white rounded-2xl p-6 lg:p-8 shadow-lg border border-gray-100">
+            <div class="flex items-center gap-4 mb-6">
+              <div class="flex items-center justify-center w-12 h-12 bg-gradient-to-r from-primary-color to-primary-color/80 rounded-xl">
+                <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-xl lg:text-2xl font-bold font-['Oswald'] text-gray-900">Juan Carlos Salazar Rico</h3>
+                <p class="text-primary-color font-medium">Profesor de Piano</p>
+              </div>
+            </div>
+
+            <!-- Biografía -->
+            <div class="space-y-4 text-gray-700 leading-relaxed">
+              <p>
+                Juan Carlos es nuestro profe de piano y el que coordina a todo el equipo docente.
+                Empezó su aventura en la música cuando tenía solo 8 años, y desde entonces no ha parado.
+              </p>
+              <p>
+                Después de estudiar en Roma con el maestro Sasha Bajcic, y tras pasar por la escuela rusa de piano de la mano de Verónica Metakovskaia,
+                Juan Carlos consiguió su Título de Grado Profesional en Piano, otorgado por el Conservatorio Adolfo Salazar. ¡Todo un crack!
+              </p>
+              <p>
+                A la hora de enseñar, adapta sus clases a cada alumno, porque sabe que cada uno tiene su propio ritmo y estilo.
+                Lleva más de tres décadas tocando el piano y más de doce años enseñando.
+                Además, participa en muchos talleres y seminarios para seguir creciendo. Su misión es clara:
+                que cada alumno encuentre su lugar en la música y saque todo su potencial.
+              </p>
+            </div>
+
+            <!-- Highlights -->
+            <div class="grid grid-cols-2 lg:grid-cols-3 gap-4 mt-6">
+              <div class="text-center p-4 bg-gray-50 rounded-xl">
+                <div class="text-2xl font-bold text-primary-color mb-1">30+</div>
+                <div class="text-sm text-gray-600">Años tocando</div>
+              </div>
+              <div class="text-center p-4 bg-gray-50 rounded-xl">
+                <div class="text-2xl font-bold text-primary-color mb-1">12+</div>
+                <div class="text-sm text-gray-600">Años enseñando</div>
+              </div>
+              <div class="text-center p-4 bg-gray-50 rounded-xl col-span-2 lg:col-span-1">
+                <div class="text-2xl font-bold text-primary-color mb-1">∞</div>
+                <div class="text-sm text-gray-600">Pasión musical</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CTA Button -->
+          <div class="flex justify-center lg:justify-start">
+            <a href="profejuancarlos.php"
+               class="inline-flex items-center gap-3 bg-gradient-to-r from-secondary-color to-yellow-400 hover:from-yellow-400 hover:to-secondary-color text-black font-bold px-8 py-4 rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-lg font-['Oswald']">
+              <span>Conóceme más</span>
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Foto del Profesor -->
+        <div class="flex-shrink-0" data-aos="fade-left" data-aos-duration="800">
+          <div class="relative group">
+            <!-- Decoración de fondo -->
+            <div class="absolute inset-0 bg-gradient-to-br from-primary-color/20 to-secondary-color/20 rounded-full transform rotate-6 group-hover:rotate-12 transition-transform duration-500"></div>
+            <div class="absolute inset-4 bg-gradient-to-br from-secondary-color/20 to-primary-color/20 rounded-full transform -rotate-6 group-hover:-rotate-12 transition-transform duration-500"></div>
+            
+            <!-- Imagen principal -->
+            <div class="relative">
+              <img src="./images/profes/juancarlos.webp"
+                   alt="Juan Carlos Salazar Rico - Profesor de piano en Melodías Unidas"
+                   class="relative z-10 w-[280px] h-[280px] lg:w-[350px] lg:h-[350px] object-cover rounded-full shadow-2xl border-4 border-white grayscale group-hover:grayscale-0 transition-all duration-500 transform group-hover:scale-105"
+                   loading="lazy" />
+              
+              <!-- Badge flotante -->
+              <div class="absolute -bottom-4 -right-4 bg-white rounded-full p-4 shadow-lg border border-gray-100 z-20">
+                <div class="text-center">
+                  <div class="text-sm font-bold text-primary-color">Profesor</div>
+                  <!-- <div class="text-xs text-gray-600">Principal</div> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 
@@ -369,7 +531,7 @@ $pagina = "inicio";
   </section>
 
   <!-- Porque elegirnos -->
-  <section class="flex p-8 w-full justify-center items-center flex-col gap-4 sm:px-32 lg:px-48 py-16">
+  <section class="hidden flex p-8 w-full justify-center items-center flex-col gap-4 sm:px-32 lg:px-48 py-16 bg-gradient-to-br from-gray-50 to-white">
     <h4 class="text-2xl font-[Oswald] font-medium lg:text-3xl xl:text-4xl" data-aos="fade-up" data-aos-duration="1000">¿Por qué elegirnos?</h4>
     <p class="text-[12px] lg:text-base lg:px-8 lg:mt-6 text-center" data-aos="zoom-in" data-aos-duration="1000">
       En Melodías Unidas no solo damos clases, creamos experiencias musicales que recordarás. <br>
@@ -380,340 +542,413 @@ $pagina = "inicio";
 
   <?php include("ventajas.php"); ?>
 
-  <!-- Testimonio Veronica Metakovskaya -->
-  <section class="flex flex-col-reverse items-center justify-center gap-12 px-6 py-16 sm:px-12 lg:px-32 lg:flex-row lg:gap-24 xl:py-24 backdrop-blur-md bg-gray-50" id="testimonios">
-    <!-- Texto del testimonio -->
-    <div class="flex flex-col gap-4 max-w-2xl" data-aos="fade-right" data-aos-duration="1000">
-      <!-- <h4 class="text-xl font-semibold text-gray-800 lg:text-2xl">Testimonio</h4> -->
-      <p class="text-sm leading-relaxed text-gray-700 lg:text-base italic">
-        “Durante varios años Juan Carlos Salazar fue uno de mis alumnos a quien siempre recuerdo con mucho cariño. Las clases con él fueron interesantes y significativas.
-        Juan Carlos es un pianista cuya imaginación artística y técnica pianística se desarrollaron a un alto nivel.”
-      </p>
-      <p class="text-sm leading-relaxed text-gray-700 lg:text-base italic">
-        “Gracias a su actitud cuidadosa y creativa ante las indicaciones de los compositores, interpreta obras de diversos estilos y épocas con constante éxito.
-        Estoy segura que en sus clases los alumnos no sólo reciben excelentes conocimientos, sino también algo más: amor por la música.”
-      </p>
-      <div class="mt-4">
-        <p class="text-base font-semibold text-primary-color">Verónica Metakovskaya</p>
-        <p class="text-xs text-gray-500">Pianista y docente</p>
+  <!-- Testimonio Principal - Veronica Metakovskaya -->
+  <section class="relative py-20 lg:py-28 bg-gradient-to-br from-gray-50 via-white to-gray-50 overflow-hidden" id="testimonios">
+    <!-- Elementos decorativos -->
+    <!-- <div class="absolute top-0 left-0 w-72 h-72 bg-primary-color/5 rounded-full -translate-x-36 -translate-y-36"></div> -->
+    <!-- <div class="absolute bottom-0 right-0 w-96 h-96 bg-secondary-color/5 rounded-full translate-x-48 translate-y-48"></div> -->
+    
+    <div class="relative max-w-7xl mx-auto px-6 lg:px-12">
+      <!-- Header de la sección -->
+      <div class="text-center mb-16" data-aos="fade-up" data-aos-duration="800">
+        <div class="inline-flex items-center gap-2 bg-primary-color/10 rounded-full px-4 py-2 mb-6">
+          <div class="w-2 h-2 bg-primary-color rounded-full animate-pulse"></div>
+          <span class="text-sm font-medium text-primary-color">Testimonio destacado</span>
+        </div>
+        <h2 class="text-3xl lg:text-4xl xl:text-5xl font-bold font-['Oswald'] text-gray-900 mb-4">
+          Respaldo profesional
+        </h2>
+        <div class="w-24 h-1 bg-gradient-to-r from-primary-color to-secondary-color mx-auto"></div>
       </div>
-    </div>
 
-    <!-- Foto o certificado -->
-    <div class="flex flex-col items-center gap-4" data-aos="fade-left" data-aos-duration="1000">
-      <div class="rounded-full overflow-hidden shadow-lg w-[160px] h-[160px] sm:w-[200px] sm:h-[200px] lg:w-[220px] lg:h-[220px]">
-        <img src="./images/veronicamet.webp" alt="Veronica Metakovskaya" class="w-full h-full object-cover" loading="lazy">
+      <!-- Contenido del testimonio -->
+      <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+        
+        <!-- Texto del testimonio -->
+        <div class="space-y-8" data-aos="fade-right" data-aos-duration="1000">
+          <div class="relative">
+            <!-- Comillas decorativas -->
+            <div class="absolute -top-4 -left-4 text-6xl text-primary-color/20 font-serif">"</div>
+            <div class="bg-white rounded-2xl p-8 shadow-xl border border-gray-100 relative z-10">
+              <blockquote class="space-y-6">
+                <p class="text-gray-700 leading-relaxed text-lg">
+                  Durante varios años Juan Carlos Salazar fue uno de mis alumnos a quien siempre recuerdo con mucho cariño. Las clases con él fueron interesantes y significativas.
+                  Juan Carlos es un pianista cuya imaginación artística y técnica pianística se desarrollaron a un alto nivel.
+                </p>
+                <p class="text-gray-700 leading-relaxed text-lg">
+                  Gracias a su actitud cuidadosa y creativa ante las indicaciones de los compositores, interpreta obras de diversos estilos y épocas con constante éxito.
+                  Estoy segura que en sus clases los alumnos no sólo reciben excelentes conocimientos, sino también algo más: amor por la música.
+                </p>
+              </blockquote>
+            </div>
+          </div>
+          
+          <!-- Autor del testimonio -->
+          <div class="flex items-center gap-4 p-6 bg-white rounded-xl shadow-lg border border-gray-100">
+            <div class="w-16 h-16 rounded-full overflow-hidden shadow-md">
+              <img src="./images/veronicamet.webp" alt="Verónica Metakovskaya" class="w-full h-full object-cover" loading="lazy">
+            </div>
+            <div>
+              <h4 class="text-xl font-bold text-primary-color">Verónica Metakovskaya</h4>
+              <p class="text-gray-600">Pianista y Docente Profesional</p>
+              <div class="flex items-center gap-1 mt-1">
+                <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                </svg>
+                <span class="text-xs text-gray-500">Testimonio verificado</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Certificado y elementos visuales -->
+        <div class="flex flex-col items-center gap-8" data-aos="fade-left" data-aos-duration="1000">
+          <div class="relative">
+            <div class="w-80 h-80 rounded-full overflow-hidden shadow-2xl border-8 border-white">
+              <img src="./images/veronicamet.webp" alt="Verónica Metakovskaya" class="w-full h-full object-cover" loading="lazy">
+            </div>
+            <!-- Badge de verificación -->
+            <div class="absolute bottom-4 right-4 w-16 h-16 bg-green-500 rounded-full flex items-center justify-center shadow-lg">
+              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+              </svg>
+            </div>
+          </div>
+          
+          <!-- Certificado -->
+          <div class="bg-white rounded-xl shadow-lg p-4 border border-gray-100 hidden sm:block">
+            <img src="./images/certificados/testimonio_mano.jpeg" alt="Carta de testimonio manuscrita" class="rounded-lg max-w-[350px] w-full" loading="lazy">
+            <p class="text-xs text-gray-500 text-center mt-3">Testimonio manuscrito original</p>
+          </div>
+        </div>
       </div>
-      <img src="./images/certificados/testimonio_mano.jpeg" alt="Carta de testimonio" class="rounded-md shadow-md max-w-[300px] sm:max-w-[350px] lg:max-w-[400px] hidden sm:block" loading="lazy">
     </div>
   </section>
 
-  <!-- Reseñas de estudiantes -->
-  <section class="px-6 py-12 lg:pt-32 sm:px-16 lg:px-48 bg-white">
-    <h2 class="text-center text-xl lg:text-4xl font-['Oswald'] mb-8">Lo que dicen nuestros alumnos</h2>
-
-    <!-- Swiper personalizado -->
-    <div class="swiper comunidadSwiper">
-      <div class="swiper-wrapper lg:px-16 py-16">
-        <div class="swiper-slide bg-black rounded-md overflow-hidden">
-          <video class="w-full h-[200px] object-contain" controls preload="none">
-            <source src="./videos/videos_alumnos/video8.mp4" type="video/mp4">
-          </video>
+  <!-- Testimonios de Estudiantes -->
+  <section class="py-20 lg:py-28 bg-white">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12">
+      
+      <!-- Header -->
+      <div class="text-center mb-16" data-aos="fade-up" data-aos-duration="800">
+        <div class="inline-flex items-center gap-2 bg-secondary-color/10 rounded-full px-4 py-2 mb-6">
+          <div class="w-2 h-2 bg-secondary-color rounded-full animate-pulse"></div>
+          <span class="text-sm font-medium text-gray-600">Experiencias reales</span>
         </div>
-
-        <div class="swiper-slide bg-black rounded-md overflow-hidden">
-          <video class="w-full h-[200px] object-contain" controls preload="none">
-            <source src="./videos/videos_alumnos/video2.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="swiper-slide bg-black rounded-md overflow-hidden">
-          <video class="w-full h-[200px] object-contain" controls preload="none">
-            <source src="./videos/videos_alumnos/video3.mp4" type="video/mp4">
-          </video>
-        </div>
-
-        <div class="swiper-slide bg-black rounded-md overflow-hidden">
-          <video class="w-full h-[200px] object-contain" controls preload="none">
-            <source src="./videos/videos_alumnos/video4.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="swiper-slide bg-black rounded-md overflow-hidden">
-          <video class="w-full h-[200px] object-contain" controls preload="none">
-            <source src="./videos/videos_alumnos/video5.mp4" type="video/mp4">
-          </video>
-        </div>
-
-        <div class="swiper-slide bg-black rounded-md overflow-hidden">
-          <video class="w-full h-[200px] object-contain" controls preload="none">
-            <source src="./videos/videos_alumnos/video6.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="swiper-slide bg-black rounded-md overflow-hidden">
-          <video class="w-full h-[200px] object-contain" controls preload="none">
-            <source src="./videos/videos_alumnos/video7.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="swiper-slide bg-black rounded-md overflow-hidden">
-          <video class="w-full h-[200px] object-contain" controls preload="none">
-            <source src="./videos/videos_alumnos/video9.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="swiper-slide bg-black rounded-md overflow-hidden">
-          <video class="w-full h-[200px] object-contain" controls preload="none">
-            <source src="./videos/videos_alumnos/video10.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="swiper-slide bg-black rounded-md overflow-hidden">
-          <video class="w-full h-[200px] object-contain" controls preload="none">
-            <source src="./videos/videos_alumnos/video1.mp4" type="video/mp4">
-          </video>
-        </div>
-
-        <!-- Agrega más slides aquí -->
+        <h2 class="text-3xl lg:text-4xl xl:text-5xl font-bold font-['Oswald'] text-gray-900 mb-4">
+          Lo que dicen nuestros alumnos
+        </h2>
+        <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+          Descubre las experiencias de estudiantes reales que han transformado su relación con la música
+        </p>
       </div>
 
-      <!-- Navegación -->
-      <div class="comunidad-next swiper-button-next text-gray-700"></div>
-      <div class="comunidad-prev swiper-button-prev text-gray-700"></div>
+      <!-- Videos de testimonios -->
+      <div class="mb-16" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+        <!-- <div class="text-center mb-8">
+          <h3 class="text-2xl font-bold font-['Oswald'] text-gray-800 mb-4">Videos de nuestros estudiantes</h3>
+          <p class="text-gray-600">Escucha directamente a nuestros alumnos contar su experiencia</p>
+        </div> -->
+        
+        <div class="swiper comunidadSwiper rounded-2xl overflow-hidden">
+          <div class="swiper-wrapper">
+            <?php
+              $videos = [
+                'video8.mp4', 'video2.mp4', 'video3.mp4', 'video4.mp4', 'video5.mp4',
+                'video6.mp4', 'video7.mp4', 'video9.mp4', 'video10.mp4', 'video1.mp4'
+              ];
+              
+              foreach ($videos as $index => $video) {
+                echo <<<HTML
+                <div class="swiper-slide">
+                  <div class="relative bg-gray-900 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <video class="w-full h-64 object-cover" controls preload="none" poster="./images/logo/logo.png">
+                      <source src="./videos/videos_alumnos/{$video}" type="video/mp4">
+                      Tu navegador no soporta este video.
+                    </video>
+                    <div class="absolute inset-0 bg-black/20 hover:bg-black/10 transition-colors pointer-events-none"></div>
+                  </div>
+                </div>
+                HTML;
+              }
+            ?>
+          </div>
+          
+          <!-- Navegación mejorada para videos con mejor visibilidad -->
+          <div class="relative mt-8">
+            <!-- Botones de navegación centrados y más visibles -->
+            <div class="flex justify-center items-center gap-6 mb-6">
+              <button class="comunidad-prev-btn w-14 h-14 bg-gradient-to-r from-primary-color to-secondary-color hover:from-secondary-color hover:to-primary-color text-white rounded-full flex items-center justify-center shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-110 border-2 border-white">
+                <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M15 19l-7-7 7-7"/>
+                </svg>
+              </button>
+              <span class="text-gray-600 font-medium">Desliza para ver más videos</span>
+              <button class="comunidad-next-btn w-14 h-14 bg-gradient-to-r from-primary-color to-secondary-color hover:from-secondary-color hover:to-primary-color text-white rounded-full flex items-center justify-center shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-110 border-2 border-white">
+                <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M9 5l7 7-7 7"/>
+                </svg>
+              </button>
+            </div>
+            <!-- Paginación con mejor espaciado -->
+            <div class="comunidad-pagination swiper-pagination !relative"></div>
+          </div>
+        </div>
+      </div>
+      <!-- Testimonios escritos -->
+      <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+        <div class="text-center mb-8">
+          <h3 class="text-2xl font-bold font-['Oswald'] text-gray-800 mb-4">Reseñas destacadas</h3>
+          <p class="text-gray-600">Lee las experiencias detalladas de nuestros estudiantes</p>
+        </div>
+        
+        <div class="swiper testimonial-swiper">
+          <div class="swiper-wrapper">
+            
+            <!-- Testimonio 1: Jose -->
+            <div class="swiper-slide">
+              <div class="bg-gradient-to-br from-white to-gray-50 rounded-2xl p-8 lg:p-12 shadow-xl border border-gray-100 h-full">
+                <div class="flex items-center gap-4 mb-6">
+                  <div class="w-16 h-16 bg-gradient-to-br from-primary-color to-primary-color/80 rounded-2xl flex items-center justify-center text-white text-2xl font-bold">
+                    J
+                  </div>
+                  <div>
+                    <h4 class="text-xl font-bold text-gray-900">Jose</h4>
+                    <p class="text-gray-600">Estudiante principiante</p>
+                    <div class="flex items-center gap-1 mt-1">
+                      <?php for($i = 0; $i < 5; $i++): ?>
+                        <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                      <?php endfor; ?>
+                    </div>
+                  </div>
+                </div>
+                <blockquote class="text-gray-700 leading-relaxed">
+                  "Juan Carlos es un magnífico profesor. Adapta las clases a todos los niveles y las clases son muy prácticas y divertidas. Yo entré con cero conocimiento y estoy muy contento con el progreso que he hecho gracias a Juan Carlos. Además, la infraestructura que tiene montada para la clase online es perfecta y puedes ver a la vez varias cámaras y las partituras. 100% recomendado!! Además es un crack como persona!"
+                </blockquote>
+              </div>
+            </div>
 
-      <!-- Paginación -->
-      <div class="comunidad-pagination swiper-pagination mt-4"></div>
-    </div>
-    <div class="swiper testimonial-swiper">
-      <div class="swiper-wrapper">
-        <!-- Slide 1 -->
-        <div class="swiper-slide bg-white px-16 lg:px-32 py-6 lg:py-32 rounded-lg">
-          <div class="flex gap-4 items-start mb-4">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-12 lg:size-16 text-[#ffcb01]">
-              <path d="M11.7 2.805a.75.75 0 0 1 .6 0A60.65 60.65 0 0 1 22.83 8.72a.75.75 0 0 1-.231 1.337 49.948 49.948 0 0 0-9.902 3.912l-.003.002c-.114.06-.227.119-.34.18a.75.75 0 0 1-.707 0A50.88 50.88 0 0 0 7.5 12.173v-.224c0-.131.067-.248.172-.311a54.615 54.615 0 0 1 4.653-2.52.75.75 0 0 0-.65-1.352 56.123 56.123 0 0 0-4.78 2.589 1.858 1.858 0 0 0-.859 1.228 49.803 49.803 0 0 0-4.634-1.527.75.75 0 0 1-.231-1.337A60.653 60.653 0 0 1 11.7 2.805Z" />
-              <path d="M13.06 15.473a48.45 48.45 0 0 1 7.666-3.282c.134 1.414.22 2.843.255 4.284a.75.75 0 0 1-.46.711 47.87 47.87 0 0 0-8.105 4.342.75.75 0 0 1-.832 0 47.87 47.87 0 0 0-8.104-4.342.75.75 0 0 1-.461-.71c.035-1.442.121-2.87.255-4.286.921.304 1.83.634 2.726.99v1.27a1.5 1.5 0 0 0-.14 2.508c-.09.38-.222.753-.397 1.11.452.213.901.434 1.346.66a6.727 6.727 0 0 0 .551-1.607 1.5 1.5 0 0 0 .14-2.67v-.645a48.549 48.549 0 0 1 3.44 1.667 2.25 2.25 0 0 0 2.12 0Z" />
-              <path d="M4.462 19.462c.42-.419.753-.89 1-1.395.453.214.902.435 1.347.662a6.742 6.742 0 0 1-1.286 1.794.75.75 0 0 1-1.06-1.06Z" />
-            </svg>
-            <div>
-              <h5 class="text-lg font-semibold">Jose</h5>
-              <p class="text-sm text-gray-500">Estudiante</p>
+            <!-- Testimonio 2: Amanda -->
+            <div class="swiper-slide">
+              <div class="bg-gradient-to-br from-white to-gray-50 rounded-2xl p-8 lg:p-12 shadow-xl border border-gray-100 h-full">
+                <div class="flex items-center gap-4 mb-6">
+                  <div class="w-16 h-16 bg-gradient-to-br from-secondary-color to-yellow-400 rounded-2xl flex items-center justify-center text-black text-2xl font-bold">
+                    A
+                  </div>
+                  <div>
+                    <h4 class="text-xl font-bold text-gray-900">Amanda</h4>
+                    <p class="text-gray-600">Madre de estudiantes</p>
+                    <div class="flex items-center gap-1 mt-1">
+                      <?php for($i = 0; $i < 5; $i++): ?>
+                        <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                      <?php endfor; ?>
+                    </div>
+                  </div>
+                </div>
+                <blockquote class="text-gray-700 leading-relaxed">
+                  "Mis dos hijos de 8 y 11 años dan clases de piano con Juan. Darío, el pequeño, ha ganado muchísima seguridad en sí mismo incluso tocando delante de la familia y los amigos, Jorge, mi hijo de 11 años está planteándose preparar las pruebas de acceso al conservatorio con Juan. Durante el confinamiento hemos dado clases online con Juan y se dan estupendamente porque lo tiene todo muy bien preparado con un buen micrófono y varias cámaras."
+                </blockquote>
+              </div>
+            </div>
+
+            <!-- Testimonio 3: Carlota -->
+            <div class="swiper-slide">
+              <div class="bg-gradient-to-br from-white to-gray-50 rounded-2xl p-8 lg:p-12 shadow-xl border border-gray-100 h-full">
+                <div class="flex items-center gap-4 mb-6">
+                  <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-600 rounded-2xl flex items-center justify-center text-white text-2xl font-bold">
+                    C
+                  </div>
+                  <div>
+                    <h4 class="text-xl font-bold text-gray-900">Carlota</h4>
+                    <p class="text-gray-600">Estudiante adulta</p>
+                    <div class="flex items-center gap-1 mt-1">
+                      <?php for($i = 0; $i < 5; $i++): ?>
+                        <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                      <?php endfor; ?>
+                    </div>
+                  </div>
+                </div>
+                <blockquote class="text-gray-700 leading-relaxed">
+                  "Toqué hace 20 años el piano y lo he retomado hace 4 meses con Juan; me encanta su manera de dar clases, está muy pendiente de todo y se nota que le pone pasión a lo que enseña en cada clase; trato excepcional, es un chico majísimo, pero me pone las pilas en cada clase para que note que voy avanzando; sus técnicas de estudio me parecen fabulosas ya que optimizo el tiempo que puedo practicar al máximo, en 4 meses ya estoy tocando piezas que tenía completamente olvidadas, motivada al 100%, lo recomiendo sin duda."
+                </blockquote>
+              </div>
+            </div>
+
+            <!-- Testimonio 4: Laura -->
+            <div class="swiper-slide">
+              <div class="bg-gradient-to-br from-white to-gray-50 rounded-2xl p-8 lg:p-12 shadow-xl border border-gray-100 h-full">
+                <div class="flex items-center gap-4 mb-6">
+                  <div class="w-16 h-16 bg-gradient-to-br from-pink-500 to-pink-600 rounded-2xl flex items-center justify-center text-white text-2xl font-bold">
+                    L
+                  </div>
+                  <div>
+                    <h4 class="text-xl font-bold text-gray-900">Laura</h4>
+                    <p class="text-gray-600">Estudiante de piano clásico</p>
+                    <div class="flex items-center gap-1 mt-1">
+                      <?php for($i = 0; $i < 5; $i++): ?>
+                        <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                      <?php endfor; ?>
+                    </div>
+                  </div>
+                </div>
+                <blockquote class="text-gray-700 leading-relaxed">
+                  "Doy clases de piano clásico con Juan, he aprendido muchísimo en 2 años en cuanto al manejo del brazo y la muñeca, que es fundamental para poder tocar con fluidez y sacarle un buen sonido al piano; siempre tiene una manera de hacerte ver lo que por ti misma no llegas a ver y de darte las pautas necesarias para no caer en los mismos errores cuando estás practicando en casa, ha mejorado mi relajación y consigo comprender y ejecutar muchísimo mejor las dinámicas, lo recomiendo 100%."
+                </blockquote>
+              </div>
             </div>
           </div>
-          <p class="text-sm lg:text-base text-gray-700 text-justify">Juan Carlos es un magnífico profesor. Adapta las clases a todos los niveles y las clases son muy prácticas y divertidas. Yo entré con cero conocimiento y estoy muy contento con el progreso que he hecho gracias a Juan Carlos. Además, la infraestructura que tiene montada para la clase on line es perfecta y puedes ver a la vez varias cámaras y las partituras. 100% recomendado!! Además es un crack como persona!
-          </p>
-        </div>
-
-        <!-- Slide 2 -->
-        <div class="swiper-slide bg-white px-16 lg:px-32 py-6 lg:py-32 rounded-lg">
-          <div class="flex gap-4 items-start mb-4">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-12 lg:size-16 text-[#ffcb01]">
-              <path d="M11.7 2.805a.75.75 0 0 1 .6 0A60.65 60.65 0 0 1 22.83 8.72a.75.75 0 0 1-.231 1.337 49.948 49.948 0 0 0-9.902 3.912l-.003.002c-.114.06-.227.119-.34.18a.75.75 0 0 1-.707 0A50.88 50.88 0 0 0 7.5 12.173v-.224c0-.131.067-.248.172-.311a54.615 54.615 0 0 1 4.653-2.52.75.75 0 0 0-.65-1.352 56.123 56.123 0 0 0-4.78 2.589 1.858 1.858 0 0 0-.859 1.228 49.803 49.803 0 0 0-4.634-1.527.75.75 0 0 1-.231-1.337A60.653 60.653 0 0 1 11.7 2.805Z" />
-              <path d="M13.06 15.473a48.45 48.45 0 0 1 7.666-3.282c.134 1.414.22 2.843.255 4.284a.75.75 0 0 1-.46.711 47.87 47.87 0 0 0-8.105 4.342.75.75 0 0 1-.832 0 47.87 47.87 0 0 0-8.104-4.342.75.75 0 0 1-.461-.71c.035-1.442.121-2.87.255-4.286.921.304 1.83.634 2.726.99v1.27a1.5 1.5 0 0 0-.14 2.508c-.09.38-.222.753-.397 1.11.452.213.901.434 1.346.66a6.727 6.727 0 0 0 .551-1.607 1.5 1.5 0 0 0 .14-2.67v-.645a48.549 48.549 0 0 1 3.44 1.667 2.25 2.25 0 0 0 2.12 0Z" />
-              <path d="M4.462 19.462c.42-.419.753-.89 1-1.395.453.214.902.435 1.347.662a6.742 6.742 0 0 1-1.286 1.794.75.75 0 0 1-1.06-1.06Z" />
-            </svg>
-            <div>
-              <h5 class="text-lg font-semibold">Amanda</h5>
-              <p class="text-sm text-gray-500">Testimonio</p>
+          
+          <!-- Navegación y paginación mejorada para testimonios -->
+          <div class="relative mt-12">
+            <!-- Botones de navegación más visibles y separados -->
+            <div class="flex justify-center items-center gap-4 mb-8">
+              <button class="testimonial-prev-btn w-12 h-12 bg-primary-color hover:bg-primary-color/80 text-white rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+                </svg>
+              </button>
+              <button class="testimonial-next-btn w-12 h-12 bg-primary-color hover:bg-primary-color/80 text-white rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                </svg>
+              </button>
             </div>
+            <!-- Paginación con mejor espaciado -->
+            <div class="swiper-pagination testimonial-pagination !relative !bottom-auto"></div>
           </div>
-          <p class="text-sm lg:text-base text-gray-700 text-justify">Mis dos hijos de 8 y 11 años dan clases de piano con Juan. Darío, el pequeño, ha ganado muchísima seguridad en sí mismo incluso tocando delante de la familia y los amigos, Jorge, mi hijo de 11 años está planteándose preparar las pruebas de acceso al conservatorio con Juan. Durante el confinamiento hemos dado clases online con Juan y se dan estupendamente porque lo tiene todo muy bien preparado con un buen micrófono y varias cámaras.</p>
         </div>
-
-        <!-- Slide 3 -->
-        <div class="swiper-slide bg-white px-16 lg:px-32 py-6 lg:py-32 rounded-lg">
-          <div class="flex gap-4 items-start mb-4">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-12 lg:size-16 text-[#ffcb01]">
-              <path d="M11.7 2.805a.75.75 0 0 1 .6 0A60.65 60.65 0 0 1 22.83 8.72a.75.75 0 0 1-.231 1.337 49.948 49.948 0 0 0-9.902 3.912l-.003.002c-.114.06-.227.119-.34.18a.75.75 0 0 1-.707 0A50.88 50.88 0 0 0 7.5 12.173v-.224c0-.131.067-.248.172-.311a54.615 54.615 0 0 1 4.653-2.52.75.75 0 0 0-.65-1.352 56.123 56.123 0 0 0-4.78 2.589 1.858 1.858 0 0 0-.859 1.228 49.803 49.803 0 0 0-4.634-1.527.75.75 0 0 1-.231-1.337A60.653 60.653 0 0 1 11.7 2.805Z" />
-              <path d="M13.06 15.473a48.45 48.45 0 0 1 7.666-3.282c.134 1.414.22 2.843.255 4.284a.75.75 0 0 1-.46.711 47.87 47.87 0 0 0-8.105 4.342.75.75 0 0 1-.832 0 47.87 47.87 0 0 0-8.104-4.342.75.75 0 0 1-.461-.71c.035-1.442.121-2.87.255-4.286.921.304 1.83.634 2.726.99v1.27a1.5 1.5 0 0 0-.14 2.508c-.09.38-.222.753-.397 1.11.452.213.901.434 1.346.66a6.727 6.727 0 0 0 .551-1.607 1.5 1.5 0 0 0 .14-2.67v-.645a48.549 48.549 0 0 1 3.44 1.667 2.25 2.25 0 0 0 2.12 0Z" />
-              <path d="M4.462 19.462c.42-.419.753-.89 1-1.395.453.214.902.435 1.347.662a6.742 6.742 0 0 1-1.286 1.794.75.75 0 0 1-1.06-1.06Z" />
-            </svg>
-            <div>
-              <h5 class="text-lg font-semibold">Carlota</h5>
-              <p class="text-sm text-gray-500">Estudiante</p>
-            </div>
-          </div>
-          <p class="text-sm lg:text-base text-gray-700 text-justify">Toqué hace 20 años el piano y lo he retomado hace 4 meses con Juan; me encanta su manera de dar clases, está muy pendiente de todo y se nota que le pone pasión a lo que enseña en cada clase; trato excepcional, es un chico majísimo, pero me pone las pilas en cada clase para que note que voy avanzando; sus técnicas de estudio me parecen fabulosas ya que optimizo el tiempo que puedo practicar al máximo, en 4 meses ya estoy tocando piezas que tenía completamente olvidadas, motivada al 100%, lo recomiendo sin duda.</p>
-        </div>
-
-        <div class="swiper-slide bg-white px-16 lg:px-32 py-6 lg:py-32 rounded-lg">
-          <div class="flex gap-4 items-start mb-4">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-12 lg:size-16 text-[#ffcb01]">
-              <path d="M11.7 2.805a.75.75 0 0 1 .6 0A60.65 60.65 0 0 1 22.83 8.72a.75.75 0 0 1-.231 1.337 49.948 49.948 0 0 0-9.902 3.912l-.003.002c-.114.06-.227.119-.34.18a.75.75 0 0 1-.707 0A50.88 50.88 0 0 0 7.5 12.173v-.224c0-.131.067-.248.172-.311a54.615 54.615 0 0 1 4.653-2.52.75.75 0 0 0-.65-1.352 56.123 56.123 0 0 0-4.78 2.589 1.858 1.858 0 0 0-.859 1.228 49.803 49.803 0 0 0-4.634-1.527.75.75 0 0 1-.231-1.337A60.653 60.653 0 0 1 11.7 2.805Z" />
-              <path d="M13.06 15.473a48.45 48.45 0 0 1 7.666-3.282c.134 1.414.22 2.843.255 4.284a.75.75 0 0 1-.46.711 47.87 47.87 0 0 0-8.105 4.342.75.75 0 0 1-.832 0 47.87 47.87 0 0 0-8.104-4.342.75.75 0 0 1-.461-.71c.035-1.442.121-2.87.255-4.286.921.304 1.83.634 2.726.99v1.27a1.5 1.5 0 0 0-.14 2.508c-.09.38-.222.753-.397 1.11.452.213.901.434 1.346.66a6.727 6.727 0 0 0 .551-1.607 1.5 1.5 0 0 0 .14-2.67v-.645a48.549 48.549 0 0 1 3.44 1.667 2.25 2.25 0 0 0 2.12 0Z" />
-              <path d="M4.462 19.462c.42-.419.753-.89 1-1.395.453.214.902.435 1.347.662a6.742 6.742 0 0 1-1.286 1.794.75.75 0 0 1-1.06-1.06Z" />
-            </svg>
-            <div>
-              <h5 class="text-lg font-semibold">Laura</h5>
-              <p class="text-sm text-gray-500">Estudiante</p>
-            </div>
-          </div>
-          <p class="text-sm lg:text-base text-gray-700 text-justify">Doy clases de piano clásico con Juan, he aprendido muchísimo en 2 años en cuanto al manejo del brazo y la muñeca, que es fundamental para poder tocar con fluidez y sacarle un buen sonido al piano; siempre tiene una manera de hacerte ver lo que por tí misma no llegas a ver y de darte las pautas necesarias para no caer en los mismos errores cuando estás practicando en casa, ha mejorado mi relajación y consigo comprender y ejecutar muchísimo mejor las dinámicas, lo recomiendo 100%.</p>
-        </div>
-
-        <!-- Agrega más slides aquí -->
-      </div>
-
-      <!-- Paginación y navegación -->
-      <div class="swiper-pagination mt-4"></div>
-      <!-- <div class="swiper-button-prev text-[#333]"></div> -->
-      <!-- <div class="swiper-button-next text-[#333]"></div> -->
-    </div>
-  </section>
-
-  <!-- <section class="w-full py-16 px-4 sm:px-16 lg:px-32 xl:px-48 bg-white" id="comunidad-videos">
-    <h2 class="text-2xl sm:text-3xl xl:text-4xl font-bold text-center text-black mb-10">
-      Así Suena Nuestra Comunidad
-    </h2>
-  </section> -->
-
-  <!-- Videos de comunidad estudiantil -->
-  <section class="relative flex p-8 pt-12 w-full justify-center items-center flex-col gap-4 sm:px-32 lg:px-48 lg:py-0 xl:py-12 xl:pt-0 xl:mb-10 hidden">
-    <div class="relative flex flex-row justify-start gap-4 lg:pt-8 lg:gap-6 w-[275px] sm:w-[550px] py-4 lg:w-[750px] xl:w-[1200px] overflow-x-scroll" id="section-div-videos">
-
-      <div class="relative flex bg-black/80 shadow-md min-w-[260px] h-[160px]">
-        <!-- Contenedor de la miniatura -->
-        <div class="w-full h-full cursor-pointer flex flex-col justify-center items-center relative p-4" id="container1" onclick="viewvideo('container1','video1')">
-          <img src="./images/logo/logo.png" alt="Logo" class="absolute w-[50px] h-[50px] right-0 top-0">
-          <img src="./images/iconvideo.png" alt="Video thumbnail" style="width: 65px !important;">
-        </div>
-        <!-- Video oculto inicialmente -->
-        <video class="w-full h-full hidden" id="video1" controls>
-          <source src="./videos/videos_alumnos/video8.mp4" type="video/mp4">
-        </video>
-      </div>
-
-      <div class="relative flex bg-black/80 shadow-md min-w-[260px] h-[160px]">
-        <!-- Contenedor de la miniatura -->
-        <div class="w-full h-full cursor-pointer flex flex-col justify-center items-center relative p-4" id="container2" onclick="viewvideo('container2','video2')">
-          <img src="./images/logo/logo.png" alt="Logo" class="absolute w-[50px] h-[50px] right-0 top-0">
-          <img src="./images/iconvideo.png" alt="Video thumbnail" style="width: 65px !important;">
-        </div>
-        <!-- Video oculto inicialmente -->
-        <video class="w-full h-full hidden" id="video2" controls>
-          <source src="./videos/videos_alumnos/video2.mp4" type="video/mp4">
-        </video>
-      </div>
-
-      <div class="relative flex bg-black/80 shadow-md min-w-[260px] h-[160px]">
-        <!-- Contenedor de la miniatura -->
-        <div class="w-full h-full cursor-pointer flex flex-col justify-center items-center relative p-4" id="container3" onclick="viewvideo('container3','video3')">
-          <img src="./images/logo/logo.png" alt="Logo" class="absolute w-[50px] h-[50px] right-0 top-0">
-          <img src="./images/iconvideo.png" alt="Video thumbnail" style="width: 65px !important;">
-        </div>
-        <!-- Video oculto inicialmente -->
-        <video class="w-full h-full hidden" id="video3" controls>
-          <source src="./videos/videos_alumnos/video3.mp4" type="video/mp4">
-        </video>
-      </div>
-
-      <div class="relative flex bg-black/80 shadow-md min-w-[260px] h-[160px]">
-        <!-- Contenedor de la miniatura -->
-        <div class="w-full h-full cursor-pointer flex flex-col justify-center items-center relative p-4" id="container4" onclick="viewvideo('container4','video4')">
-          <img src="./images/logo/logo.png" alt="Logo" class="absolute w-[50px] h-[50px] right-0 top-0">
-          <img src="./images/iconvideo.png" alt="Video thumbnail" style="width: 65px !important;">
-        </div>
-        <!-- Video oculto inicialmente -->
-        <video class="w-full h-full hidden" id="video4" controls>
-          <source src="./videos/videos_alumnos/video4.mp4" type="video/mp4">
-        </video>
-      </div>
-
-      <div class="relative flex bg-black/80 shadow-md min-w-[260px] h-[160px]">
-        <!-- Contenedor de la miniatura -->
-        <div class="w-full h-full cursor-pointer flex flex-col justify-center items-center relative p-4" id="container5" onclick="viewvideo('container5','video5')">
-          <img src="./images/logo/logo.png" alt="Logo" class="absolute w-[50px] h-[50px] right-0 top-0">
-          <img src="./images/iconvideo.png" alt="Video thumbnail" style="width: 65px !important;">
-        </div>
-        <!-- Video oculto inicialmente -->
-        <video class="w-full h-full hidden" id="video5" controls>
-          <source src="./videos/videos_alumnos/video5.mp4" type="video/mp4">
-        </video>
-      </div>
-
-      <div class="relative flex bg-black/80 shadow-md min-w-[260px] h-[160px]">
-        <!-- Contenedor de la miniatura -->
-        <div class="w-full h-full cursor-pointer flex flex-col justify-center items-center relative p-4" id="container6" onclick="viewvideo('container6','video6')">
-          <img src="./images/logo/logo.png" alt="Logo" class="absolute w-[50px] h-[50px] right-0 top-0">
-          <img src="./images/iconvideo.png" alt="Video thumbnail" style="width: 65px !important;">
-        </div>
-        <!-- Video oculto inicialmente -->
-        <video class="w-full h-full hidden" id="video6" controls>
-          <source src="./videos/videos_alumnos/video6.mp4" type="video/mp4">
-        </video>
-      </div>
-
-      <div class="relative flex bg-black/80 shadow-md min-w-[260px] h-[160px]">
-        <!-- Contenedor de la miniatura -->
-        <div class="w-full h-full cursor-pointer flex flex-col justify-center items-center relative p-4" id="container7" onclick="viewvideo('container7','video7')">
-          <img src="./images/logo/logo.png" alt="Logo" class="absolute w-[50px] h-[50px] right-0 top-0">
-          <img src="./images/iconvideo.png" alt="Video thumbnail" style="width: 65px !important;">
-        </div>
-        <!-- Video oculto inicialmente -->
-        <video class="w-full h-full hidden" id="video7" controls>
-          <source src="./videos/videos_alumnos/video7.mp4" type="video/mp4">
-        </video>
-      </div>
-
-      <div class="relative flex bg-black/80 shadow-md min-w-[260px] h-[160px]">
-        <!-- Contenedor de la miniatura -->
-        <div class="w-full h-full cursor-pointer flex flex-col justify-center items-center relative p-4" id="container8" onclick="viewvideo('container8','video8')">
-          <img src="./images/logo/logo.png" alt="Logo" class="absolute w-[50px] h-[50px] right-0 top-0">
-          <img src="./images/iconvideo.png" alt="Video thumbnail" style="width: 65px !important;">
-        </div>
-        <!-- Video oculto inicialmente -->
-        <video class="w-full h-full hidden" id="video8" controls>
-          <source src="./videos/videos_alumnos/video9.mp4" type="video/mp4">
-        </video>
-      </div>
-
-      <div class="relative flex bg-black/80 shadow-md min-w-[260px] h-[160px]">
-        <!-- Contenedor de la miniatura -->
-        <div class="w-full h-full cursor-pointer flex flex-col justify-center items-center relative p-4" id="container9" onclick="viewvideo('container9','video9')">
-          <img src="./images/logo/logo.png" alt="Logo" class="absolute w-[50px] h-[50px] right-0 top-0">
-          <img src="./images/iconvideo.png" alt="Video thumbnail" style="width: 65px !important;">
-        </div>
-        <!-- Video oculto inicialmente -->
-        <video class="w-full h-full hidden" id="video9" controls>
-          <source src="./videos/videos_alumnos/video10.mp4" type="video/mp4">
-        </video>
-      </div>
-
-    </div>
-    <div class="absolute bottom-1 lg:-bottom-5 xl:bottom-3 flex w-full justify-center items-center">
-      <div class="flex gap-3">
-        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-left-circle-fil text-secondary-color cursor-pointer" viewBox="0 0 16 16" id="scrollLeft">
-          <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z" />
-        </svg>
-        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-right-circle-fill text-secondary-color cursor-pointer" viewBox="0 0 16 16" id="scrollRight">
-          <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z" />
-        </svg>
       </div>
     </div>
   </section>
 
   <!-- Contactanos -->
-  <section id="contacto" class="w-full px-6 py-16 flex justify-center items-center">
-    <div class="w-full max-w-5xl flex flex-col items-center gap-8" data-aos="fade-up" data-aos-duration="800">
+  <section id="contacto" class="relative bg-white py-20 overflow-hidden">
+    <!-- Elementos decorativos -->
+    <div class="absolute inset-0 opacity-10">
+      <div class="absolute top-20 left-10 w-32 h-32 bg-gray-200 rounded-full animate-pulse"></div>
+      <div class="absolute bottom-20 right-20 w-24 h-24 bg-gray-300 rounded-full animate-bounce"></div>
+      <div class="absolute top-1/2 left-1/4 w-16 h-16 bg-gray-200 rounded-full animate-ping"></div>
+    </div>
 
-      <!-- Título -->
-      <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold font-['Oswald'] text-center">Contáctanos</h2>
-      <p class="text-sm md:text-base  text-center max-w-xl">¿Tienes alguna duda o quieres saber más sobre nuestras clases y programas? Completa el formulario y nos pondremos en contacto contigo.</p>
+    <div class="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
+      <!-- Título principal -->
+      <div class="text-center mb-16" data-aos="fade-up">
+        <h2 class="text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 font-['Oswald'] mb-4">
+          Contáctanos
+        </h2>
+        <div class="w-24 h-1 bg-gray-800 mx-auto rounded-full mb-6"></div>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+          ¿Tienes alguna duda o quieres saber más sobre nuestras clases y programas? Completa el formulario y nos pondremos en contacto contigo.
+        </p>
+      </div>
 
-      <!-- Formulario -->
-      <form id="contactForm" method="post" class="w-full flex flex-col gap-5 bg-white/10 backdrop-blur-md border border-white/10 rounded-xl p-6 md:p-10 shadow-xl sm:max-w-[520px] lg:max-w-[800px]">
+      <!-- Contenido principal -->
+      <div class="grid lg:grid-cols-2 gap-12 items-start">
+        <!-- Columna izquierda - Información de contacto -->
+        <div class="space-y-8" data-aos="fade-right" data-aos-delay="200">
+          <!-- Card de información -->
+          <div class="bg-gradient-to-br from-gray-50 to-gray-100 rounded-3xl p-8 border border-gray-200 shadow-xl">
+            <h3 class="text-2xl font-bold text-gray-900 font-['Oswald'] mb-6">
+              ¡Comienza tu aventura musical!
+            </h3>
+            <p class="text-gray-700 mb-8 leading-relaxed">
+              Únete a nuestra comunidad musical y descubre tu potencial artístico con profesores especializados y métodos innovadores.
+            </p>
 
-        <div class="flex flex-col md:flex-row gap-4">
-          <input type="text" name="nombre" id="nombre" placeholder="Tu nombre" required
-            class="flex-1 px-4 py-2 rounded-md placeholder-gray-400 border border-gray-600 focus:ring-2 focus:ring-secondary-color focus:outline-none transition">
-
-          <input type="email" name="email" id="email" placeholder="Tu correo electrónico" required
-            class="flex-1 px-4 py-2 rounded-md placeholder-gray-400 border border-gray-600 focus:ring-2 focus:ring-secondary-color focus:outline-none transition">
+            <!-- Características destacadas -->
+            <div class="space-y-4">
+              <div class="flex items-center gap-3">
+                <div class="bg-secondary-color rounded-full p-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 text-white">
+                    <path fill-rule="evenodd" d="M19.916 4.626a.75.75 0 0 1 .208 1.04l-9 13.5a.75.75 0 0 1-1.154.114l-6-6a.75.75 0 0 1 1.06-1.06l5.353 5.353 8.493-12.74a.75.75 0 0 1 1.04-.207Z" clip-rule="evenodd" />
+                  </svg>
+                </div>
+                <span class="text-gray-800 font-medium">Clases personalizadas para tu nivel</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <div class="bg-secondary-color rounded-full p-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 text-white">
+                    <path fill-rule="evenodd" d="M19.916 4.626a.75.75 0 0 1 .208 1.04l-9 13.5a.75.75 0 0 1-1.154.114l-6-6a.75.75 0 0 1 1.06-1.06l5.353 5.353 8.493-12.74a.75.75 0 0 1 1.04-.207Z" clip-rule="evenodd" />
+                  </svg>
+                </div>
+                <span class="text-gray-800 font-medium">Profesores con experiencia internacional</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <div class="bg-secondary-color rounded-full p-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 text-white">
+                    <path fill-rule="evenodd" d="M19.916 4.626a.75.75 0 0 1 .208 1.04l-9 13.5a.75.75 0 0 1-1.154.114l-6-6a.75.75 0 0 1 1.06-1.06l5.353 5.353 8.493-12.74a.75.75 0 0 1 1.04-.207Z" clip-rule="evenodd" />
+                  </svg>
+                </div>
+                <span class="text-gray-800 font-medium">Metodología moderna y divertida</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <div class="bg-secondary-color rounded-full p-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 text-white">
+                    <path fill-rule="evenodd" d="M19.916 4.626a.75.75 0 0 1 .208 1.04l-9 13.5a.75.75 0 0 1-1.154.114l-6-6a.75.75 0 0 1 1.06-1.06l5.353 5.353 8.493-12.74a.75.75 0 0 1 1.04-.207Z" clip-rule="evenodd" />
+                  </svg>
+                </div>
+                <span class="text-gray-800 font-medium">Flexibilidad de horarios</span>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <input type="text" name="celcontacto" id="celcontacto" placeholder="Tu número (opcional)"
-          class="w-full px-4 py-2 rounded-md placeholder-gray-400 border border-gray-600 focus:ring-2 focus:ring-secondary-color focus:outline-none transition">
+        <!-- Columna derecha - Formulario -->
+        <div class="space-y-8" data-aos="fade-left" data-aos-delay="400">
+          <div class="bg-gradient-to-br from-gray-50 to-gray-100 rounded-3xl p-8 border border-gray-200 shadow-xl">
+            <h3 class="text-2xl font-bold text-gray-900 font-['Oswald'] mb-6">
+              Envíanos un mensaje
+            </h3>
+            
+            <form id="contactForm" method="post" class="space-y-6">
+              <!-- Nombre y Email -->
+              <div class="grid md:grid-cols-2 gap-4">
+                <div class="space-y-2">
+                  <label for="nombre" class="text-gray-800 font-medium text-sm">Nombre *</label>
+                  <input type="text" name="nombre" id="nombre" placeholder="Tu nombre completo" required
+                    class="w-full px-4 py-3 rounded-xl bg-white border border-gray-300 text-gray-900 placeholder-gray-500 focus:ring-2 focus:ring-gray-800 focus:border-transparent focus:outline-none transition-all duration-300 shadow-sm">
+                </div>
+                <div class="space-y-2">
+                  <label for="email" class="text-gray-800 font-medium text-sm">Email *</label>
+                  <input type="email" name="email" id="email" placeholder="tu@email.com" required
+                    class="w-full px-4 py-3 rounded-xl bg-white border border-gray-300 text-gray-900 placeholder-gray-500 focus:ring-2 focus:ring-gray-800 focus:border-transparent focus:outline-none transition-all duration-300 shadow-sm">
+                </div>
+              </div>
 
-        <textarea name="content" id="content" rows="5" placeholder="Dejanos un mensaje" required
-          class="w-full px-4 py-2 rounded-md placeholder-gray-400 border border-gray-600 focus:ring-2 focus:ring-secondary-color focus:outline-none transition resize-none"></textarea>
+              <!-- Teléfono -->
+              <div class="space-y-2">
+                <label for="celcontacto" class="text-gray-800 font-medium text-sm">Teléfono (opcional)</label>
+                <input type="text" name="celcontacto" id="celcontacto" placeholder="Tu número de contacto"
+                  class="w-full px-4 py-3 rounded-xl bg-white border border-gray-300 text-gray-900 placeholder-gray-500 focus:ring-2 focus:ring-gray-800 focus:border-transparent focus:outline-none transition-all duration-300 shadow-sm">
+              </div>
 
-        <input type="submit" value="Enviar mensaje"
-          class="bg-secondary-color text-black font-semibold px-6 py-3 rounded-md hover:bg-yellow-400/80 transition cursor-pointer text-lg font-['Oswald'] mt-4 shadow-md">
-      </form>
+              <!-- Mensaje -->
+              <div class="space-y-2">
+                <label for="content" class="text-gray-800 font-medium text-sm">Mensaje *</label>
+                <textarea name="content" id="content" rows="5" placeholder="Cuéntanos sobre tus intereses musicales o preguntas que tengas..." required
+                  class="w-full px-4 py-3 rounded-xl bg-white border border-gray-300 text-gray-900 placeholder-gray-500 focus:ring-2 focus:ring-gray-800 focus:border-transparent focus:outline-none transition-all duration-300 resize-none shadow-sm"></textarea>
+              </div>
+
+              <!-- Botón de envío -->
+              <button type="submit" 
+                class="w-full bg-gradient-to-r from-blue-800 to-primary-color text-white font-bold px-8 py-4 rounded-xl hover:shadow-2xl hover:from-primary-color-800 hover:to-primary-color-700 transform hover:scale-105 transition-all duration-300 text-lg font-['Oswald'] flex items-center justify-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5">
+                  <path d="M3.478 2.404a.75.75 0 0 0-.926.941l2.432 7.905H13.5a.75.75 0 0 1 0 1.5H4.984l-2.432 7.905a.75.75 0 0 0 .926.94 60.519 60.519 0 0 0 18.445-8.986.75.75 0 0 0 0-1.218A60.517 60.517 0 0 0 3.478 2.404Z" />
+                </svg>
+                Enviar Mensaje
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -784,7 +1019,8 @@ $pagina = "inicio";
     showSlide(current); // Mostrar el primero al cargar
 
 
-    new Swiper(".testimonial-swiper", {
+    // Configuración del swiper de testimonios con botones personalizados
+    const testimonialSwiper = new Swiper(".testimonial-swiper", {
       effect: "fade",
       autoplay: {
         delay: 8000,
@@ -792,18 +1028,24 @@ $pagina = "inicio";
       },
       loop: true,
       pagination: {
-        el: ".swiper-pagination",
+        el: ".testimonial-pagination",
         clickable: true,
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
       },
       fadeEffect: {
         crossFade: true,
       },
     });
 
+    // Botones personalizados para testimonios
+    document.querySelector('.testimonial-prev-btn').addEventListener('click', () => {
+      testimonialSwiper.slidePrev();
+    });
+    
+    document.querySelector('.testimonial-next-btn').addEventListener('click', () => {
+      testimonialSwiper.slideNext();
+    });
+
+    // Configuración del swiper de videos de comunidad con botones personalizados
     const comunidadSwiper = new Swiper(".comunidadSwiper", {
       loop: false,
       spaceBetween: 20,
@@ -812,10 +1054,6 @@ $pagina = "inicio";
       pagination: {
         el: ".comunidad-pagination",
         clickable: true,
-      },
-      navigation: {
-        nextEl: ".comunidad-next",
-        prevEl: ".comunidad-prev",
       },
       breakpoints: {
         640: {
@@ -838,14 +1076,23 @@ $pagina = "inicio";
       }
     });
 
+    // Botones personalizados para videos de comunidad
+    document.querySelector('.comunidad-prev-btn').addEventListener('click', () => {
+      comunidadSwiper.slidePrev();
+    });
+    
+    document.querySelector('.comunidad-next-btn').addEventListener('click', () => {
+      comunidadSwiper.slideNext();
+    });
+
     function toggleComunidadNav(swiper) {
       const slidesPerView = getSlidesPerView(swiper);
       const totalSlides = swiper.slides.length;
 
       const shouldShow = totalSlides > slidesPerView;
 
-      const nextBtn = document.querySelector(".comunidad-next");
-      const prevBtn = document.querySelector(".comunidad-prev");
+      const nextBtn = document.querySelector(".comunidad-next-btn");
+      const prevBtn = document.querySelector(".comunidad-prev-btn");
 
       if (nextBtn && prevBtn) {
         nextBtn.style.display = shouldShow ? "flex" : "none";
@@ -870,8 +1117,8 @@ $pagina = "inicio";
     }
   </script>
 
-  <script src="src/js/main.js?v=20250728"></script>
-  <script src="./src/js/resenias.js?v=20250728"></script>
+  <script src="src/js/main.js?v=20250810"></script>
+  <script src="./src/js/resenias.js?v=20250810"></script>
   <script src="./src/css/aos-master/dist/aos.js"></script>
   <link href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-minimal/minimal.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>

@@ -63,38 +63,72 @@ document.addEventListener("DOMContentLoaded", function () {
     document.querySelector(".slider-container-slider").style.transform =
       "translateX(0)";
   });
+});
 
-  document.getElementById("btn-show-menu-mb").addEventListener("click", () => {
-    document.getElementById("nav-menu-mobile").classList.toggle("hidden");
-  });
-  // if (!localStorage.getItem("reloaded")) {
-  //   // Marcar que se ha recargado la página
-  //   localStorage.setItem("reloaded", "true");
+// Funcionalidad del menú móvil - Envuelto en DOMContentLoaded para garantizar que los elementos estén disponibles
+document.addEventListener('DOMContentLoaded', function() {
+  // Mostrar/ocultar menú móvil
+  const btnShowMenu = document.getElementById("btn-show-menu-mb");
+  const btnCloseMenu = document.getElementById("btn-close-menu-mb");
+  const navMenuMobile = document.getElementById("nav-menu-mobile");
 
-  //   // Recargar la página sin usar la caché
-  //   location.reload();
-  // } else {
-  //   // Limpiar la bandera después de la recarga para permitir futuras recargas
-  //   localStorage.removeItem("reloaded");
-  // }
+  if (btnShowMenu && navMenuMobile) {
+    btnShowMenu.addEventListener("click", (e) => {
+      e.preventDefault();
+      console.log("Botón hamburguesa clickeado"); // Para debug
+      navMenuMobile.classList.remove("hidden");
+      navMenuMobile.classList.add("flex");
+      document.body.classList.add("overflow-hidden");
+    });
+  }
 
-  // const video = document.getElementById("video-audicion");
-  // const source = video.querySelector("source");
-  // source.src = source.getAttribute("data-src");
-  // video.load();
-  // document.getElementById('video-thumbnail').addEventListener('click', function () {
-  //   const video = document.getElementById('video-audicion');
-  //   const source = video.querySelector('source');
+  if (btnCloseMenu && navMenuMobile) {
+    btnCloseMenu.addEventListener("click", (e) => {
+      e.preventDefault();
+      console.log("Botón cerrar clickeado"); // Para debug
+      navMenuMobile.classList.add("hidden");
+      navMenuMobile.classList.remove("flex");
+      document.body.classList.remove("overflow-hidden");
+    });
+  }
 
-  //   // Cargar el video solo cuando el usuario haga clic
-  //   source.src = source.getAttribute('data-src');
-  //   video.load();
+  if (navMenuMobile) {
+    // Cerrar menú haciendo clic en el overlay
+    navMenuMobile.addEventListener("click", (e) => {
+      if (e.target === e.currentTarget || e.target.classList.contains('bg-black/50')) {
+        navMenuMobile.classList.add("hidden");
+        navMenuMobile.classList.remove("flex");
+        document.body.classList.remove("overflow-hidden");
+      }
+    });
 
-  //   // Cambiar la miniatura por el video
-  //   this.style.display = 'none'; // Ocultar la imagen de vista previa
-  //   video.style.display = 'block'; // Mostrar el video
-  //   video.play(); // Opcional: iniciar la reproducción automáticamente
-  // });
+    // Cerrar menú al hacer clic en cualquier enlace
+    const menuLinks = navMenuMobile.querySelectorAll("a");
+    menuLinks.forEach(link => {
+      link.addEventListener("click", () => {
+        navMenuMobile.classList.add("hidden");
+        navMenuMobile.classList.remove("flex");
+        document.body.classList.remove("overflow-hidden");
+      });
+    });
+  }
+
+  // Funcionalidad mejorada del video de audiciones
+  const videoThumbnail = document.getElementById('video-thumbnail');
+  const videoElement = document.getElementById('video-audicion');
+  const playOverlay = document.getElementById('play-overlay');
+
+  if (videoThumbnail && videoElement && playOverlay) {
+    const showVideo = () => {
+      videoThumbnail.classList.add('hidden');
+      playOverlay.classList.add('hidden');
+      videoElement.classList.remove('hidden');
+      videoElement.play();
+    };
+
+    videoThumbnail.addEventListener('click', showVideo);
+    playOverlay.addEventListener('click', showVideo);
+  }
   const thumbnail = document.getElementById("video-thumbnail");
   const video = document.getElementById("video-audicion");
 
