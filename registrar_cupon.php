@@ -28,7 +28,7 @@ function sendMessageAdmin($message)
   $curl = curl_init();
 
   curl_setopt_array($curl, [
-    CURLOPT_URL => "https://waapi.app/api/v1/instances/66076/client/action/send-message",
+    CURLOPT_URL => "https://www.wasenderapi.com/api/send-message",
     CURLOPT_RETURNTRANSFER => true,
     CURLOPT_ENCODING => "",
     CURLOPT_MAXREDIRS => 10,
@@ -36,13 +36,13 @@ function sendMessageAdmin($message)
     CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
     CURLOPT_CUSTOMREQUEST => "POST",
     CURLOPT_POSTFIELDS => json_encode([
-      'chatId' => "34604369473@c.us",
+      'to' => "34604369473",
       // 'chatId' => "51924471461@c.us",
-      'message' => $message
+      'text' => $message
     ]),
     CURLOPT_HTTPHEADER => [
       "accept: application/json",
-      "authorization: Bearer Ps0CQrMUGwOowWupP2nWmnsLegUGAEMLSzcpMYl314cefa28",
+      "authorization: Bearer b9a3385066f49ad42b991daf9a5b97c8df6398d906b173fb2c1e2d1eafff87f3",
       "content-type: application/json"
     ],
   ]);
