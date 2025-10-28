@@ -1,9 +1,9 @@
 <?php
 // Configuración de la base de datos
-define('HOST', 'srv1689.hstgr.io');
-define('DB', 'u603781914_app');
-define('USER', 'u603781914_admin');
-define('PASSWORD', '@dminDb2024');
+define('HOST', 'db5018879803.hosting-data.io');
+define('DB', 'dbs14896670');
+define('USER', 'dbu3069664');
+define('PASSWORD', 'M3lod1asUnid@s');
 define('CHARSET', 'utf8mb4');
 define('PORT', '3306');
 
@@ -272,7 +272,8 @@ $mail = new PHPMailer(true);
 
 try {
   $mail->isSMTP();
-  $mail->Host       = 'smtp.hostinger.com';
+  // $mail->Host       = 'smtp.hostinger.com';
+  $mail->Host       = 'smtp.ionos.es';
   $mail->SMTPAuth   = true;
   $mail->Username   = 'soporte.promociones@melodiasunidas.com';
   $mail->Password   = 'oZ8RNzhs[';
@@ -292,7 +293,7 @@ try {
       'src/pdf/cursoscuponatic/CURSO DE PRODUCCIÓN MUSICAL.pdf',
       'src/pdf/cursoscuponatic/CURSO DE IMPROVISACIÓN AL PIANO.pdf'
     ];
-    
+
     foreach ($archivos_pdf as $archivo) {
       if (file_exists($archivo)) {
         $mail->addAttachment($archivo);

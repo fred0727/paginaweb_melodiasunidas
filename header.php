@@ -1,4 +1,4 @@
-  <header class="bg-primary-color fixed top-0 left-0 w-full z-50" id="header">
+  <header class="bg-primary-color fixed top-0 left-0 w-full z-50 lg:px-12" id="header">
     <!-- Barra principal con logo y menú -->
     <div class="py-4 lg:py-4 px-4 lg:px-6 xl:px-8">
       <div class="flex justify-between items-center w-full max-w-7xl mx-auto min-w-0 gap-2">
@@ -8,7 +8,7 @@
             Melodías Unidas
           </h3>
           <span class="text-white/90 text-xs lg:text-sm font-['Oswald'] font-light tracking-wider whitespace-nowrap truncate max-w-full">
-            Escuela de Música
+            Tu comunidad musical
           </span>
         </a>
 
@@ -16,34 +16,34 @@
         <nav class="hidden lg:flex flex-shrink min-w-0">
           <ul class="flex items-center gap-1 xl:gap-2 text-white flex-wrap">
             <li class="flex-shrink-0">
-              <a href="index.php" class="font-['Oswald'] text-sm xl:text-base px-2 xl:px-3 py-2 rounded-lg hover:bg-white/10 transition-all duration-300 hover:scale-105 border-b-2 border-transparent hover:border-white/50 whitespace-nowrap">
+              <a href="index.php" class="font-['Oswald'] text-sm xl:text-lg px-2 xl:px-3 py-2 rounded-lg hover:bg-white/10 transition-all duration-300 hover:scale-105 border-b-2 border-transparent hover:border-white/50 whitespace-nowrap">
                 Inicio
               </a>
             </li>
             <?php if ($pagina == "inicio") { ?>
               <li class="flex-shrink-0">
-                <a href="#testimonios" class="font-['Oswald'] text-sm xl:text-base px-2 xl:px-3 py-2 rounded-lg hover:bg-white/10 transition-all duration-300 hover:scale-105 border-b-2 border-transparent hover:border-white/50 whitespace-nowrap">
+                <a href="#testimonios" class="font-['Oswald'] text-sm xl:text-lg px-2 xl:px-3 py-2 rounded-lg hover:bg-white/10 transition-all duration-300 hover:scale-105 border-b-2 border-transparent hover:border-white/50 whitespace-nowrap">
                   Testimonios
                 </a>
               </li>
             <?php } ?>
             <li class="flex-shrink-0">
-              <a href="nosotros.php" class="font-['Oswald'] text-sm xl:text-base px-2 xl:px-3 py-2 rounded-lg hover:bg-white/10 transition-all duration-300 hover:scale-105 border-b-2 border-transparent hover:border-white/50 whitespace-nowrap">
+              <a href="nosotros.php" class="font-['Oswald'] text-sm xl:text-lg px-2 xl:px-3 py-2 rounded-lg hover:bg-white/10 transition-all duration-300 hover:scale-105 border-b-2 border-transparent hover:border-white/50 whitespace-nowrap">
                 Nosotros
               </a>
             </li>
             <li class="flex-shrink-0">
-              <a href="profejuancarlos.php" class="font-['Oswald'] text-sm xl:text-base px-2 xl:px-3 py-2 rounded-lg hover:bg-white/10 transition-all duration-300 hover:scale-105 border-b-2 border-transparent hover:border-white/50 whitespace-nowrap">
+              <a href="profejuancarlos.php" class="font-['Oswald'] text-sm xl:text-lg px-2 xl:px-3 py-2 rounded-lg hover:bg-white/10 transition-all duration-300 hover:scale-105 border-b-2 border-transparent hover:border-white/50 whitespace-nowrap">
                 Nuestro Profe
               </a>
             </li>
             <li class="flex-shrink-0">
-              <a href="contenido-digital.php" class="font-['Oswald'] text-sm xl:text-base px-2 xl:px-3 py-2 rounded-lg hover:bg-white/10 transition-all duration-300 hover:scale-105 border-b-2 border-transparent hover:border-white/50 whitespace-nowrap">
+              <a href="contenido-digital.php" class="font-['Oswald'] text-sm xl:text-lg px-2 xl:px-3 py-2 rounded-lg hover:bg-white/10 transition-all duration-300 hover:scale-105 border-b-2 border-transparent hover:border-white/50 whitespace-nowrap">
                 Contenido Digital
               </a>
             </li>
             <li class="flex-shrink-0">
-              <a href="faq.php" class="font-['Oswald'] text-sm xl:text-base px-2 xl:px-3 py-2 rounded-lg hover:bg-white/10 transition-all duration-300 hover:scale-105 border-b-2 border-transparent hover:border-white/50 whitespace-nowrap">
+              <a href="faq.php" class="font-['Oswald'] text-sm xl:text-lg px-2 xl:px-3 py-2 rounded-lg hover:bg-white/10 transition-all duration-300 hover:scale-105 border-b-2 border-transparent hover:border-white/50 whitespace-nowrap">
                 FAQ
               </a>
             </li>
