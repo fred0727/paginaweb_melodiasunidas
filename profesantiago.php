@@ -14,41 +14,7 @@
     <link href="./src/css/main.css?v=20250810" rel="stylesheet" />
     <link href="./src/css/aos-master/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" defer />
-    <link href="./src/output_v6.css?v=20250810" rel="stylesheet" defer />
-    <style>
-        /* Scrollbar personalizado */
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-        ::-webkit-scrollbar-track {
-            background: #f1f1f1;
-        }
-        ::-webkit-scrollbar-thumb {
-            background: #2d3436;
-            border-radius: 10px;
-        }
-        ::-webkit-scrollbar-thumb:hover {
-            background: #636e72;
-        }
-
-        /* Efectos hover para íconos de herramientas */
-        .tech-icon:hover {
-            transform: scale(1.1);
-            transition: transform 0.3s ease;
-        }
-
-        /* Animación de gradiente */
-        .gradient-animate {
-            background-size: 400% 400%;
-            animation: gradientShift 15s ease infinite;
-        }
-
-        @keyframes gradientShift {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
-        }
-    </style>
+    <link href="./src/output_v2112025.css?v=20250810" rel="stylesheet" defer />
 </head>
 <?php
 $pagina = "nosotros";
@@ -61,10 +27,10 @@ $pagina = "nosotros";
     <!-- Portada -->
     <section class="relative flex bg-black/30 h-[50vh] sm:h-[60vh] lg:h-[80vh] xl:h-[85vh] overflow-hidden">
         <img src="./images/nuestroprofe.webp" alt="Santiago Andrés Medina Gómez - Profesor de Música" class="w-full h-full object-cover">
-        
+
         <!-- Overlay con gradiente -->
         <div class="absolute inset-0 bg-gradient-to-br from-black/70 via-primary-color/40 to-black/80"></div>
-        
+
         <!-- Contenido sobre la imagen -->
         <div class="absolute inset-0 flex flex-col justify-center items-center text-center px-6 lg:px-12">
             <div class="max-w-4xl mx-auto">
@@ -90,439 +56,313 @@ $pagina = "nosotros";
         </div>
     </section>
 
-    <!-- Nuestro Profesor - Mobile -->
-    <section class="lg:hidden bg-gradient-to-br from-white to-gray-50 py-16 px-6">
-        <div class="max-w-4xl mx-auto">
-            <!-- Título principal -->
-            <div class="text-center mb-12">
-                <h2 class="text-3xl sm:text-4xl font-bold text-gray-800 font-['Oswald'] mb-4">Nuestro Profesor</h2>
-                <div class="w-20 h-1 bg-secondary-color mx-auto rounded-full"></div>
+    <section class="bg-gradient-to-b from-gray-50 to-white min-h-screen" id="profesantiago">
+        <div class="max-w-[80%] xl:max-w-[65%] mx-auto px-4 sm:px-6 lg:px-8 py-16">
+
+            <!-- Hero Section Compacto -->
+            <div class="text-center mb-16" data-aos="fade-up">
+                <div class="inline-flex items-center justify-center w-16 h-16 bg-primary-color rounded-full mb-6">
+                    <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z" />
+                    </svg>
+                </div>
             </div>
 
-            <!-- Card principal del profesor -->
-            <div class="bg-white rounded-3xl shadow-xl p-8 mb-8 border border-gray-100" data-aos="fade-up" data-aos-duration="800">
-                <!-- Foto y nombre -->
-                <div class="flex flex-col items-center mb-8">
-                    <div class="relative mb-6">
-                        <div class="w-40 h-40 rounded-full overflow-hidden border-4 border-secondary-color shadow-lg">
-                            <img src="./images/profes/santiago.jpeg" alt="Santiago Andrés Medina Gómez" title="Santiago Andrés Medina Gómez" class="w-full h-full object-cover">
-                        </div>
-                        <div class="absolute -bottom-2 -right-2 bg-primary-color rounded-full p-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-white">
-                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
-                            </svg>
+            <!-- Sección Principal: Profesor y Presentación -->
+            <div class="mb-16" data-aos="fade-up" data-aos-delay="100">
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <!-- Lado izquierdo: Foto del profesor -->
+                    <div class="text-center lg:text-left">
+                        <div class="w-80 h-80 mx-auto lg:mx-0 rounded-2xl overflow-hidden shadow-2xl border-4 border-white">
+                            <img src="./images/profes/newsantiago.jpg" alt="Santiago Andrés Medina Gómez - Profesor de Música" class="w-full h-full object-cover object-center">
                         </div>
                     </div>
-                    <h3 class="text-2xl font-bold text-gray-800 font-['Oswald'] text-center">Santiago Andrés Medina Gómez</h3>
-                    <p class="text-primary-color font-semibold mt-2">Especialista en Producción Musical & Audio Digital</p>
-                </div>
 
-                <!-- Descripción principal -->
-                <div class="space-y-4 text-gray-700 leading-relaxed">
-                    <p class="text-base">
-                        Santi lleva más de 12 años en el mundo de la producción musical, teoría musical y lenguaje musical, enseñando a sus alumnos a crear y entender la música desde cero. En sus clases no solo se aprende, ¡se disfruta! Porque para él, la música es más que teoría, es vivirla y sentirla.
-                    </p>
-                </div>
-            </div>
-
-            <!-- Cards de experiencia -->
-            <div class="grid gap-6 mb-8">
-                <!-- Polyphonic Studios -->
-                <div class="bg-gradient-to-r from-primary-color/5 to-secondary-color/5 rounded-2xl p-6 border border-gray-100" data-aos="fade-right" data-aos-delay="200">
-                    <div class="flex items-center gap-3 mb-4">
-                        <div class="bg-primary-color rounded-full p-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 text-white">
-                                <path d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25ZM12.75 9a.75.75 0 0 0-1.5 0v2.25H9a.75.75 0 0 0 0 1.5h2.25V15a.75.75 0 0 0 1.5 0v-2.25H15a.75.75 0 0 0 0-1.5h-2.25V9Z" />
-                            </svg>
-                        </div>
-                        <h4 class="font-bold text-gray-800">Polyphonic Studios</h4>
-                    </div>
-                    <p class="text-sm text-gray-600">
-                        Como director de audio, convierte cualquier idea en un paisaje sonoro que engancha desde el primer segundo, creando experiencias auditivas únicas.
-                    </p>
-                </div>
-
-                <!-- Producción Teatral -->
-                <div class="bg-gradient-to-r from-secondary-color/5 to-primary-color/5 rounded-2xl p-6 border border-gray-100" data-aos="fade-left" data-aos-delay="300">
-                    <div class="flex items-center gap-3 mb-4">
-                        <div class="bg-secondary-color rounded-full p-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 text-primary-color">
-                                <path d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443a55.381 55.381 0 0 1 5.25 2.882V15" />
-                            </svg>
-                        </div>
-                        <h4 class="font-bold text-gray-800">Producción Teatral</h4>
-                    </div>
-                    <p class="text-sm text-gray-600">
-                        Su trabajo como productor en obras como Test a Turing, Evoéh y La Patafomosis ha dejado al público totalmente atrapado.
-                    </p>
-                </div>
-            </div>
-
-            <!-- Herramientas Especializadas -->
-            <div class="bg-white rounded-2xl shadow-lg p-6 mb-8 border border-gray-100" data-aos="fade-up" data-aos-delay="400">
-                <div class="flex items-center gap-3 mb-4">
-                    <div class="bg-gradient-to-r from-primary-color to-secondary-color rounded-full p-3">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-white">
-                            <path d="M4 4c0-1.11.89-2 2-2h12c1.11 0 2 .89 2 2v12c0 1.11-.89 2-2 2H6c-1.11 0-2-.89-2-2V4zm2 0v12h12V4H6z"/>
-                        </svg>
-                    </div>
-                    <h4 class="text-lg font-bold text-gray-800">Herramientas Especializadas</h4>
-                </div>
-                <p class="text-sm text-gray-600 leading-relaxed">
-                    Es un crack con programas como Logic Pro X, Pro Tools y Ableton, usando estas herramientas para crear bandas sonoras que elevan cualquier proyecto, ya sea un videojuego, una película o un corto.
-                </p>
-            </div>
-
-            <!-- Herramientas tecnológicas -->
-            <div class="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-6 text-white" data-aos="fade-up" data-aos-delay="500">
-                <h4 class="text-lg font-bold mb-4 text-center">Herramientas de Producción</h4>
-                <div class="flex justify-center items-center gap-4">
-                    <div class="bg-white/10 rounded-xl p-3 tech-icon">
-                        <span class="text-secondary-color font-bold text-sm">Logic Pro X</span>
-                    </div>
-                    <div class="bg-white/10 rounded-xl p-3 tech-icon">
-                        <span class="text-secondary-color font-bold text-sm">Pro Tools</span>
-                    </div>
-                    <div class="bg-white/10 rounded-xl p-3 tech-icon">
-                        <span class="text-secondary-color font-bold text-sm">Ableton</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-                <div class="grid grid-cols-2 gap-4 mt-6 pt-6 border-t border-gray-100">
-                    <div class="text-center">
-                        <div class="text-2xl font-bold text-primary-color font-['Oswald']">12+</div>
-                        <div class="text-xs text-gray-600">Años de experiencia</div>
-                    </div>
-                    <div class="text-center">
-                        <div class="text-2xl font-bold text-primary-color font-['Oswald']">∞</div>
-                        <div class="text-xs text-gray-600">Proyectos creados</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Nuestro Profesor - Desktop-->
-    <section class="hidden lg:block bg-gradient-to-br from-white to-gray-50 py-20">
-        <div class="max-w-7xl mx-auto px-8 lg:px-12">
-            <!-- Título principal -->
-            <div class="text-center mb-16">
-                <h2 class="text-4xl lg:text-5xl font-bold text-gray-800 font-['Oswald'] mb-6">Nuestro Profesor</h2>
-                <div class="w-24 h-1 bg-secondary-color mx-auto rounded-full"></div>
-            </div>
-
-            <!-- Contenido principal -->
-            <div class="grid lg:grid-cols-2 gap-12 items-start">
-                <!-- Columna izquierda - Información -->
-                <div class="space-y-8">
-                    <!-- Card del profesor -->
-                    <div class="bg-white rounded-3xl shadow-xl p-8 border border-gray-100" data-aos="fade-right" data-aos-duration="1000">
-                        <div class="flex items-center gap-4 mb-6">
-                            <div class="bg-primary-color rounded-full p-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-white">
-                                    <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
-                                </svg>
-                            </div>
-                            <div>
-                                <h3 class="text-2xl font-bold text-gray-800 font-['Oswald']">Santiago Andrés Medina Gómez</h3>
-                                <p class="text-primary-color font-semibold">Especialista en Producción Musical & Audio Digital</p>
-                            </div>
-                        </div>
-                        <p class="text-gray-700 leading-relaxed text-base">
-                            Santi lleva más de 12 años en el mundo de la producción musical, teoría musical y lenguaje musical, enseñando a sus alumnos a crear y entender la música desde cero. En sus clases no solo se aprende, ¡se disfruta! Porque para él, la música es más que teoría, es vivirla y sentirla.
+                    <!-- Lado derecho: Información principal -->
+                    <div class="space-y-6">
+                        <h2 class="text-4xl md:text-5xl font-light text-gray-900 leading-tight tracking-tight">
+                            Santiago Andrés Medina Gómez
+                        </h2>
+                        <p class="text-xl text-gray-600 leading-relaxed">
+                            Profesor de <span class="font-semibold text-primary-color">Guitarra Eléctrica, Guitarra Acústica, Producción Musical, Improvisación al Piano, Lenguaje Musical, Teoría y Solfeo</span>
                         </p>
-                    </div>
-
-                    <!-- Experiencia profesional -->
-                    <div class="grid gap-6">
-                        <!-- Polyphonic Studios -->
-                        <div class="bg-gradient-to-r from-primary-color/5 to-secondary-color/5 rounded-2xl p-6 border border-gray-100" data-aos="fade-right" data-aos-delay="200">
-                            <div class="flex items-center gap-3 mb-4">
-                                <div class="bg-primary-color rounded-full p-2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 text-white">
-                                        <path d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25ZM12.75 9a.75.75 0 0 0-1.5 0v2.25H9a.75.75 0 0 0 0 1.5h2.25V15a.75.75 0 0 0 1.5 0v-2.25H15a.75.75 0 0 0 0-1.5h-2.25V9Z" />
-                                    </svg>
-                                </div>
-                                <h4 class="font-bold text-gray-800 text-lg">Polyphonic Studios</h4>
-                            </div>
-                            <p class="text-gray-600">
-                                Como director de audio, convierte cualquier idea en un paisaje sonoro que engancha desde el primer segundo, creando experiencias auditivas únicas.
+                        <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+                            <p class="text-lg text-gray-700 leading-relaxed mb-4">
+                                En Melodías Unidas entendemos que un profesor no es alguien que solo imparte contenidos: es alguien que expande horizontes.
+                            </p>
+                            <p class="text-lg text-gray-700 leading-relaxed">
+                                Santiago Andrés Medina Gómez es uno de los mentores que dan vida a esa visión.
                             </p>
                         </div>
+                    </div>
+                </div>
+            </div>
 
-                        <!-- Producción Teatral -->
-                        <div class="bg-gradient-to-r from-secondary-color/5 to-primary-color/5 rounded-2xl p-6 border border-gray-100" data-aos="fade-right" data-aos-delay="300">
-                            <div class="flex items-center gap-3 mb-4">
-                                <div class="bg-secondary-color rounded-full p-2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 text-primary-color">
-                                        <path d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443a55.381 55.381 0 0 1 5.25 2.882V15" />
-                                    </svg>
-                                </div>
-                                <h4 class="font-bold text-gray-800 text-lg">Producción Teatral</h4>
-                            </div>
-                            <p class="text-gray-600">
-                                Su trabajo como productor en obras como Test a Turing, Evoéh y La Patafomosis ha dejado al público totalmente atrapado.
+            <!-- Experiencia y Especialidades -->
+            <div class="mb-12" data-aos="fade-up" data-aos-delay="250">
+                <div class="grid lg:grid-cols-3 gap-12 items-start">
+                    <!-- Texto principal -->
+                    <div class="lg:col-span-2 space-y-6">
+                        <div class="bg-white rounded-2xl p-8 border border-gray-100">
+                            <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                                Con más de <span class="font-semibold text-primary-color">12 años de experiencia profesional</span> en producción musical, teoría, lenguaje musical e interpretación instrumental, Santiago forma parte de este proyecto no solo como docente, sino como pieza esencial del ecosistema pedagógico.
+                            </p>
+                            <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                                Aquí no hablamos de departamentos ni de asignaturas sueltas: hablamos de sinergia, colaboración y apoyo mutuo.
+                            </p>
+                            <p class="text-lg text-gray-800 font-medium text-center italic">
+                                Y Santiago encarna esa filosofía con excelencia.
                             </p>
                         </div>
                     </div>
 
-                    <!-- Herramientas Especializadas -->
-                    <div class="bg-white rounded-2xl shadow-lg p-6 border border-gray-100" data-aos="fade-right" data-aos-delay="400">
-                        <div class="flex items-center gap-3 mb-4">
-                            <div class="bg-gradient-to-r from-primary-color to-secondary-color rounded-full p-3">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-white">
-                                    <path d="M4 4c0-1.11.89-2 2-2h12c1.11 0 2 .89 2 2v12c0 1.11-.89 2-2 2H6c-1.11 0-2-.89-2-2V4zm2 0v12h12V4H6z"/>
-                                </svg>
-                            </div>
-                            <h4 class="text-xl font-bold text-gray-800">Herramientas Especializadas</h4>
+                    <!-- Estadísticas destacadas -->
+                    <div class="space-y-4">
+                        <div class="bg-primary-color text-white rounded-2xl p-6 text-center">
+                            <div class="text-3xl font-bold mb-2">12+</div>
+                            <div class="text-sm opacity-90">Años de experiencia profesional</div>
                         </div>
-                        <p class="text-gray-600 leading-relaxed">
-                            Es un crack con programas como Logic Pro X, Pro Tools y Ableton, usando estas herramientas para crear bandas sonoras que elevan cualquier proyecto, ya sea un videojuego, una película o un corto.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Columna derecha - Imagen y herramientas -->
-                <div class="space-y-8">
-                    <!-- Imagen del profesor -->
-                    <div class="flex justify-center" data-aos="fade-left" data-aos-duration="1000">
-                        <div class="relative">
-                            <div class="w-80 h-80 rounded-full overflow-hidden border-4 border-secondary-color shadow-2xl">
-                                <img src="./images/profes/santiago.jpeg" alt="Santiago Andrés Medina Gómez" title="Santiago Andrés Medina Gómez" class="w-full h-full object-cover">
-                            </div>
-                            <!-- Badge decorativo -->
-                            <div class="absolute -bottom-4 -right-4 bg-primary-color rounded-full p-4 shadow-lg">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-8 h-8 text-white">
-                                    <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
-                                </svg>
-                            </div>
+                        <div class="bg-secondary-color text-white rounded-2xl p-6 text-center">
+                            <div class="text-3xl font-bold mb-2">5</div>
+                            <div class="text-sm opacity-90">Especialidades musicales</div>
                         </div>
-                    </div>
-
-                    <!-- Herramientas y especialidades -->
-                    <div class="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-8 text-white" data-aos="fade-left" data-aos-delay="200">
-                        <h4 class="text-xl font-bold mb-6 text-center text-secondary-color">Herramientas & Especialidades</h4>
-                        <div class="grid grid-cols-2 gap-4">
-                            <div class="bg-white/10 rounded-xl p-4 text-center tech-icon">
-                                <div class="text-secondary-color font-bold text-lg mb-1">Logic Pro X</div>
-                                <div class="text-white/70 text-xs">DAW Profesional</div>
-                            </div>
-                            <div class="bg-white/10 rounded-xl p-4 text-center tech-icon">
-                                <div class="text-secondary-color font-bold text-lg mb-1">Pro Tools</div>
-                                <div class="text-white/70 text-xs">Edición Audio</div>
-                            </div>
-                            <div class="bg-white/10 rounded-xl p-4 text-center tech-icon">
-                                <div class="text-secondary-color font-bold text-lg mb-1">Ableton</div>
-                                <div class="text-white/70 text-xs">Producción Live</div>
-                            </div>
-                            <div class="bg-white/10 rounded-xl p-4 text-center tech-icon">
-                                <div class="text-secondary-color font-bold text-lg mb-1">Audio Digital</div>
-                                <div class="text-white/70 text-xs">Masterización</div>
-                            </div>
+                        <div class="bg-gray-800 text-white rounded-2xl p-6 text-center">
+                            <div class="text-3xl font-bold mb-2">∞</div>
+                            <div class="text-sm opacity-90">Posibilidades creativas</div>
                         </div>
-                    </div>
-
-                    <!-- Filosofía -->
-                    <div class="bg-gradient-to-r from-primary-color/10 to-secondary-color/10 rounded-2xl p-6 border border-gray-200" data-aos="fade-left" data-aos-delay="300">
-                        <h4 class="font-bold text-gray-800 text-lg mb-3">Su Filosofía</h4>
-                        <p class="text-gray-600 text-sm leading-relaxed italic">
-                            "Que mis alumnos no solo aprendan música, sino que la vivan a su manera, disfrutando cada paso del camino. ¡Porque la música no se estudia, se siente!"
-                        </p>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Especialidades en Producción Musical -->
-    <section class="bg-gradient-to-br from-gray-900 via-primary-color to-gray-900 py-20">
-        <div class="max-w-7xl mx-auto px-6 lg:px-12">
-            <!-- Título principal -->
-            <div class="text-center mb-16">
-                <h3 class="text-4xl lg:text-5xl xl:text-6xl font-bold text-white font-['Oswald'] mb-4">Especialidades</h3>
-                <div class="w-24 h-1 bg-secondary-color mx-auto rounded-full mb-6"></div>
-                <p class="text-xl text-white/80 max-w-3xl mx-auto">
-                    Dominando la tecnología musical para crear experiencias únicas
-                </p>
-            </div>
-
-            <!-- Grid de especialidades -->
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-                <!-- Producción Musical -->
-                <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 hover:bg-white/15 transition-all duration-300" data-aos="fade-up" data-aos-delay="100">
-                    <div class="flex items-center gap-4 mb-6">
-                        <div class="bg-secondary-color rounded-full p-3">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-8 h-8 text-primary-color">
-                                <path d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25ZM12.75 9a.75.75 0 0 0-1.5 0v2.25H9a.75.75 0 0 0 0 1.5h2.25V15a.75.75 0 0 0 1.5 0v-2.25H15a.75.75 0 0 0 0-1.5h-2.25V9Z" />
-                            </svg>
-                        </div>
-                        <h4 class="text-xl font-bold text-white font-['Oswald']">Producción Musical</h4>
-                    </div>
-                    <p class="text-white/90 leading-relaxed">
-                        Creación integral de proyectos musicales desde la composición hasta la masterización final, utilizando las mejores herramientas digitales del mercado.
+            <!-- Filosofía Pedagógica -->
+            <div class="mb-12" data-aos="fade-up" data-aos-delay="300">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-light text-gray-900 mb-6 tracking-tight">
+                        Su Visión Pedagógica
+                    </h2>
+                    <p class="text-xl md:text-2xl text-gray-700 font-light max-w-4xl mx-auto leading-relaxed">
+                        Santiago no concibe la música como una fórmula cerrada ni como una lista de objetivos que hay que cumplir.
+                    </p>
+                    <p class="text-lg text-gray-600 max-w-3xl mx-auto mt-4">
+                        Su enseñanza se basa en la idea de que cada alumno merece expresarse con autenticidad, con recursos técnicos sólidos, sí, pero sobre todo con claridad emocional y libertad creativa.
                     </p>
                 </div>
 
-                <!-- Audio Digital -->
-                <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 hover:bg-white/15 transition-all duration-300" data-aos="fade-up" data-aos-delay="200">
-                    <div class="flex items-center gap-4 mb-6">
-                        <div class="bg-secondary-color rounded-full p-3">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-8 h-8 text-primary-color">
-                                <path d="M9.53 16.122a3 3 0 0 0-5.78 1.128 2.25 2.25 0 0 1-2.4 2.245 4.5 4.5 0 0 0 8.4-2.245c0-.399-.078-.78-.22-1.128Zm0 0a15.998 15.998 0 0 0 3.388-1.62m-5.043-.025a15.994 15.994 0 0 1 1.622-3.395m3.42 3.42a15.995 15.995 0 0 0 4.764-4.648l3.876-5.814a1.151 1.151 0 0 0-1.597-1.597L14.146 6.32a15.996 15.996 0 0 0-4.649 4.763m3.42 3.42a6.776 6.776 0 0 0-3.42-3.42" />
-                            </svg>
-                        </div>
-                        <h4 class="text-xl font-bold text-white font-['Oswald']">Audio Digital</h4>
-                    </div>
-                    <p class="text-white/90 leading-relaxed">
-                        Especialista en grabación, edición y procesamiento de audio digital con técnicas avanzadas de mezcla y masterización profesional.
-                    </p>
-                </div>
-
-                <!-- Bandas Sonoras -->
-                <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 hover:bg-white/15 transition-all duration-300" data-aos="fade-up" data-aos-delay="300">
-                    <div class="flex items-center gap-4 mb-6">
-                        <div class="bg-secondary-color rounded-full p-3">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-8 h-8 text-primary-color">
-                                <path d="M4.5 6.375a4.125 4.125 0 1 1 8.25 0 4.125 4.125 0 0 1-8.25 0ZM14.25 8.625a3.375 3.375 0 1 1 6.75 0 3.375 3.375 0 0 1-6.75 0ZM1.5 19.125a7.125 7.125 0 0 1 14.25 0v.003l-.001.119a.75.75 0 0 1-.363.63 13.067 13.067 0 0 1-6.761 1.873c-2.472 0-4.786-.684-6.76-1.873a.75.75 0 0 1-.364-.63l-.001-.122ZM17.25 19.128l-.001.144a2.25 2.25 0 0 1-.233.96 10.088 10.088 0 0 0 5.06-1.01.75.75 0 0 0 .42-.643 4.875 4.875 0 0 0-6.957-4.611 8.586 8.586 0 0 1 1.71 5.157l.001.003Z" />
-                            </svg>
-                        </div>
-                        <h4 class="text-xl font-bold text-white font-['Oswald']">Bandas Sonoras</h4>
-                    </div>
-                    <p class="text-white/90 leading-relaxed">
-                        Creación de atmósferas sonoras para videojuegos, películas, cortometrajes y obras teatrales que conectan emocionalmente con la audiencia.
-                    </p>
-                </div>
-
-                <!-- Teoría Musical -->
-                <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 hover:bg-white/15 transition-all duration-300" data-aos="fade-up" data-aos-delay="400">
-                    <div class="flex items-center gap-4 mb-6">
-                        <div class="bg-secondary-color rounded-full p-3">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-8 h-8 text-primary-color">
-                                <path d="M11.25 4.533A9.707 9.707 0 0 0 6 3a9.735 9.735 0 0 0-3.25.555.75.75 0 0 0-.5.707v14.25a.75.75 0 0 0 1 .707A8.237 8.237 0 0 1 6 18.75c1.995 0 3.823.707 5.25 1.886V4.533ZM12.75 20.636A8.214 8.214 0 0 1 18 18.75c.966 0 1.89.166 2.75.47a.75.75 0 0 0 1-.708V4.262a.75.75 0 0 0-.5-.707A9.735 9.735 0 0 0 18 3a9.707 9.707 0 0 0-5.25 1.533v16.103Z" />
-                            </svg>
-                        </div>
-                        <h4 class="text-xl font-bold text-white font-['Oswald']">Teoría Musical</h4>
-                    </div>
-                    <p class="text-white/90 leading-relaxed">
-                        Enseñanza de fundamentos teóricos musicales de forma práctica y divertida, conectando la teoría con la creatividad musical moderna.
-                    </p>
-                </div>
-
-                <!-- Lenguaje Musical -->
-                <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 hover:bg-white/15 transition-all duration-300" data-aos="fade-up" data-aos-delay="500">
-                    <div class="flex items-center gap-4 mb-6">
-                        <div class="bg-secondary-color rounded-full p-3">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-8 h-8 text-primary-color">
-                                <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm8.706-1.442c1.146-.573 2.437.463 2.126 1.706l-.709 2.836.042-.02a.75.75 0 0 1 .67 1.34l-.04.022c-1.147.573-2.438-.463-2.127-1.706l.71-2.836-.042.02a.75.75 0 1 1-.671-1.34l.041-.022ZM12 9a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z" clip-rule="evenodd" />
-                            </svg>
-                        </div>
-                        <h4 class="text-xl font-bold text-white font-['Oswald']">Lenguaje Musical</h4>
-                    </div>
-                    <p class="text-white/90 leading-relaxed">
-                        Desarrollo de habilidades de lectura musical, ritmo y comprensión auditiva a través de métodos innovadores y tecnología interactiva.
-                    </p>
-                </div>
-
-                <!-- Teatro Musical -->
-                <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 hover:bg-white/15 transition-all duration-300" data-aos="fade-up" data-aos-delay="600">
-                    <div class="flex items-center gap-4 mb-6">
-                        <div class="bg-secondary-color rounded-full p-3">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-8 h-8 text-primary-color">
-                                <path fill-rule="evenodd" d="M1.371 8.143c5.858-5.857 15.356-5.857 21.213 0a.75.75 0 0 1 0 1.061l-.53.53a.75.75 0 0 1-1.06 0c-4.98-4.979-13.053-4.979-18.032 0a.75.75 0 0 1-1.06 0l-.53-.53a.75.75 0 0 1 0-1.06Zm3.182 3.182c4.1-4.1 10.749-4.1 14.85 0a.75.75 0 0 1 0 1.061l-.53.53a.75.75 0 0 1-1.062 0 8.25 8.25 0 0 0-11.667 0 .75.75 0 0 1-1.06 0l-.53-.53a.75.75 0 0 1 0-1.06Zm3.204 3.182a6 6 0 0 1 8.486 0 .75.75 0 0 1 0 1.061l-.53.53a.75.75 0 0 1-1.061 0 3.75 3.75 0 0 0-5.304 0 .75.75 0 0 1-1.06 0l-.53-.53a.75.75 0 0 1 0-1.06Zm3.182 3.182a1.5 1.5 0 0 1 2.122 0 .75.75 0 0 1 0 1.061l-.53.53a.75.75 0 0 1-1.061 0l-.53-.53a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
-                            </svg>
-                        </div>
-                        <h4 class="text-xl font-bold text-white font-['Oswald']">Teatro Musical</h4>
-                    </div>
-                    <p class="text-white/90 leading-relaxed">
-                        Producción musical para obras teatrales, creando ambientes sonoros inmersivos que potencian la narrativa y la experiencia del espectador.
-                    </p>
-                </div>
-            </div>
-
-            <!-- Proyectos destacados -->
-            <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
-                <h3 class="text-3xl font-bold text-white font-['Oswald'] mb-8 text-center">Proyectos Destacados</h3>
-                <div class="grid md:grid-cols-3 gap-6">
-                    <div class="bg-white/10 rounded-xl p-6 text-center">
-                        <h4 class="text-lg font-bold text-secondary-color mb-2">Test a Turing</h4>
-                        <p class="text-white/80 text-sm">Obra teatral</p>
-                    </div>
-                    <div class="bg-white/10 rounded-xl p-6 text-center">
-                        <h4 class="text-lg font-bold text-secondary-color mb-2">Evoéh</h4>
-                        <p class="text-white/80 text-sm">Producción musical</p>
-                    </div>
-                    <div class="bg-white/10 rounded-xl p-6 text-center">
-                        <h4 class="text-lg font-bold text-secondary-color mb-2">La Patafomosis</h4>
-                        <p class="text-white/80 text-sm">Banda sonora</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Metodología de Enseñanza -->
-    <section class="bg-gradient-to-br from-white to-gray-100 py-20">
-        <div class="max-w-6xl mx-auto px-6 lg:px-12">
-            <!-- Título -->
-            <div class="text-center mb-16">
-                <h5 class="text-4xl lg:text-5xl font-bold text-gray-800 font-['Oswald'] mb-4">
-                    Metodología de Enseñanza
-                </h5>
-                <div class="w-24 h-1 bg-secondary-color mx-auto rounded-full mb-6"></div>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    Aprender música de forma práctica, divertida y con tecnología de vanguardia
-                </p>
-            </div>
-
-            <!-- Contenido principal -->
-            <div class="bg-white rounded-3xl shadow-2xl p-8 lg:p-12 border border-gray-100">
-                <!-- Características destacadas -->
+                <!-- Principios en formato simple -->
                 <div class="grid md:grid-cols-3 gap-8 mb-12">
                     <div class="text-center">
-                        <div class="bg-gradient-to-br from-primary-color to-primary-color/80 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-10 h-10 text-white">
-                                <path d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25ZM12.75 9a.75.75 0 0 0-1.5 0v2.25H9a.75.75 0 0 0 0 1.5h2.25V15a.75.75 0 0 0 1.5 0v-2.25H15a.75.75 0 0 0 0-1.5h-2.25V9Z" />
+                        <div class="w-16 h-16 bg-primary-color rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
                             </svg>
                         </div>
-                        <h6 class="text-xl font-bold text-gray-800 mb-2">Aprendizaje Práctico</h6>
-                        <p class="text-gray-600 text-sm">Crear mientras aprendes, desde el primer día</p>
+                        <h3 class="text-lg font-medium text-gray-900 mb-2">Adaptación Personal</h3>
+                        <p class="text-gray-600">Cada clase se adapta al ritmo y propósito del alumno.</p>
                     </div>
 
                     <div class="text-center">
-                        <div class="bg-gradient-to-br from-secondary-color to-secondary-color/80 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-10 h-10 text-primary-color">
-                                <path d="M9.53 16.122a3 3 0 0 0-5.78 1.128 2.25 2.25 0 0 1-2.4 2.245 4.5 4.5 0 0 0 8.4-2.245c0-.399-.078-.78-.22-1.128Zm0 0a15.998 15.998 0 0 0 3.388-1.62m-5.043-.025a15.994 15.994 0 0 1 1.622-3.395m3.42 3.42a15.995 15.995 0 0 0 4.764-4.648l3.876-5.814a1.151 1.151 0 0 0-1.597-1.597L14.146 6.32a15.996 15.996 0 0 0-4.649 4.763m3.42 3.42a6.776 6.776 0 0 0-3.42-3.42" />
+                        <div class="w-16 h-16 bg-secondary-color rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
                             </svg>
                         </div>
-                        <h6 class="text-xl font-bold text-gray-800 mb-2">Tecnología Avanzada</h6>
-                        <p class="text-gray-600 text-sm">Herramientas profesionales para estudiantes</p>
+                        <h3 class="text-lg font-medium text-gray-900 mb-2">Profundidad sin Rigidez</h3>
+                        <p class="text-gray-600">Se trabaja con profundidad, pero sin rigidez.</p>
                     </div>
 
                     <div class="text-center">
-                        <div class="bg-gradient-to-br from-primary-color to-primary-color/80 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-10 h-10 text-white">
-                                <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm-2.625 6c-.54 0-.828.419-.936.634a1.96 1.96 0 0 0-.189.866c0 .298.059.605.189.866.108.215.395.634.936.634.54 0 .828-.419.936-.634.13-.26.189-.568.189-.866 0-.298-.059-.605-.189-.866-.108-.215-.395-.634-.936-.634Zm4.314.634c.108-.215.395-.634.936-.634.54 0 .828.419.936.634.13.26.189.568.189.866 0 .298-.059.605-.189.866-.108.215-.395.634-.936.634-.54 0-.828-.419-.936-.634a1.96 1.96 0 0 1-.189-.866c0-.298.059-.605.189-.866Zm2.023 6.828a.75.75 0 1 0-1.06-1.06 3.75 3.75 0 0 1-5.304 0 .75.75 0 0 0-1.06 1.06 5.25 5.25 0 0 0 7.424 0Z" clip-rule="evenodd" />
+                        <div class="w-16 h-16 bg-primary-color rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
                             </svg>
                         </div>
-                        <h6 class="text-xl font-bold text-gray-800 mb-2">Diversión Garantizada</h6>
-                        <p class="text-gray-600 text-sm">La música se siente, no solo se estudia</p>
+                        <h3 class="text-lg font-medium text-gray-900 mb-2">Autonomía Creativa</h3>
+                        <p class="text-gray-600">Se favorece la autonomía, el pensamiento musical y la escucha activa.</p>
                     </div>
                 </div>
 
-                <!-- Filosofía de enseñanza -->
-                <div class="bg-gradient-to-r from-primary-color/5 to-secondary-color/5 rounded-2xl p-8 text-center">
-                    <h4 class="text-2xl font-bold text-gray-800 mb-4">Su Filosofía</h4>
-                    <p class="text-lg text-gray-700 leading-relaxed italic">
-                        "La música no se estudia, se siente. Mi objetivo es que cada alumno viva la música a su manera, disfrutando cada paso del camino mientras domina las herramientas más avanzadas de la industria musical."
+                <!-- Mensaje final simplificado -->
+                <div class="text-center bg-gray-50 rounded-2xl p-8">
+                    <p class="text-2xl font-light text-gray-800 italic mb-4">
+                        "La música no se estudia, se siente"
                     </p>
-                    <div class="mt-6">
-                        <span class="text-primary-color font-bold text-lg">- Santiago Andrés Medina Gómez</span>
+                    <p class="text-lg text-gray-600">
+                        Filosofía que guía cada momento de aprendizaje con Santiago
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Áreas de Especialización -->
+    <section class="bg-white">
+        <div class="max-w-[90%] xl:max-w-[85%] mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            <h2 class="text-4xl md:text-5xl font-light text-gray-900 mb-12 text-center tracking-tight">
+                Áreas de Especialización
+            </h2>
+
+            <!-- Texto introductorio -->
+            <div class="text-center mb-12">
+                <p class="text-xl text-gray-600 leading-relaxed max-w-4xl mx-auto">
+                    Cada una de estas áreas es abordada desde una pedagogía actual, realista y emocional, pensada para que el alumno evolucione con sentido.
+                </p>
+            </div>
+
+            <!-- Especialidades -->
+            <div class="mb-12 px-4 sm:px-6 lg:px-8" data-aos="fade-up" data-aos-delay="800">
+                <div class="max-w-6xl mx-auto">
+                    <!-- Especialidades en formato profesional -->
+                    <div class="bg-white rounded-2xl p-8 border border-gray-100">
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <!-- Columna izquierda -->
+                            <div class="space-y-6">
+                                <div class="flex items-start space-x-4">
+                                    <div class="w-3 h-3 bg-primary-color rounded-full mt-2"></div>
+                                    <div>
+                                        <h3 class="text-lg font-medium text-gray-900 mb-2">Guitarra Eléctrica y Acústica</h3>
+                                        <p class="text-gray-600">Técnica, repertorio contemporáneo, exploración creativa.</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start space-x-4">
+                                    <div class="w-3 h-3 bg-secondary-color rounded-full mt-2"></div>
+                                    <div>
+                                        <h3 class="text-lg font-medium text-gray-900 mb-2">Producción Musical Profesional</h3>
+                                        <p class="text-gray-600">Desde la idea inicial hasta el máster final, pasando por grabación, edición, mezcla y ambientación sonora.</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start space-x-4">
+                                    <div class="w-3 h-3 bg-primary-color rounded-full mt-2"></div>
+                                    <div>
+                                        <h3 class="text-lg font-medium text-gray-900 mb-2">Improvisación al Piano</h3>
+                                        <p class="text-gray-600">Conexión directa entre oído, emoción y teclado.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Columna derecha -->
+                            <div class="space-y-6">
+                                <div class="flex items-start space-x-4">
+                                    <div class="w-3 h-3 bg-secondary-color rounded-full mt-2"></div>
+                                    <div>
+                                        <h3 class="text-lg font-medium text-gray-900 mb-2">Teoría Musical</h3>
+                                        <p class="text-gray-600">Comprensión profunda del lenguaje que sustenta toda expresión sonora.</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start space-x-4">
+                                    <div class="w-3 h-3 bg-primary-color rounded-full mt-2"></div>
+                                    <div>
+                                        <h3 class="text-lg font-medium text-gray-900 mb-2">Lenguaje Musical y Solfeo</h3>
+                                        <p class="text-gray-600">Fundamentos sólidos para la lectura y comprensión musical.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Clases en Vivo y Contenido Pregrabado -->
+            <div class="mb-12 px-4 sm:px-6 lg:px-8" data-aos="fade-up" data-aos-delay="900">
+                <h2 class="text-4xl md:text-5xl font-light text-gray-900 mb-12 text-center tracking-tight">
+                    Clases en Vivo y Contenido Pregrabado
+                </h2>
+                <div class="max-w-6xl mx-auto">
+                    <div class="bg-white rounded-2xl p-8 border border-gray-100 mb-8">
+                        <p class="text-lg text-gray-600 leading-relaxed mb-6">
+                            Santiago imparte clases en vivo online en guitarra eléctrica, guitarra acústica y producción musical.
+                        </p>
+                        <p class="text-lg text-gray-600 leading-relaxed mb-6">
+                            Pero su labor dentro de la comunidad va mucho más allá.
+                        </p>
+                        <p class="text-lg text-gray-600 leading-relaxed mb-6">
+                            Como parte del modelo pedagógico de Melodías Unidas, Santiago también ha desarrollado una serie de clases complementarias pregrabadas en cinco asignaturas clave: teoría musical, lenguaje musical, solfeo, improvisación al piano y producción musical.
+                        </p>
+                        <p class="text-lg text-gray-600 leading-relaxed">
+                            Estas clases han sido creadas como apoyo gratuito exclusivo para quienes aprenden piano con Juan Carlos.
+                        </p>
+                    </div>
+
+                    <div class="bg-gradient-to-r from-primary-color to-secondary-color rounded-2xl p-8 text-white text-center mb-8">
+                        <p class="text-xl font-medium mb-4">
+                            Estas clases no son un añadido comercial.
+                        </p>
+                        <p class="text-lg">
+                            Son una aportación solidaria dentro de un ecosistema educativo que busca que cada alumno tenga acceso a herramientas reales de crecimiento.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Su Rol en la Comunidad Pedagógica -->
+            <div class="mb-12 px-4 sm:px-6 lg:px-8" data-aos="fade-up" data-aos-delay="1000">
+                <h2 class="text-4xl md:text-5xl font-light text-gray-900 mb-12 text-center tracking-tight">
+                    Su Rol en la Comunidad Pedagógica
+                </h2>
+                <div class="max-w-6xl mx-auto">
+                    <div class="bg-white rounded-2xl p-8 border border-gray-100 mb-8">
+                        <p class="text-lg text-gray-600 leading-relaxed mb-6">
+                            Santiago no llegó a Melodías Unidas por recomendación ni por azar.
+                        </p>
+                        <p class="text-lg text-gray-600 leading-relaxed mb-6">
+                            Llegó porque, al igual que otros mentores de la comunidad, reconoció la necesidad de un entorno donde enseñar tenga sentido.
+                        </p>
+                        <p class="text-lg text-gray-800 font-medium text-center mb-6">
+                            Aquí descubrió que el profesor no está solo. Aquí hay equipo. Hay acompañamiento. Hay visión.
+                        </p>
+                        <p class="text-lg text-gray-600 leading-relaxed">
+                            Por eso, además de impartir sus clases, Santiago colabora activamente con la comunidad, desarrollando contenido estratégico, compartiendo ideas con otros docentes y aportando valor constante al aprendizaje de cada alumno, más allá de su propia aula virtual.
+                        </p>
+                    </div>
+
+                    <div class="bg-gradient-to-r from-gray-900 to-gray-700 rounded-2xl p-8 text-white text-center">
+                        <p class="text-xl font-medium italic">
+                            En Melodías Unidas, enseñar no es un acto aislado. Es una construcción colectiva.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Invitación Final -->
+            <div class="mb-12 px-4 sm:px-6 lg:px-8" data-aos="fade-up" data-aos-delay="1100">
+                <h2 class="text-4xl md:text-5xl font-light text-gray-900 mb-12 text-center tracking-tight">
+                    ¿Listo para explorar nuevos horizontes musicales?
+                </h2>
+                <div class="max-w-6xl mx-auto">
+                    <div class="bg-white rounded-2xl p-8 border border-gray-100 text-center">
+                        <p class="text-xl text-gray-700 mb-4">
+                            Descubre una forma diferente de aprender música: sin límites, sin rigidez, con propósito y con mentores que realmente entienden tu camino creativo.
+                        </p>
+                        <p class="text-lg text-gray-600 mb-6">
+                            Únete a una comunidad donde cada profesor es parte de un ecosistema colaborativo diseñado para tu crecimiento musical integral.
+                        </p>
+                        <p class="text-xl text-gray-800 font-medium mb-8 italic">
+                            Tu creatividad no tiene límites. Tu aprendizaje tampoco debería tenerlos.
+                        </p>
+                        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                            <a href="index.php#contacto" class="bg-primary-color text-white px-8 py-3 rounded-full font-semibold hover:bg-opacity-90 transition-colors">
+                                Comenzar Ahora
+                            </a>
+                            <a href="index.php#videos" class="bg-secondary-color text-white px-8 py-3 rounded-full font-semibold hover:bg-opacity-90 transition-colors">
+                                Ver Clases Demo
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+
+        <!-- Inicializar AOS -->
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                if (typeof AOS !== 'undefined') {
+                    AOS.init({
+                        duration: 800,
+                        once: true,
+                        offset: 100
+                    });
+                }
+            });
+        </script>
     </section>
 
     <!-- Botones flotantes -->

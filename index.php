@@ -21,7 +21,7 @@
   <link href="./src/css/main.css?v=20250810" rel="stylesheet" />
   <link href="./src/css/aos-master/dist/aos.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" defer />
-  <link href="./src/output_v6.css?v=20250810" rel="stylesheet" defer />
+  <link href="./src/output_v2112025.css?v=20250810" rel="stylesheet" defer />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <!-- JSON-LD LocalBusiness (optimizado para SEO local) -->
@@ -142,19 +142,17 @@ $pagina = "inicio";
 
           <div class="w-24 h-1 bg-gradient-to-r from-primary-color to-secondary-color mx-auto lg:mx-0"></div>
 
-          <div class="text-sm lg:text-base leading-relaxed text-gray-700 max-w-2xl mx-auto lg:mx-0 space-y-4">
+          <div class="text-sm lg:text-base leading-relaxed text-gray-700 max-w-2xl mx-auto lg:mx-0 space-y-4 text-justify">
             <p>
               En Melodías Unidas no hay aulas numeradas, ni pasillos con ventanillas, ni secretarías
               con tiempos de espera.
             </p>
             <p>
               Aquí no hay profesores que entran y salen de clase como en una cadena de montaje educativa.
+              <strong>Aquí todo gira en torno a ti.</strong>
             </p>
             <p>
-              Aquí todo gira en torno a ti.
-            </p>
-            <p>
-              Melodías Unidas es una comunidad pedagógica: un entorno organizado para que cada alumno disfrute de
+              <strong>Melodías Unidas es una comunidad pedagógica:</strong> un entorno organizado para que cada alumno disfrute de
               lo mejor que puede ofrecer un profesor particular… pero sin las limitaciones habituales que ese profesor
               tendría por su cuenta.
             </p>
@@ -532,7 +530,7 @@ $pagina = "inicio";
     class="relative flex flex-col items-center justify-center text-black px-6 py-16 bg-black/70 sm:px-16 lg:px-48 xl:py-48"> -->
   <section
     id="nuestro-equipo"
-    class="relative flex flex-col items-center justify-center text-black px-6 py-16 sm:px-16 lg:px-48 xl:py-24 bg-gray-50">
+    class="hidden relative flex flex-col items-center justify-center text-black px-6 py-16 sm:px-16 lg:px-48 xl:py-24 bg-gray-50">
     <!-- Título principal -->
     <h2 class="text-3xl font-bold text-center font-['Oswald'] sm:text-4xl xl:text-5xl animate__animated animate__fadeInDown">
       Nuestro equipo
@@ -622,10 +620,10 @@ $pagina = "inicio";
         <!-- Manuel Ortega Sanz -->
         <article class="bg-white border border-gray-100 rounded-2xl p-6 shadow-sm hover:shadow-lg transition-shadow duration-300 flex flex-col items-center text-center">
           <div class="w-28 h-28 rounded-full overflow-hidden mb-4">
-            <img src="./images/admins/manuel.jpeg" alt="Manuel Ortega Sanz" class="w-full h-full object-cover" loading="lazy">
+            <img src="./images/admins/newmanuel.jpg" alt="Manuel Ortega Sanz" class="w-full h-full object-cover" loading="lazy">
           </div>
           <h3 class="text-lg font-semibold text-gray-900">Manuel Ortega Sanz</h3>
-          <p class="text-sm text-secondary-color font-medium">Director General</p>
+          <p class="text-sm text-secondary-color font-bold">Director General</p>
           <p class="mt-3 text-sm text-gray-700">Supervisa la estructura, la coherencia institucional y la calidad global del servicio.</p>
           <div class="mt-4 w-full flex items-center justify-center">
             <a href="mailto:director@melodiasunidas.com" class="group relative inline-flex items-center justify-center p-2 rounded-full bg-gray-50 hover:bg-gray-100 text-secondary-color" aria-label="Enviar email a Manuel Ortega Sanz">
@@ -640,10 +638,10 @@ $pagina = "inicio";
         <!-- Ana Villalobos Pérez -->
         <article class="bg-white border border-gray-100 rounded-2xl p-6 shadow-sm hover:shadow-lg transition-shadow duration-300 flex flex-col items-center text-center">
           <div class="w-28 h-28 rounded-full overflow-hidden mb-4">
-            <img src="./images/admins/ana.jpeg" alt="Ana Villalobos Pérez" class="w-full h-full object-cover" loading="lazy">
+            <img src="./images/admins/newana.jpg" alt="Ana Villalobos Pérez" class="w-full h-full object-cover" loading="lazy">
           </div>
           <h3 class="text-lg font-semibold text-gray-900">Ana Villalobos Pérez</h3>
-          <p class="text-sm text-secondary-color font-medium">Mentora pedagógica</p>
+          <p class="text-sm text-secondary-color font-bold">Mentora pedagógica</p>
           <p class="mt-3 text-sm text-gray-700">Acompaña a cada alumno en su proceso de aprendizaje, establece metas pedagógicas y asegura continuidad educativa.</p>
           <div class="mt-4 w-full flex items-center justify-center">
             <a href="mailto:coordinacion@melodiasunidas.com" class="group relative inline-flex items-center justify-center p-2 rounded-full bg-gray-50 hover:bg-gray-100 text-secondary-color" aria-label="Enviar email a Ana Villalobos Pérez">
@@ -658,10 +656,10 @@ $pagina = "inicio";
         <!-- Lucía Herrera Doménech -->
         <article class="bg-white border border-gray-100 rounded-2xl p-6 shadow-sm hover:shadow-lg transition-shadow duration-300 flex flex-col items-center text-center">
           <div class="w-28 h-28 rounded-full overflow-hidden mb-4">
-            <img src="./images/admins/lucia.jpeg" alt="Lucía Herrera Doménech" class="w-full h-full object-cover" loading="lazy">
+            <img src="./images/admins/newlucia.jpg" alt="Lucía Herrera Doménech" class="w-full h-full object-cover" loading="lazy">
           </div>
           <h3 class="text-lg font-semibold text-gray-900">Lucía Herrera Doménech</h3>
-          <p class="text-sm text-secondary-color font-medium">Gestión administrativa y contable</p>
+          <p class="text-sm text-secondary-color font-bold">Gestión administrativa y contable</p>
           <p class="mt-3 text-sm text-gray-700">Garantiza la transparencia y el equilibrio en todos los aspectos económicos y organizativos de la comunidad.</p>
           <div class="mt-4 w-full flex items-center justify-center">
             <a href="mailto:finanzas@melodiasunidas.com" class="group relative inline-flex items-center justify-center p-2 rounded-full bg-gray-50 hover:bg-gray-100 text-secondary-color" aria-label="Enviar email a Lucía Herrera Doménech">
@@ -676,10 +674,10 @@ $pagina = "inicio";
         <!-- Marina Alonso Rivas -->
         <article class="bg-white border border-gray-100 rounded-2xl p-6 shadow-sm hover:shadow-lg transition-shadow duration-300 flex flex-col items-center text-center">
           <div class="w-28 h-28 rounded-full overflow-hidden mb-4">
-            <img src="./images/admins/marina.jpeg" alt="Marina Alonso Rivas" class="w-full h-full object-cover" loading="lazy">
+            <img src="./images/admins/newmarina.jpg" alt="Marina Alonso Rivas" class="w-full h-full object-cover" loading="lazy">
           </div>
           <h3 class="text-lg font-semibold text-gray-900">Marina Alonso Rivas</h3>
-          <p class="text-sm text-secondary-color font-medium">Secretaría y Atención al Alumno</p>
+          <p class="text-sm text-secondary-color font-bold">Secretaría y Atención al Alumno</p>
           <p class="mt-3 text-sm text-gray-700">Primer punto de contacto: atiende llamadas, canaliza solicitudes y mantiene la comunicación fluida con cada estudiante.</p>
           <div class="mt-4 w-full flex items-center justify-center">
             <a href="mailto:secretaria@melodiasunidas.com" class="group relative inline-flex items-center justify-center p-2 rounded-full bg-gray-50 hover:bg-gray-100 text-secondary-color" aria-label="Enviar email a Marina Alonso Rivas">

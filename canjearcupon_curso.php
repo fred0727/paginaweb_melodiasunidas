@@ -11,7 +11,7 @@
     <link rel="icon" href="./images/logo/iconoround.png" type="image/x-icon">
     <link rel="apple-touch-icon" href="./images/logo/iconoround.png">
     <link rel="canonical" href="https://www.melodiasunidas.com">
-    <link href="./src/output_v6.css" rel="stylesheet" />
+    <link href="./src/output_v2112025.css" rel="stylesheet" />
     <link href="./src/css/main.css" rel="stylesheet" />
     <script src="src/js/main.js" defer></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
@@ -34,7 +34,7 @@ $pagina = "nosotros";
     <!-- Contenido Principal -->
     <section class="flex flex-col pt-14 px-4 sm:px-8 lg:px-24 xl:px-48 bg-gradient-to-br from-gray-50 to-white min-h-screen">
         <div class="max-w-4xl mx-auto space-y-12 py-8">
-            
+
             <!-- Header con diseño moderno -->
             <div class="text-center" data-aos="fade-up">
                 <div class="inline-flex items-center justify-center w-20 h-20 bg-blue-100 rounded-3xl mb-6">
@@ -50,11 +50,11 @@ $pagina = "nosotros";
             <div class="relative" data-aos="fade-up" data-aos-delay="200">
                 <!-- Fondo decorativo sutil -->
                 <div class="absolute inset-0 bg-gradient-to-r from-blue-600 to-blue-800 rounded-3xl transform rotate-1 opacity-5"></div>
-                
+
                 <!-- Contenido del formulario -->
                 <div class="relative bg-white rounded-3xl p-8 sm:p-12 shadow-2xl border border-gray-100">
                     <form action="registrar_cupon.php" method="POST" class="space-y-8">
-                        
+
                         <!-- Tipo de cupón -->
                         <div class="space-y-2">
                             <label for="tipocupon" class="text-sm font-semibold text-gray-800">Cupón a canjear</label>
@@ -139,7 +139,7 @@ $pagina = "nosotros";
                     <div>
                         <h3 class="font-bold text-amber-800 mb-2">¿Necesitas ayuda?</h3>
                         <p class="text-amber-700 text-sm leading-relaxed">
-                            Si ya registraste tu cupón y no recibiste el acceso en tu bandeja de correo, o si tienes alguna duda, 
+                            Si ya registraste tu cupón y no recibiste el acceso en tu bandeja de correo, o si tienes alguna duda,
                             <a href="https://api.whatsapp.com/send/?phone=+34604369473&text=Hola%2C%20necesito%20ayuda%20con%20mi%20cup%C3%B3n" class="underline font-semibold hover:text-amber-600">escríbenos directamente por WhatsApp</a>.
                         </p>
                     </div>

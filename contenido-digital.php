@@ -11,7 +11,7 @@
     <link rel="icon" href="./images/logo/iconoround.png" type="image/x-icon">
     <link rel="apple-touch-icon" href="./images/logo/iconoround.png">
     <link rel="canonical" href="https://www.melodiasunidas.com">
-    <link href="./src/output_v6.css?v=20250810" rel="stylesheet" />
+    <link href="./src/output_v2112025.css?v=20250810" rel="stylesheet" />
     <link href="./src/css/main.css?v=20250810" rel="stylesheet" />
     <script src="src/js/main.js?v=20250810" defer></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
@@ -38,10 +38,10 @@ $pagina = "nosotros";
             <!-- Título Principal -->
             <div class="text-center" data-aos="fade-up">
                 <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight px-4">
-                    🎓 ACCESO COMPLETO A LOS CONTENIDOS DIGITALES DE 
+                    🎓 ACCESO COMPLETO A LOS CONTENIDOS DIGITALES DE
                     <span class="text-blue-600">MELODÍAS UNIDAS</span>
                 </h1>
-                
+
                 <p class="text-lg sm:text-xl text-gray-600 mb-12 leading-relaxed max-w-4xl mx-auto px-4">
                     Disfruta de acceso completo, ilimitado y vitalicio a todo el contenido digital que Melodías Unidas ha creado y probado con éxito para que puedas aprender y avanzar a tu ritmo, sin depender de clases en vivo ni de horarios fijos.
                 </p>
@@ -164,9 +164,9 @@ $pagina = "nosotros";
                     </div>
                     <h3 class="text-lg sm:text-xl font-bold text-amber-800">ATENCIÓN AL CANJEAR TU CUPÓN</h3>
                 </div>
-                
+
                 <p class="text-gray-700 mb-6 text-lg">Si al canjear tu cupón no recibes el correo electrónico con el acceso:</p>
-                
+
                 <div class="grid md:grid-cols-2 gap-6">
                     <div class="bg-white p-6 rounded-2xl">
                         <h4 class="font-bold text-gray-800 mb-4">Pasos a seguir:</h4>
@@ -190,7 +190,7 @@ $pagina = "nosotros";
             <div class="relative px-4" data-aos="fade-up" data-aos-delay="500">
                 <!-- Fondo decorativo -->
                 <div class="absolute inset-0 bg-gradient-to-r from-blue-600 to-blue-800 rounded-3xl transform rotate-1"></div>
-                
+
                 <!-- Contenido principal -->
                 <div class="relative bg-white rounded-3xl p-6 sm:p-8 lg:p-12 shadow-2xl border border-gray-100">
                     <!-- Header -->
@@ -243,7 +243,7 @@ $pagina = "nosotros";
                                 </h3>
                                 <p class="text-gray-700 font-medium text-lg">🎥 Acceso a cuatro cursos completos en vídeo</p>
                             </div>
-                            
+
                             <div class="bg-blue-50 rounded-2xl p-6">
                                 <div class="flex items-start gap-3">
                                     <span class="text-2xl">💡</span>
@@ -260,7 +260,7 @@ $pagina = "nosotros";
                         <!-- Columna derecha: Lista de cursos -->
                         <div>
                             <h3 class="text-xl font-bold text-gray-900 mb-6">Cada curso contiene clases guiadas en vídeo, materiales descargables y ejercicios prácticos:</h3>
-                            
+
                             <div class="space-y-4">
                                 <div class="bg-white border border-gray-200 rounded-xl p-4 hover:shadow-md transition-shadow duration-300">
                                     <div class="flex items-start gap-4">

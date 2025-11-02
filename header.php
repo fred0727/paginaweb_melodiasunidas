@@ -1,4 +1,4 @@
-  <header class="bg-primary-color fixed top-0 left-0 w-full z-50 lg:px-12" id="header">
+  <header class="bg-primary-color fixed top-0 left-0 w-full z-[9998] lg:px-12" id="header">
     <!-- Barra principal con logo y menú -->
     <div class="py-4 lg:py-4 px-4 lg:px-6 xl:px-8">
       <div class="flex justify-between items-center w-full max-w-7xl mx-auto min-w-0 gap-2">
@@ -20,22 +20,42 @@
                 Inicio
               </a>
             </li>
-            <?php if ($pagina == "inicio") { ?>
-              <li class="flex-shrink-0">
-                <a href="#testimonios" class="font-['Oswald'] text-sm xl:text-lg px-2 xl:px-3 py-2 rounded-lg hover:bg-white/10 transition-all duration-300 hover:scale-105 border-b-2 border-transparent hover:border-white/50 whitespace-nowrap">
-                  Testimonios
-                </a>
-              </li>
-            <?php } ?>
             <li class="flex-shrink-0">
               <a href="nosotros.php" class="font-['Oswald'] text-sm xl:text-lg px-2 xl:px-3 py-2 rounded-lg hover:bg-white/10 transition-all duration-300 hover:scale-105 border-b-2 border-transparent hover:border-white/50 whitespace-nowrap">
                 Nosotros
               </a>
             </li>
             <li class="flex-shrink-0">
-              <a href="profejuancarlos.php" class="font-['Oswald'] text-sm xl:text-lg px-2 xl:px-3 py-2 rounded-lg hover:bg-white/10 transition-all duration-300 hover:scale-105 border-b-2 border-transparent hover:border-white/50 whitespace-nowrap">
-                Nuestro Profe
+              <a href="como-funciona.php" class="font-['Oswald'] text-sm xl:text-lg px-2 xl:px-3 py-2 rounded-lg hover:bg-white/10 transition-all duration-300 hover:scale-105 border-b-2 border-transparent hover:border-white/50 whitespace-nowrap">
+                ¿Cómo funciona?
               </a>
+            </li>
+            <li class="flex-shrink-0">
+              <a href="encuentros.php" class="font-['Oswald'] text-sm xl:text-lg px-2 xl:px-3 py-2 rounded-lg hover:bg-white/10 transition-all duration-300 hover:scale-105 border-b-2 border-transparent hover:border-white/50 whitespace-nowrap">
+                Encuentros Musicales
+              </a>
+            </li>
+            <li class="flex-shrink-0 relative">
+              <div class="group">
+                <button class="font-['Oswald'] text-sm xl:text-lg px-2 xl:px-3 py-2 rounded-lg hover:bg-white/10 transition-all duration-300 hover:scale-105 border-b-2 border-transparent hover:border-white/50 whitespace-nowrap flex items-center gap-1">
+                  Profesores
+                  <svg class="w-3 h-3 transition-transform duration-300 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                  </svg>
+                </button>
+                <!-- Dropdown Menu -->
+                <div class="fixed top-16 w-44 bg-white rounded-xl shadow-xl border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[99999]" style="left: calc(var(--profesores-left, 0px));">
+                  <a href="profejuancarlos.php" class="block px-4 py-3 text-gray-700 hover:bg-primary-color hover:text-white transition-all duration-200 font-['Oswald'] text-sm rounded-t-xl">
+                    Juan Carlos
+                  </a>
+                  <a href="profesantiago.php" class="block px-4 py-3 text-gray-700 hover:bg-primary-color hover:text-white transition-all duration-200 font-['Oswald'] text-sm border-t border-gray-100">
+                    Santiago
+                  </a>
+                  <a href="profejoseantonio.php" class="block px-4 py-3 text-gray-700 hover:bg-primary-color hover:text-white transition-all duration-200 font-['Oswald'] text-sm border-t border-gray-100 rounded-b-xl">
+                    José Antonio
+                  </a>
+                </div>
+              </div>
             </li>
             <li class="flex-shrink-0">
               <a href="contenido-digital.php" class="font-['Oswald'] text-sm xl:text-lg px-2 xl:px-3 py-2 rounded-lg hover:bg-white/10 transition-all duration-300 hover:scale-105 border-b-2 border-transparent hover:border-white/50 whitespace-nowrap">
@@ -71,22 +91,41 @@
                 Inicio
               </a>
             </li>
-            <?php if ($pagina == "inicio") { ?>
-              <li>
-                <a href="#testimonios" class="font-['Oswald'] text-lg block p-3 rounded-lg hover:bg-white/10 transition-all duration-300 text-white border-l-4 border-transparent hover:border-secondary-color">
-                  Testimonios
-                </a>
-              </li>
-            <?php } ?>
             <li>
               <a href="nosotros.php" class="font-['Oswald'] text-lg block p-3 rounded-lg hover:bg-white/10 transition-all duration-300 text-white border-l-4 border-transparent hover:border-secondary-color">
                 Nosotros
               </a>
             </li>
             <li>
-              <a href="profejuancarlos.php" class="font-['Oswald'] text-lg block p-3 rounded-lg hover:bg-white/10 transition-all duration-300 text-white border-l-4 border-transparent hover:border-secondary-color">
-                Nuestro Profe
+              <a href="como-funciona.php" class="font-['Oswald'] text-lg block p-3 rounded-lg hover:bg-white/10 transition-all duration-300 text-white border-l-4 border-transparent hover:border-secondary-color">
+                ¿Cómo funciona?
               </a>
+            </li>
+            <li>
+              <a href="encuentros.php" class="font-['Oswald'] text-lg block p-3 rounded-lg hover:bg-white/10 transition-all duration-300 text-white border-l-4 border-transparent hover:border-secondary-color">
+                Encuentros Musicales
+              </a>
+            </li>
+            <li>
+              <div class="profesores-mobile-dropdown">
+                <button class="font-['Oswald'] text-lg w-full text-left p-3 rounded-lg hover:bg-white/10 transition-all duration-300 text-white border-l-4 border-transparent hover:border-secondary-color flex items-center justify-between" onclick="toggleProfesoresDropdown()">
+                  Profesores
+                  <svg class="w-4 h-4 transition-transform duration-300" id="profesores-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                  </svg>
+                </button>
+                <div id="profesores-submenu" class="hidden ml-4 mt-2 space-y-1">
+                  <a href="profejuancarlos.php" class="font-['Oswald'] text-base block p-2 pl-4 rounded-lg hover:bg-white/10 transition-all duration-300 text-white/90 border-l-2 border-transparent hover:border-secondary-color">
+                    Juan Carlos
+                  </a>
+                  <a href="profesantiago.php" class="font-['Oswald'] text-base block p-2 pl-4 rounded-lg hover:bg-white/10 transition-all duration-300 text-white/90 border-l-2 border-transparent hover:border-secondary-color">
+                    Santiago
+                  </a>
+                  <a href="profejoseantonio.php" class="font-['Oswald'] text-base block p-2 pl-4 rounded-lg hover:bg-white/10 transition-all duration-300 text-white/90 border-l-2 border-transparent hover:border-secondary-color">
+                    José Antonio
+                  </a>
+                </div>
+              </div>
             </li>
             <li>
               <a href="contenido-digital.php" class="font-['Oswald'] text-lg block p-3 rounded-lg hover:bg-white/10 transition-all duration-300 text-white border-l-4 border-transparent hover:border-secondary-color">
@@ -112,7 +151,7 @@
 
           let isMenuOpen = false;
 
-          console.log('� Inicializando menú móvil simple');
+          console.log('🎵 Inicializando menú móvil simple');
 
           if (btnMenu && menuDropdown && menuIcon && closeIcon) {
             btnMenu.addEventListener('click', function(e) {
@@ -148,6 +187,38 @@
               });
             });
           }
+
+          // Posicionamiento del dropdown de profesores
+          const profesoresButton = document.querySelector('li .group button');
+          const profesoresDropdown = document.querySelector('li .group div[style*="--profesores-left"]');
+
+          if (profesoresButton && profesoresDropdown) {
+            function updateDropdownPosition() {
+              const buttonRect = profesoresButton.getBoundingClientRect();
+              const leftPosition = buttonRect.left;
+              document.documentElement.style.setProperty('--profesores-left', leftPosition + 'px');
+            }
+
+            // Actualizar posición al cargar
+            updateDropdownPosition();
+
+            // Actualizar posición al redimensionar
+            window.addEventListener('resize', updateDropdownPosition);
+
+            // Actualizar posición al hacer hover
+            profesoresButton.parentElement.addEventListener('mouseenter', updateDropdownPosition);
+          }
         });
+
+        // Función para el dropdown de profesores en móvil
+        function toggleProfesoresDropdown() {
+          const submenu = document.getElementById('profesores-submenu');
+          const arrow = document.getElementById('profesores-arrow');
+
+          if (submenu && arrow) {
+            submenu.classList.toggle('hidden');
+            arrow.classList.toggle('rotate-180');
+          }
+        }
       </script>
   </header>

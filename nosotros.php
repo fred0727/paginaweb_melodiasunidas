@@ -11,7 +11,7 @@
     <link rel="icon" href="./images/logo/iconoround.png" type="image/x-icon">
     <link rel="apple-touch-icon" href="./images/logo/iconoround.png">
     <link rel="canonical" href="https://www.melodiasunidas.com">
-    <link href="./src/output_v6.css?v=20250810" rel="stylesheet" />
+    <link href="./src/output_v2112025.css?v=20250810" rel="stylesheet" />
     <link href="./src/css/main.css?v=20250810" rel="stylesheet" />
     <script src="src/js/main.js?v=20250810" defer></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
@@ -33,7 +33,7 @@ $pagina = "nosotros";
             <img src="./images/portada.jpeg" alt="Melodías Unidas - Nuestra Historia" class="w-full h-full object-cover">
             <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/70"></div>
         </div>
-        
+
         <!-- Contenido superpuesto -->
         <div class="relative z-10 h-full flex items-center justify-center px-6">
             <div class="text-center text-white max-w-4xl mx-auto">
@@ -47,23 +47,23 @@ $pagina = "nosotros";
                     <a href="#intro" class="inline-flex items-center gap-3 bg-gradient-to-r from-primary-color to-primary-color/80 hover:from-primary-color/80 hover:to-primary-color text-white font-bold px-8 py-4 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg">
                         <span>Conoce nuestra historia</span>
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
                         </svg>
                     </a>
                     <a href="#oferta" class="inline-flex items-center gap-3 bg-gradient-to-r from-secondary-color to-yellow-400 hover:from-yellow-400 hover:to-secondary-color text-black font-bold px-8 py-4 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg">
                         <span>Ver oferta educativa</span>
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
                         </svg>
                     </a>
                 </div>
             </div>
         </div>
-        
+
         <!-- Indicador de scroll -->
         <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
             <svg class="w-6 h-6 text-white opacity-70" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
             </svg>
         </div>
     </section>
@@ -94,7 +94,7 @@ $pagina = "nosotros";
                             ¡Ven a compartir esta aventura musical con nosotros!
                         </p>
                     </div>
-                    
+
                     <!-- Stats o características destacadas -->
                     <div class="grid grid-cols-2 gap-6 mt-8">
                         <div class="text-center p-4 bg-white rounded-xl shadow-md border border-gray-100">
@@ -114,19 +114,19 @@ $pagina = "nosotros";
                         <!-- Decoración de fondo -->
                         <div class="absolute -inset-4 bg-gradient-to-r from-primary-color/20 to-secondary-color/20 rounded-2xl transform rotate-3 group-hover:rotate-6 transition-transform duration-500"></div>
                         <div class="absolute -inset-2 bg-gradient-to-r from-secondary-color/20 to-primary-color/20 rounded-2xl transform -rotate-3 group-hover:-rotate-6 transition-transform duration-500"></div>
-                        
+
                         <!-- Video principal -->
                         <video class="relative z-10 w-full h-auto rounded-2xl shadow-xl border-4 border-white" muted autoplay loop>
                             <source src="./videos/nosotros.webm" type="video/webm">
                             <source src="./videos/nosotros.mp4" type="video/mp4">
                             Tu navegador no soporta el video.
                         </video>
-                        
+
                         <!-- Overlay con play button (opcional) -->
                         <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl flex items-center justify-center z-20">
                             <div class="w-16 h-16 bg-white/90 rounded-full flex items-center justify-center">
                                 <svg class="w-8 h-8 text-primary-color ml-1" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M8 5v14l11-7z"/>
+                                    <path d="M8 5v14l11-7z" />
                                 </svg>
                             </div>
                         </div>
@@ -144,7 +144,7 @@ $pagina = "nosotros";
             <div class="absolute bottom-10 right-10 w-40 h-40 bg-secondary-color rounded-full blur-3xl"></div>
             <div class="absolute top-1/2 left-1/3 w-24 h-24 bg-purple-500 rounded-full blur-2xl"></div>
         </div>
-        
+
         <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-12">
             <!-- Header -->
             <div class="text-center mb-16" data-aos="fade-up" data-aos-duration="800">
@@ -166,7 +166,7 @@ $pagina = "nosotros";
                         <div class="flex items-center mb-6">
                             <div class="w-16 h-16 bg-gradient-to-r from-primary-color to-blue-500 rounded-2xl flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300">
                                 <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
                                 </svg>
                             </div>
                             <div>
@@ -182,12 +182,12 @@ $pagina = "nosotros";
                             <p class="text-gray-300 leading-relaxed">
                                 Si tu sueño es entrar en el conservatorio o conseguir un título oficial, nuestra formación oficial te llevará directo a la meta. Te preparamos para pruebas de acceso y títulos de prestigio como <span class="font-bold text-white">ABRSM</span> y <span class="font-bold text-white">Rock School</span>. ¡Todo lo que necesitas para validar tu progreso y convertirte en un crack musical!
                             </p>
-                            
+
                             <!-- Beneficios -->
                             <div class="bg-black/20 rounded-xl p-6 border border-white/5">
                                 <h4 class="font-bold text-white mb-3 flex items-center">
                                     <svg class="w-5 h-5 text-secondary-color mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/>
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" />
                                     </svg>
                                     Beneficios:
                                 </h4>
@@ -200,25 +200,25 @@ $pagina = "nosotros";
                             <div class="grid grid-cols-2 gap-3">
                                 <div class="flex items-center text-sm text-gray-300">
                                     <svg class="w-4 h-4 text-primary-color mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" />
                                     </svg>
                                     Títulos ABRSM
                                 </div>
                                 <div class="flex items-center text-sm text-gray-300">
                                     <svg class="w-4 h-4 text-primary-color mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" />
                                     </svg>
                                     Rock School
                                 </div>
                                 <div class="flex items-center text-sm text-gray-300">
                                     <svg class="w-4 h-4 text-primary-color mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" />
                                     </svg>
                                     Conservatorio
                                 </div>
                                 <div class="flex items-center text-sm text-gray-300">
                                     <svg class="w-4 h-4 text-primary-color mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" />
                                     </svg>
                                     Preparación oficial
                                 </div>
@@ -234,7 +234,7 @@ $pagina = "nosotros";
                         <div class="flex items-center mb-6">
                             <div class="w-16 h-16 bg-gradient-to-r from-secondary-color to-yellow-400 rounded-2xl flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300">
                                 <svg class="w-8 h-8 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                                 </svg>
                             </div>
                             <div>
@@ -250,12 +250,12 @@ $pagina = "nosotros";
                             <p class="text-gray-300 leading-relaxed">
                                 Si lo que buscas es aprender música por puro placer, sin prisas ni exámenes, nuestras clases no oficiales son lo tuyo. Aquí aprendes a tu ritmo, sin estrés, y haces de la música una parte divertida de tu día a día. ¡Vas a disfrutar del proceso mientras desarrollas tu creatividad y bienestar emocional!
                             </p>
-                            
+
                             <!-- Filosofía -->
                             <div class="bg-black/20 rounded-xl p-6 border border-white/5">
                                 <h4 class="font-bold text-white mb-3 flex items-center">
                                     <svg class="w-5 h-5 text-secondary-color mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"/>
+                                        <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" />
                                     </svg>
                                     Nuestra Filosofía:
                                 </h4>
@@ -268,25 +268,25 @@ $pagina = "nosotros";
                             <div class="grid grid-cols-2 gap-3">
                                 <div class="flex items-center text-sm text-gray-300">
                                     <svg class="w-4 h-4 text-secondary-color mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" />
                                     </svg>
                                     A tu ritmo
                                 </div>
                                 <div class="flex items-center text-sm text-gray-300">
                                     <svg class="w-4 h-4 text-secondary-color mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" />
                                     </svg>
                                     Sin estrés
                                 </div>
                                 <div class="flex items-center text-sm text-gray-300">
                                     <svg class="w-4 h-4 text-secondary-color mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" />
                                     </svg>
                                     Creatividad
                                 </div>
                                 <div class="flex items-center text-sm text-gray-300">
                                     <svg class="w-4 h-4 text-secondary-color mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" />
                                     </svg>
                                     Bienestar
                                 </div>
@@ -302,13 +302,13 @@ $pagina = "nosotros";
                     <a href="index.php#contacto" class="inline-flex items-center gap-3 bg-gradient-to-r from-primary-color to-primary-color/80 hover:from-primary-color/80 hover:to-primary-color text-white font-bold px-8 py-4 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg">
                         <span>Formación Oficial</span>
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                         </svg>
                     </a>
                     <a href="index.php#contacto" class="inline-flex items-center gap-3 bg-gradient-to-r from-secondary-color to-yellow-400 hover:from-yellow-400 hover:to-secondary-color text-black font-bold px-8 py-4 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg">
                         <span>Formación Libre</span>
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                         </svg>
                     </a>
                 </div>
@@ -337,7 +337,7 @@ $pagina = "nosotros";
                     <div class="flex items-center mb-6">
                         <div class="w-12 h-12 bg-gradient-to-r from-primary-color to-primary-color/80 rounded-xl flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300">
                             <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                             </svg>
                         </div>
                         <h4 class="text-xl font-bold font-['Oswald'] text-gray-900">Talento y Experiencia</h4>
@@ -352,7 +352,7 @@ $pagina = "nosotros";
                     <div class="flex items-center mb-6">
                         <div class="w-12 h-12 bg-gradient-to-r from-secondary-color to-yellow-400 rounded-xl flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300">
                             <svg class="w-6 h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 100 4m0-4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 100 4m0-4v2m0-6V4"/>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 100 4m0-4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 100 4m0-4v2m0-6V4" />
                             </svg>
                         </div>
                         <h4 class="text-xl font-bold font-['Oswald'] text-gray-900">Personalización Total</h4>
@@ -367,7 +367,7 @@ $pagina = "nosotros";
                     <div class="flex items-center mb-6">
                         <div class="w-12 h-12 bg-gradient-to-r from-green-500 to-green-400 rounded-xl flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300">
                             <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
                             </svg>
                         </div>
                         <h4 class="text-xl font-bold font-['Oswald'] text-gray-900">Resultados Comprobados</h4>
@@ -382,7 +382,7 @@ $pagina = "nosotros";
                     <div class="flex items-center mb-6">
                         <div class="w-12 h-12 bg-gradient-to-r from-purple-500 to-purple-400 rounded-xl flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300">
                             <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
                             </svg>
                         </div>
                         <h4 class="text-xl font-bold font-['Oswald'] text-gray-900">Metodología Integral</h4>
@@ -397,7 +397,7 @@ $pagina = "nosotros";
                     <div class="flex items-center mb-6">
                         <div class="w-12 h-12 bg-gradient-to-r from-blue-500 to-blue-400 rounded-xl flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300">
                             <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                             </svg>
                         </div>
                         <h4 class="text-xl font-bold font-['Oswald'] text-gray-900">Bienestar Musical</h4>
@@ -412,7 +412,7 @@ $pagina = "nosotros";
                     <div class="flex items-center mb-6">
                         <div class="w-12 h-12 bg-gradient-to-r from-red-500 to-red-400 rounded-xl flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300">
                             <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
                             </svg>
                         </div>
                         <h4 class="text-xl font-bold font-['Oswald'] text-gray-900">Pasión por Enseñar</h4>
@@ -470,7 +470,7 @@ $pagina = "nosotros";
 
         // Smooth scroll para los enlaces internos
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
+            anchor.addEventListener('click', function(e) {
                 e.preventDefault();
                 const target = document.querySelector(this.getAttribute('href'));
                 if (target) {

@@ -11,7 +11,7 @@
     <link rel="icon" href="./images/logo/iconoround.png" type="image/x-icon">
     <link rel="apple-touch-icon" href="./images/logo/iconoround.png">
     <link rel="canonical" href="https://www.melodiasunidas.com">
-    <link href="./src/output_v6.css" rel="stylesheet" />
+    <link href="./src/output_v2112025.css" rel="stylesheet" />
     <link href="./src/css/main.css" rel="stylesheet" />
     <script src="src/js/main.js" defer></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
@@ -83,11 +83,11 @@ $pagina = "nosotros";
         sm:max-w-lg
         w-full
         ">
-        <form action="connect.php" method="post">
-                    <div class="modal-wrapper bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
-                        <div class="modal-wrapper-flex sm:flex sm:items-start">
+                    <form action="connect.php" method="post">
+                        <div class="modal-wrapper bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+                            <div class="modal-wrapper-flex sm:flex sm:items-start">
 
-                            <div class=" modal-icon 
+                                <div class=" modal-icon 
                     mx-auto 
                     flex-shrink-0 flex 
                     items-center 
@@ -98,53 +98,53 @@ $pagina = "nosotros";
                     bg-blue-100
                     sm:mx-0 sm:h-10 sm:w-10
                      ">
-                                <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#3480f9">
-                                    <path d="M120-160v-112q0-34 17.5-62.5T184-378q62-31 126-46.5T440-440q20 0 40 1.5t40 4.5q-4 58 21 109.5t73 84.5v80H120ZM760-40l-60-60v-186q-44-13-72-49.5T600-420q0-58 41-99t99-41q58 0 99 41t41 99q0 45-25.5 80T790-290l50 50-60 60 60 60-80 80ZM440-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47Zm300 80q17 0 28.5-11.5T780-440q0-17-11.5-28.5T740-480q-17 0-28.5 11.5T700-440q0 17 11.5 28.5T740-400Z" />
-                                </svg>
-                            </div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#3480f9">
+                                        <path d="M120-160v-112q0-34 17.5-62.5T184-378q62-31 126-46.5T440-440q20 0 40 1.5t40 4.5q-4 58 21 109.5t73 84.5v80H120ZM760-40l-60-60v-186q-44-13-72-49.5T600-420q0-58 41-99t99-41q58 0 99 41t41 99q0 45-25.5 80T790-290l50 50-60 60 60 60-80 80ZM440-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47Zm300 80q17 0 28.5-11.5T780-440q0-17-11.5-28.5T740-480q-17 0-28.5 11.5T700-440q0 17 11.5 28.5T740-400Z" />
+                                    </svg>
+                                </div>
 
-                            <div class="
+                                <div class="
                     modal-content
                     text-center
                     mt-3
                     sm:mt-0 sm:ml-4 sm:text-left
                     ">
-                                <h3 class="text-xl font-medium text-gray-700">Iniciar Sesión</h3>
-                                <div class="modal-text mt-2">
-                                    <p class="text-gray-500 text-sm">
+                                    <h3 class="text-xl font-medium text-gray-700">Iniciar Sesión</h3>
+                                    <div class="modal-text mt-2">
+                                        <p class="text-gray-500 text-sm">
 
-                                    <div action="" class="space-y-6 text-gray-700 ">
+                                        <div action="" class="space-y-6 text-gray-700 ">
 
-                                        <div class="relative ">
-                                            <div class="absolute top-1 left-1 bg-white-medium rounded-md p-2 flex items-center justify-center text-blue-300 ">
-                                                <i class="fa-solid fa-envelope-open"></i>
+                                            <div class="relative ">
+                                                <div class="absolute top-1 left-1 bg-white-medium rounded-md p-2 flex items-center justify-center text-blue-300 ">
+                                                    <i class="fa-solid fa-envelope-open"></i>
+                                                </div>
+                                                <input type="email" placeholder="Usuario" class="w-80 border-solid border-2 border-blue-300/50 bg-white-ligth py-2 px-12 
+                    rounded-md ring-blue-500/50 focus:bg-red focus:outline-none focus:ring-1  focus:drop-shadow-xl" name="email" />
                                             </div>
-                                            <input type="email" placeholder="Usuario" class="w-80 border-solid border-2 border-blue-300/50 bg-white-ligth py-2 px-12 
-                    rounded-md ring-blue-500/50 focus:bg-red focus:outline-none focus:ring-1  focus:drop-shadow-xl" name="email"/>
+
+                                            <div class="relative">
+                                                <div class="absolute top-1 left-1 bg-white-medium rounded-full p-2 flex items-center justify-center text-blue-300">
+                                                    <i class="fa-solid fa-lock"></i>
+                                                </div>
+                                                <input type="text" placeholder="Contraseña" class="w-80 border-solid border-2 border-blue-300/50 bg-white-light py-2 px-12 
+                    rounded-md focus:bg-black-dark focus:outline-none focus:ring-1 focus:ring-neon-blue focus:drop-shadow-xl" name="password" />
+                                            </div>
+
                                         </div>
 
-                                        <div class="relative">
-                                            <div class="absolute top-1 left-1 bg-white-medium rounded-full p-2 flex items-center justify-center text-blue-300">
-                                                <i class="fa-solid fa-lock"></i>
-                                            </div>
-                                            <input type="text" placeholder="Contraseña" class="w-80 border-solid border-2 border-blue-300/50 bg-white-light py-2 px-12 
-                    rounded-md focus:bg-black-dark focus:outline-none focus:ring-1 focus:ring-neon-blue focus:drop-shadow-xl" name="password"/>
-                                        </div>
-
+                                        </p>
                                     </div>
-
-                                    </p>
                                 </div>
-                            </div>
 
+                            </div>
                         </div>
-                    </div>
-                    <div class="modal-actions
+                        <div class="modal-actions
              bg-gray-50
               px-4 
               py-3 
               sm:px-6 sm:flex sm:flex-row-reverse">
-                        <button type="submit" class="
+                            <button type="submit" class="
                 w-full 
                 inline-flex 
                 justify-center
@@ -166,8 +166,8 @@ $pagina = "nosotros";
 
                 ">iniciar sesion</button>
 
-                        <button id="close-modal"
-                            class="
+                            <button id="close-modal"
+                                class="
                    w-full 
                 inline-flex 
                 justify-center
@@ -187,7 +187,7 @@ $pagina = "nosotros";
                 focus:ring-gray-200
                 sm:mt-0 sm:ml-3 sm:w-auto
                 ">cancelar</button>
-                    </div>
+                        </div>
                     </form>
                 </div>
             </div>
