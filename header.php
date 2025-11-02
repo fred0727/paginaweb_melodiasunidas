@@ -57,11 +57,11 @@
                 </div>
               </div>
             </li>
-            <li class="flex-shrink-0">
+            <!-- <li class="flex-shrink-0">
               <a href="contenido-digital.php" class="font-['Oswald'] text-sm xl:text-lg px-2 xl:px-3 py-2 rounded-lg hover:bg-white/10 transition-all duration-300 hover:scale-105 border-b-2 border-transparent hover:border-white/50 whitespace-nowrap">
                 Contenido Digital
               </a>
-            </li>
+            </li> -->
             <li class="flex-shrink-0">
               <a href="faq.php" class="font-['Oswald'] text-sm xl:text-lg px-2 xl:px-3 py-2 rounded-lg hover:bg-white/10 transition-all duration-300 hover:scale-105 border-b-2 border-transparent hover:border-white/50 whitespace-nowrap">
                 FAQ
@@ -127,11 +127,11 @@
                 </div>
               </div>
             </li>
-            <li>
+            <!-- <li>
               <a href="contenido-digital.php" class="font-['Oswald'] text-lg block p-3 rounded-lg hover:bg-white/10 transition-all duration-300 text-white border-l-4 border-transparent hover:border-secondary-color">
                 Contenido Digital
               </a>
-            </li>
+            </li> -->
             <li>
               <a href="faq.php" class="font-['Oswald'] text-lg block p-3 rounded-lg hover:bg-white/10 transition-all duration-300 text-white border-l-4 border-transparent hover:border-secondary-color">
                 FAQ
